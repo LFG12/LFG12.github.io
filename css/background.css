@@ -1,0 +1,33 @@
+#web_bg {
+    /* 修改背景图片 */
+
+    /* 背景图像的地址（url括号里）  */
+    background: url(../img/wallhaven.jpg);
+    /* 背景图像不重复 */
+    background-repeat: no-repeat;
+    /* 背景图像大小 */
+    background-size: cover;
+
+    /* webkit内核 5.1 - 6.0 */
+    /*紫粉渐变*/
+    /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
+    /*粉白蓝*/
+    background-image: linear-gradient(-225deg, #dfbacd 0%, #B8DCFF 48%, #58abf3 100%);
+}
+
+
+/* 修改文章页背景 */
+.layout>div:first-child:not(.recent-posts) {
+    /* 以下代表白色透明度为0.3 */
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 所有背景（包括首页卡片、文章页、页面页等） */
+#recent-posts>.recent-post-item,
+.layout>div:first-child:not(.recent-posts),
+.layout_post>#page,
+.layout_post>#post,
+.read-mode .layout_post>#post {
+    /* 以下代表白色透明度为0.3 */
+    background: rgba(255, 255, 255, 0.3);
+}
