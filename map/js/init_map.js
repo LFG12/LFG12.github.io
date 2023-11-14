@@ -7,9 +7,9 @@
 
 // 谷歌街道
 var GoogleNormalMap = L.tileLayer.chinaProvider('Google.Normal.Map', {
-        maxZoom: 23,
-        minZoom: 0
-    }),
+    maxZoom: 23,
+    minZoom: 0
+}),
     // 地形
     GoogleTerrainMap = L.tileLayer.chinaProvider('Google.Terrain.Map', {
         maxZoom: 23,
@@ -31,9 +31,9 @@ var GoogleNormalMap = L.tileLayer.chinaProvider('Google.Normal.Map', {
 
 // 高德街道
 var GaoDeNormalMap = L.tileLayer.chinaProvider('GaoDe.Normal.Map', {
-        maxZoom: 18,
-        minZoom: 3
-    }),
+    maxZoom: 18,
+    minZoom: 3
+}),
     // 卫星
     GaoDeSatelliteMap = L.tileLayer.chinaProvider('GaoDe.Satellite.Map', {
         maxZoom: 18,
@@ -46,9 +46,9 @@ var GaoDeNormalMap = L.tileLayer.chinaProvider('GaoDe.Normal.Map', {
 
 // Arcgis街道
 var ArcgisNormalMap = L.tileLayer.chinaProvider('Arcgis.Normal.Map', {
-        maxZoom: 18,
-        minZoom: 0
-    }),
+    maxZoom: 18,
+    minZoom: 0
+}),
     // 卫星
     ArcgisSatelliteMap = L.tileLayer.chinaProvider('Arcgis.Satellite.Map', {
         maxZoom: 18,
@@ -83,16 +83,16 @@ var arcgis_streets = L.layerGroup([ArcgisNormalMap]),
 var open_streets = L.layerGroup([OpenNormalMap]);
 
 var baseLayers = {
+    "高德地图(街道)": gaode_streets,
+    "高德地图(卫星)": gaode_satellite,
+    "高德地图(混合)": gaode_hybrid,
+    "Arcgis(卫星)": arcgis_satellite,
+    "Arcgis(街道)": arcgis_streets,
+    "Arcgis(混合)": arcgis_hybrid,
     "谷歌地图(街道)": google_streets,
     "谷歌地图(地形)": google_terrain,
     "谷歌地图(卫星)": google_satellite,
     "谷歌地图(混合)": google_hybrid,
-    "高德地图(街道)": gaode_streets,
-    "高德地图(卫星)": gaode_satellite,
-    "高德地图(混合)": gaode_hybrid,
-    "Arcgis(街道)": arcgis_streets,
-    "Arcgis(卫星)": arcgis_satellite,
-    "Arcgis(混合)": arcgis_hybrid,
     "OpenMap(街道)": open_streets
 };
 
@@ -100,9 +100,9 @@ var overlayLayers = {};
 
 
 var map = L.map("map", {
-    center: [39.54, 116.23],
-    zoom: 8,
-    layers: [google_streets],
+    center: [30.54, 114.29],
+    zoom: 9,
+    layers: [gaode_streets],
     zoomControl: true,
     worldCopyJump: true,
     zoomSnap: 0.5,
