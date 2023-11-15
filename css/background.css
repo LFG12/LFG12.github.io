@@ -3,8 +3,8 @@
 
     /* 背景图像的地址（url括号里）  */
     /* "https://z1.ax1x.com/2023/11/10/pi8nvcj.png"  */
-    background-image: url(https://z1.ax1x.com/2023/11/10/pi8nvcj.png);
-    /* background: url(https://z1.ax1x.com/2023/11/10/pi8nvcj.png); */
+    /* background-image: url(https://z1.ax1x.com/2023/11/10/pi8nvcj.png); */
+    background: url(https://p.ananas.chaoxing.com/star3/origin/21c80b1199d078ea06e713ec0432771d.png);
     /* 背景图像不重复 */
     background-repeat: no-repeat;
     /* 背景图像大小 */
