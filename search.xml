@@ -4237,6 +4237,13 @@
 <h2 id="2-域名备案">2.域名备案</h2>
 <p>没钱买服务器，只能用授权码，购买授权码后发现身份证有效期不足3个月不能备案，于是更换身份证，经过了一个月拿到了新身份证，结果发现授权码过期了</p>
 <p>只能要么在买一个tx的授权码，或者直接转网，去al或者其他地方了</p>
+<h2 id="3-hexo-s可以推上本地，但是hexo-d不能推上github仓库">3.hexo s可以推上本地，但是hexo d不能推上github仓库</h2>
+<p>报错如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line"></span><br><span class="line">Error: Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (F:\大三上课程\WebGIS\hexo\hexo_code\hexoblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br></pre></td></tr></table></figure>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E5%BB%BA%E7%AB%99%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F3%E6%8E%A8%E4%B8%8D%E4%B8%8Agithub%E4%BB%93%E5%BA%93%2F%E6%8A%A5%E9%94%99.jpg" alt=""></p>
+<p>解决方法：应该是ssh链接的问题，经过在C站上层层的查，查到了解决问题</p>
+<p>解决链接：<a href="https://blog.csdn.net/weixin_48927364/article/details/123405585?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E8%83%BD%E6%8E%A8%E5%88%B0github%E4%B8%AD&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-123405585.142%5Ev96%5Epc_search_result_base1&amp;spm=1018.2226.3001.4187">【Hexo】部署博客到Github失败的解决方案_hexo部署不到github-CSDN博客</a></p>
+<p>万分感谢大佬。</p>
 ]]></content>
       <categories>
         <category>建站</category>
