@@ -1,9 +1,3 @@
-/**
- * Created by 忆枫 on 2018/4/10.
- */
-
-// 加载地图
-
 
 // 谷歌街道
 var GoogleNormalMap = L.tileLayer.chinaProvider('Google.Normal.Map', {
