@@ -1,6 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>备案历程(这条路如履薄冰)</title>
+    <url>/2023/12/12/19%E5%A4%87%E6%A1%88%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<h1>历程</h1>
+<p>当你想要把自己广播在网络中，能让别人检索到的话，相当于在地球村的一个地址，有了地址大家才能找到你家门来拜访</p>
+<p>此时一个域名就是必须品，当然你可以获取一些免费的域名（比如在github或者gitee上）但是想要长久有特色的话还是离不开一个真实的域名，购买域名可以参考自己的需求，（时间使用长短，作用是干什么），一个域名也像一个名字，一个简洁明了的域名能够让客户短时间记下你，而一个错综复杂、乱七八糟的域名会情不自禁给人一个烦恼</p>
+<h2 id="域名购买">域名购买</h2>
+<ul>
+<li>腾讯云</li>
+<li>华为云</li>
+<li>阿里云</li>
+</ul>
+<p>以上是我了解到的国内普遍使用的域名购买网站</p>
+<p>可以直接注册进行购买，进行域名检索，选择后缀，可以结合自己的需求进行购买</p>
+<h2 id="域名的icp备案">域名的icp备案</h2>
+<p>但仅仅买了域名还不够，你的域名还不能正常使用</p>
+<p>在国内为了便于互联网的管理，保护网络安全，净化网络环境，需要进行域名的icp备案(以下简称备案)</p>
+<p>备案的硬性条件是你要有一个三个月期限的服务器，且剩余时间大于1个月</p>
+<p>如果没有的话，海鲜市场，启动！</p>
+<p>去xian🐟说搜索以下xxx服务码/授权码，找别人买一个，或者找你有服务器的朋友申请一个用于备案的授权码（不保证一定能要来呦）</p>
+<p>然后接下来就是填写备案资料，不得不说这个历程的复杂的，各种事情的，且需要长期等待的，也需要看当地审核的效率，只能是自求多福了</p>
+<p><strong>官方发布的备案流程</strong>[<a href="https://www.isc.org.cn/article/11084110917136384.html">首次备案流程_常见问题_中国互联网协会 (isc.org.cn)</a>]</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">首次备案流程如下：</span><br><span class="line"></span><br><span class="line">1.访问接入商备案系统</span><br><span class="line"></span><br><span class="line">2.注册用户名和密码，然后登录接入商备案系统</span><br><span class="line"></span><br><span class="line">3.填写备案相关信息并提交</span><br><span class="line"></span><br><span class="line">4.接入商审核</span><br><span class="line"></span><br><span class="line">5.接入商审核通过后，通信管理局审核</span><br><span class="line"></span><br><span class="line">6.通信管理局审核通过，下发备案号；审核不通过，返回接入商</span><br></pre></td></tr></table></figure>
+<h2 id="备案注意事项">备案注意事项</h2>
+<ul>
+<li>身份证<strong>有效期必须大于三个月</strong></li>
+</ul>
+<p>我就是不知道这个，结果去备案，发现不足三个月需更换身份证后重新备案，结果身份证又等了一个月才到，此时授权码已经过期，必须又再买一个授权码😭</p>
+<p>如果时间快到了也不是很好，因为等你时间到三个月过期后也要进行备案变更。那一套复杂糟心的历程你又要重走一遍😅</p>
+<p>且期间你会有任何不合规范的问题都会被驳回</p>
+<p>然后你就要重新再走一遍😇</p>
+<p>怎么样，看到这，汗流浃背了吧😰</p>
+<p>截止12.12的历程：</p>
+<p><a href="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E5%A4%87%E6%A1%88%E5%8E%86%E7%A8%8B%2F%E5%A4%87%E6%A1%88%E8%AE%B0%E5%BD%95.jpg">https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F文章插图%2F备案历程%2F备案记录.jpg</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>建站遇到的问题及解决方法【更新中】</title>
+    <url>/2023/12/02/20%E5%BB%BA%E7%AB%99%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1>问题集锦</h1>
+<h2 id="1-当腾讯云储存桶图片清空重新上传后导致图片加载不出">1.当腾讯云储存桶图片清空重新上传后导致图片加载不出</h2>
+<h3 id="解决：">解决：</h3>
+<p>发现并不是链接的问题，而是要修改授权</p>
+<p>储存桶列表—授权管理—改为“公有读，私有写”—保存即可</p>
+<p>是权限问题导致的无法访问图片</p>
+<p>ps：建立储存桶时请设定好防盗链，防治图片被恶意盗刷造成损失。\</p>
+<h2 id="2-域名备案">2.域名备案</h2>
+<p>没钱买服务器，只能用授权码，购买授权码后发现身份证有效期不足3个月不能备案，于是更换身份证，经过了一个月拿到了新身份证，结果发现授权码过期了</p>
+<p>只能要么在买一个tx的授权码，或者直接转网，去al或者其他地方了</p>
+<h2 id="3-hexo-s可以推上本地，但是hexo-d不能推上github仓库">3.hexo s可以推上本地，但是hexo d不能推上github仓库</h2>
+<p>报错如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line"></span><br><span class="line">Error: Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (F:\大三上课程\WebGIS\hexo\hexo_code\hexoblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br></pre></td></tr></table></figure>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E5%BB%BA%E7%AB%99%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F3%E6%8E%A8%E4%B8%8D%E4%B8%8Agithub%E4%BB%93%E5%BA%93%2F%E6%8A%A5%E9%94%99.jpg" alt=""></p>
+<p>解决方法：应该是ssh链接的问题，经过在C站上层层的查，查到了解决问题</p>
+<p>解决链接：<a href="https://blog.csdn.net/weixin_48927364/article/details/123405585?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E8%83%BD%E6%8E%A8%E5%88%B0github%E4%B8%AD&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-123405585.142%5Ev96%5Epc_search_result_base1&amp;spm=1018.2226.3001.4187">【Hexo】部署博客到Github失败的解决方案_hexo部署不到github-CSDN博客</a></p>
+<p>万分感谢大佬。</p>
+]]></content>
+      <categories>
+        <category>建站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>flask框架web开发实践</title>
+    <url>/2023/12/16/21flask%E6%A1%86%E6%9E%B6web%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/</url>
+    <content><![CDATA[<p>参考文献：<a href="https://blog.csdn.net/plumlee/article/details/127945625?spm=1001.2014.3001.5506">python上手–flask框架web开发实践-数据库_python flask web开发-CSDN博客</a></p>
+<h3 id="本教程采用跟步式进行记录，把大佬的走一遍，转化为自己的输出">本教程采用跟步式进行记录，把大佬的走一遍，转化为自己的输出</h3>
+<p>1.在index首页打印welcom</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span>  Flask    <span class="comment">#导入Flask类</span></span><br><span class="line">app=Flask(__name__)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">index</span>():</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;&lt;h3&gt;welcome to my webpage!&lt;/h3&gt;&lt;hr&gt;&lt;p style=&quot;color:red&quot;&gt;输出语句测试&lt;/p&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># @app.route(&#x27;/&#x27;)    #调用route路由方法，括号里给定参数，/符号默认为首页</span></span><br><span class="line"><span class="comment"># @app.route(&#x27;/home/user&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#实例化并命名为app实例</span></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    app.run(port=<span class="number">2020</span>,host=<span class="string">&quot;127.0.0.1&quot;</span>,debug=<span class="literal">True</span>)   <span class="comment">#调用run方法，设定端口号，启动服务</span></span><br></pre></td></tr></table></figure>
+<p>但是这种缺点很明显，就是要在return中写大量的html语句</p>
+<p>解决方法就是flask库里的<strong>Jinja2模板引擎</strong>，调用flask模块里的render_template方法，来调用已经写好的html文件。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask, render_template</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">index</span>():    </span><br><span class="line"><span class="keyword">return</span> render_template(<span class="string">&quot;index.html&quot;</span>)   <span class="comment">#调用render_template函数，传入html文件参数</span></span><br></pre></td></tr></table></figure>
+<p>但是目前python是<strong>找不到</strong>index文件的</p>
+<p>flask框架在使用这个模板函数时，默认去寻找项目文件夹下的templates文件夹里的html文件。因此我们需要先新建一个templates文件夹，然后在里面新建一个html文件，项目结构及内容参考如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/4af972d9f7b3b1601b788cf50246dc06.webp?x-oss-process=image/format,png" alt=""></p>
+<p>此时也要注意main.py的路径，是该文件夹下的根目录，<strong>我最初就是因为main.py不在根目录导致一直找不到index.html</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask, render_template  <span class="comment"># 导入Flask类</span></span><br><span class="line">app=Flask(__name__)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">index</span>():</span><br><span class="line">    <span class="comment"># return &quot;&lt;h3&gt;welcome to my webpage!&lt;/h3&gt;&lt;hr&gt;&lt;p style=\&quot;color:red\&quot;&gt;输出语句测试&lt;/p&gt;&quot;</span></span><br><span class="line">    <span class="keyword">return</span> render_template(<span class="string">&quot;index.html&quot;</span>)  <span class="comment"># 调用render_template函数，传入html文件参数</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#实例化并命名为app实例</span></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    app.run(port=<span class="number">2020</span>,host=<span class="string">&quot;127.0.0.1&quot;</span>,debug=<span class="literal">True</span>)   <span class="comment">#调用run方法，设定端口号，启动服务</span></span><br></pre></td></tr></table></figure>
+<p>以上是能实现通过127.0.0.1直接启动前端页面的main.py的代码</p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+  </entry>
+  <entry>
     <title>11.28新中地面试培训心得</title>
     <url>/2023/11/28/11-28%E6%96%B0%E4%B8%AD%E5%9C%B0%E9%9D%A2%E8%AF%95%E5%9F%B9%E8%AE%AD%E5%BF%83%E5%BE%97/</url>
     <content><![CDATA[<h1>11.28新中地面试培训心得</h1>
@@ -98,88 +180,6 @@
       <tags>
         <tag>面试心得</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>备案历程(这条路如履薄冰)</title>
-    <url>/2023/12/12/19%E5%A4%87%E6%A1%88%E5%8E%86%E7%A8%8B/</url>
-    <content><![CDATA[<h1>历程</h1>
-<p>当你想要把自己广播在网络中，能让别人检索到的话，相当于在地球村的一个地址，有了地址大家才能找到你家门来拜访</p>
-<p>此时一个域名就是必须品，当然你可以获取一些免费的域名（比如在github或者gitee上）但是想要长久有特色的话还是离不开一个真实的域名，购买域名可以参考自己的需求，（时间使用长短，作用是干什么），一个域名也像一个名字，一个简洁明了的域名能够让客户短时间记下你，而一个错综复杂、乱七八糟的域名会情不自禁给人一个烦恼</p>
-<h2 id="域名购买">域名购买</h2>
-<ul>
-<li>腾讯云</li>
-<li>华为云</li>
-<li>阿里云</li>
-</ul>
-<p>以上是我了解到的国内普遍使用的域名购买网站</p>
-<p>可以直接注册进行购买，进行域名检索，选择后缀，可以结合自己的需求进行购买</p>
-<h2 id="域名的icp备案">域名的icp备案</h2>
-<p>但仅仅买了域名还不够，你的域名还不能正常使用</p>
-<p>在国内为了便于互联网的管理，保护网络安全，净化网络环境，需要进行域名的icp备案(以下简称备案)</p>
-<p>备案的硬性条件是你要有一个三个月期限的服务器，且剩余时间大于1个月</p>
-<p>如果没有的话，海鲜市场，启动！</p>
-<p>去xian🐟说搜索以下xxx服务码/授权码，找别人买一个，或者找你有服务器的朋友申请一个用于备案的授权码（不保证一定能要来呦）</p>
-<p>然后接下来就是填写备案资料，不得不说这个历程的复杂的，各种事情的，且需要长期等待的，也需要看当地审核的效率，只能是自求多福了</p>
-<p><strong>官方发布的备案流程</strong>[<a href="https://www.isc.org.cn/article/11084110917136384.html">首次备案流程_常见问题_中国互联网协会 (isc.org.cn)</a>]</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">首次备案流程如下：</span><br><span class="line"></span><br><span class="line">1.访问接入商备案系统</span><br><span class="line"></span><br><span class="line">2.注册用户名和密码，然后登录接入商备案系统</span><br><span class="line"></span><br><span class="line">3.填写备案相关信息并提交</span><br><span class="line"></span><br><span class="line">4.接入商审核</span><br><span class="line"></span><br><span class="line">5.接入商审核通过后，通信管理局审核</span><br><span class="line"></span><br><span class="line">6.通信管理局审核通过，下发备案号；审核不通过，返回接入商</span><br></pre></td></tr></table></figure>
-<h2 id="备案注意事项">备案注意事项</h2>
-<ul>
-<li>身份证<strong>有效期必须大于三个月</strong></li>
-</ul>
-<p>我就是不知道这个，结果去备案，发现不足三个月需更换身份证后重新备案，结果身份证又等了一个月才到，此时授权码已经过期，必须又再买一个授权码😭</p>
-<p>如果时间快到了也不是很好，因为等你时间到三个月过期后也要进行备案变更。那一套复杂糟心的历程你又要重走一遍😅</p>
-<p>且期间你会有任何不合规范的问题都会被驳回</p>
-<p>然后你就要重新再走一遍😇</p>
-<p>怎么样，看到这，汗流浃背了吧😰</p>
-<p>截止12.12的历程：</p>
-<p><a href="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E5%A4%87%E6%A1%88%E5%8E%86%E7%A8%8B%2F%E5%A4%87%E6%A1%88%E8%AE%B0%E5%BD%95.jpg">https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F文章插图%2F备案历程%2F备案记录.jpg</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>建站遇到的问题及解决方法【更新中】</title>
-    <url>/2023/12/02/20%E5%BB%BA%E7%AB%99%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1>问题集锦</h1>
-<h2 id="1-当腾讯云储存桶图片清空重新上传后导致图片加载不出">1.当腾讯云储存桶图片清空重新上传后导致图片加载不出</h2>
-<h3 id="解决：">解决：</h3>
-<p>发现并不是链接的问题，而是要修改授权</p>
-<p>储存桶列表—授权管理—改为“公有读，私有写”—保存即可</p>
-<p>是权限问题导致的无法访问图片</p>
-<p>ps：建立储存桶时请设定好防盗链，防治图片被恶意盗刷造成损失。\</p>
-<h2 id="2-域名备案">2.域名备案</h2>
-<p>没钱买服务器，只能用授权码，购买授权码后发现身份证有效期不足3个月不能备案，于是更换身份证，经过了一个月拿到了新身份证，结果发现授权码过期了</p>
-<p>只能要么在买一个tx的授权码，或者直接转网，去al或者其他地方了</p>
-<h2 id="3-hexo-s可以推上本地，但是hexo-d不能推上github仓库">3.hexo s可以推上本地，但是hexo d不能推上github仓库</h2>
-<p>报错如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line"></span><br><span class="line">Error: Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (F:\大三上课程\WebGIS\hexo\hexo_code\hexoblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br></pre></td></tr></table></figure>
-<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E5%BB%BA%E7%AB%99%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F3%E6%8E%A8%E4%B8%8D%E4%B8%8Agithub%E4%BB%93%E5%BA%93%2F%E6%8A%A5%E9%94%99.jpg" alt=""></p>
-<p>解决方法：应该是ssh链接的问题，经过在C站上层层的查，查到了解决问题</p>
-<p>解决链接：<a href="https://blog.csdn.net/weixin_48927364/article/details/123405585?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E8%83%BD%E6%8E%A8%E5%88%B0github%E4%B8%AD&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-123405585.142%5Ev96%5Epc_search_result_base1&amp;spm=1018.2226.3001.4187">【Hexo】部署博客到Github失败的解决方案_hexo部署不到github-CSDN博客</a></p>
-<p>万分感谢大佬。</p>
-]]></content>
-      <categories>
-        <category>建站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>flask框架web开发实践</title>
-    <url>/2023/12/16/21flask%E6%A1%86%E6%9E%B6web%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/</url>
-    <content><![CDATA[<p>参考文献：<a href="https://blog.csdn.net/plumlee/article/details/127945625?spm=1001.2014.3001.5506">python上手–flask框架web开发实践-数据库_python flask web开发-CSDN博客</a></p>
-<h3 id="本教程采用跟步式进行记录，把大佬的走一遍，转化为自己的输出">本教程采用跟步式进行记录，把大佬的走一遍，转化为自己的输出</h3>
-<p>1.在index首页打印welcom</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span>  Flask    <span class="comment">#导入Flask类</span></span><br><span class="line">app=Flask(__name__)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">index</span>():</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;&lt;h3&gt;welcome to my webpage!&lt;/h3&gt;&lt;hr&gt;&lt;p style=&quot;color:red&quot;&gt;输出语句测试&lt;/p&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># @app.route(&#x27;/&#x27;)    #调用route路由方法，括号里给定参数，/符号默认为首页</span></span><br><span class="line"><span class="comment"># @app.route(&#x27;/home/user&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#实例化并命名为app实例</span></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    app.run(port=<span class="number">2020</span>,host=<span class="string">&quot;127.0.0.1&quot;</span>,debug=<span class="literal">True</span>)   <span class="comment">#调用run方法，设定端口号，启动服务</span></span><br></pre></td></tr></table></figure>
-<p>但是这种缺点很明显，就是要在return中写大量的html语句</p>
-<p>解决方法就是flask库里的<strong>Jinja2模板引擎</strong>，调用flask模块里的render_template方法，来调用已经写好的html文件。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask, render_template</span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">index</span>():    </span><br><span class="line"><span class="keyword">return</span> render_template(<span class="string">&quot;index.html&quot;</span>)   <span class="comment">#调用render_template函数，传入html文件参数</span></span><br></pre></td></tr></table></figure>
-<p>但是目前python是<strong>找不到</strong>index文件的</p>
-<p>flask框架在使用这个模板函数时，默认去寻找项目文件夹下的templates文件夹里的html文件。因此我们需要先新建一个templates文件夹，然后在里面新建一个html文件，项目结构及内容参考如下：</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/4af972d9f7b3b1601b788cf50246dc06.webp?x-oss-process=image/format,png" alt=""></p>
-<p>此时也要注意main.py的路径，是该文件夹下的根目录，<strong>我最初就是因为main.py不在根目录导致一直找不到index.html</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask, render_template  <span class="comment"># 导入Flask类</span></span><br><span class="line">app=Flask(__name__)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">index</span>():</span><br><span class="line">    <span class="comment"># return &quot;&lt;h3&gt;welcome to my webpage!&lt;/h3&gt;&lt;hr&gt;&lt;p style=\&quot;color:red\&quot;&gt;输出语句测试&lt;/p&gt;&quot;</span></span><br><span class="line">    <span class="keyword">return</span> render_template(<span class="string">&quot;index.html&quot;</span>)  <span class="comment"># 调用render_template函数，传入html文件参数</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#实例化并命名为app实例</span></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    app.run(port=<span class="number">2020</span>,host=<span class="string">&quot;127.0.0.1&quot;</span>,debug=<span class="literal">True</span>)   <span class="comment">#调用run方法，设定端口号，启动服务</span></span><br></pre></td></tr></table></figure>
-<p>以上是能实现通过127.0.0.1直接启动前端页面的main.py的代码</p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
   </entry>
   <entry>
     <title>华科Kab之旅【受益颇丰】</title>
@@ -331,30 +331,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GIS工具箱【持续更新...】</title>
-    <url>/2023/12/02/GIS%E5%B7%A5%E5%85%B7%E7%AE%B1/</url>
-    <content><![CDATA[<h1>GIS工具箱</h1>
-<p>写本篇文章是想记录一下目前逐渐遇到的经历的启发的对于GIS来说是十分有用的工具箱</p>
-<ul>
-<li>遥感而言</li>
-</ul>
-<p><a href="https://developers.google.cn/earth-engine/">GEE</a></p>
-<p><a href="https://engine.piesat.cn/">PIE</a></p>
-<ul>
-<li>GIS上</li>
-</ul>
-<p>ArcGIS Pro  现代版的制图工具</p>
-<p>ArcMap  经典GIS入门软件</p>
-<p>ArcPy（批处理各种东西，无需反复点击操作，靠代码即可跑出来）</p>
-<p>大幅度提高效率</p>
-<h2 id="再加一句话-能用会用就行，也不要求从头开始学">再加一句话 能用会用就行，也不要求从头开始学</h2>
-<h2 id=""></h2>
-]]></content>
-      <tags>
-        <tag>GIS工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JSP基础编程01</title>
     <url>/2023/11/13/Jsp%E5%9F%BA%E7%A1%80%E7%BC%96%E7%A8%8B01/</url>
     <content><![CDATA[<h1>上机题目</h1>
@@ -392,6 +368,54 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name = Integer.parseInt(username);</span><br><span class="line">pwd = Integer.parseInt(password);</span><br></pre></td></tr></table></figure>
 <h2 id="2-P77-8-计算找零">2.P77-8 计算找零</h2>
 ]]></content>
+  </entry>
+  <entry>
+    <title>GIS工具箱【持续更新...】</title>
+    <url>/2023/12/02/GIS%E5%B7%A5%E5%85%B7%E7%AE%B1/</url>
+    <content><![CDATA[<h1>GIS工具箱</h1>
+<p>写本篇文章是想记录一下目前逐渐遇到的经历的启发的对于GIS来说是十分有用的工具箱</p>
+<ul>
+<li>遥感而言</li>
+</ul>
+<p><a href="https://developers.google.cn/earth-engine/">GEE</a></p>
+<p><a href="https://engine.piesat.cn/">PIE</a></p>
+<ul>
+<li>GIS上</li>
+</ul>
+<p>ArcGIS Pro  现代版的制图工具</p>
+<p>ArcMap  经典GIS入门软件</p>
+<p>ArcPy（批处理各种东西，无需反复点击操作，靠代码即可跑出来）</p>
+<p>大幅度提高效率</p>
+<h2 id="再加一句话-能用会用就行，也不要求从头开始学">再加一句话 能用会用就行，也不要求从头开始学</h2>
+<h2 id=""></h2>
+]]></content>
+      <tags>
+        <tag>GIS工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pycharm配置arcpy(超简单)【ArcPy教程】</title>
+    <url>/2023/12/01/Pycharm%E9%85%8D%E7%BD%AEArcpy/</url>
+    <content><![CDATA[<p>电脑上安装了python2.7版本的ArcGIS，也另安装了python3.10.<br>
+想使用PyCharm平台进行结合ArcGIS和python的编程，arcpy必不可少。但是直接新建工程使用时会出现以下报错：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">ImportError: No module named arcpy</span><br></pre></td></tr></table></figure>
+<p>通过查找网上的方法，找到了解决途径（只需一步操作）：</p>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2FARCGIS%E6%95%99%E7%A8%8B%2FArcPy%2FPycharm%E9%85%8D%E7%BD%AEarcpy%2F%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.jpg" alt="新建项目"></p>
+<p>Location：替换为自己目标的工程文件路径<br>
+Base Interpreter：把图中路径的10.8替换为自己的ArcGIS版本<br>
+勾选“Inherit global site-packages”</p>
+<p><strong>以上问题其实就是解释器的问题，选到自己的arcgis对应版本的解释器一般就能解决</strong></p>
+<p>有可能还要安装一个打包器，按提示安装即可</p>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2FARCGIS%E6%95%99%E7%A8%8B%2FArcPy%2FPycharm%E9%85%8D%E7%BD%AEarcpy%2F%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E6%89%93%E5%8C%85%E5%99%A8.jpg" alt="打包器"></p>
+<p>其他都不用变，直接创建工程。之后创建python文件，写import语句：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> arcpy</span><br></pre></td></tr></table></figure>
+<p>报错解决，可以正常运行</p>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2FARCGIS%E6%95%99%E7%A8%8B%2FArcPy%2FPycharm%E9%85%8D%E7%BD%AEarcpy%2F%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3.jpg" alt="报错解决"></p>
+<p>致谢/参考链接：<a href="https://blog.csdn.net/m0_48335178/article/details/121693471">PyCharm配置环境带arcpy（超级简单）_pycharm 和 arcpy-CSDN博客</a></p>
+]]></content>
+      <tags>
+        <tag>ArcPy教程</tag>
+      </tags>
   </entry>
   <entry>
     <title>Markdown语法手册</title>
@@ -439,30 +463,6 @@
 ]]></content>
       <tags>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Pycharm配置arcpy(超简单)【ArcPy教程】</title>
-    <url>/2023/12/01/Pycharm%E9%85%8D%E7%BD%AEArcpy/</url>
-    <content><![CDATA[<p>电脑上安装了python2.7版本的ArcGIS，也另安装了python3.10.<br>
-想使用PyCharm平台进行结合ArcGIS和python的编程，arcpy必不可少。但是直接新建工程使用时会出现以下报错：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">ImportError: No module named arcpy</span><br></pre></td></tr></table></figure>
-<p>通过查找网上的方法，找到了解决途径（只需一步操作）：</p>
-<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2FARCGIS%E6%95%99%E7%A8%8B%2FArcPy%2FPycharm%E9%85%8D%E7%BD%AEarcpy%2F%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.jpg" alt="新建项目"></p>
-<p>Location：替换为自己目标的工程文件路径<br>
-Base Interpreter：把图中路径的10.8替换为自己的ArcGIS版本<br>
-勾选“Inherit global site-packages”</p>
-<p><strong>以上问题其实就是解释器的问题，选到自己的arcgis对应版本的解释器一般就能解决</strong></p>
-<p>有可能还要安装一个打包器，按提示安装即可</p>
-<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2FARCGIS%E6%95%99%E7%A8%8B%2FArcPy%2FPycharm%E9%85%8D%E7%BD%AEarcpy%2F%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E6%89%93%E5%8C%85%E5%99%A8.jpg" alt="打包器"></p>
-<p>其他都不用变，直接创建工程。之后创建python文件，写import语句：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> arcpy</span><br></pre></td></tr></table></figure>
-<p>报错解决，可以正常运行</p>
-<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2FARCGIS%E6%95%99%E7%A8%8B%2FArcPy%2FPycharm%E9%85%8D%E7%BD%AEarcpy%2F%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3.jpg" alt="报错解决"></p>
-<p>致谢/参考链接：<a href="https://blog.csdn.net/m0_48335178/article/details/121693471">PyCharm配置环境带arcpy（超级简单）_pycharm 和 arcpy-CSDN博客</a></p>
-]]></content>
-      <tags>
-        <tag>ArcPy教程</tag>
       </tags>
   </entry>
   <entry>
@@ -831,6 +831,55 @@ Arcgis中calcuator公式:<br>
 ]]></content>
       <tags>
         <tag>hexo美化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站期许</title>
+    <url>/2023/12/04/%E7%BD%91%E7%AB%99%E6%9C%9F%E8%AE%B8/</url>
+    <content><![CDATA[<h1>起因/背景</h1>
+<p>大三上学习，做为一名GISer，上了一门专业课—WebGIS</p>
+<p>我也和老师看法一致，为了web端是主流，诚然不同的客户端不会消除，桌面应用端也以其强大的处理功能位置不可替代，比如AecMap，ArcgisPro，但随着科技的发展，云服务器的简便高效快捷，开发者无需投入巨大的服务器成本，可以按需灵活的购买云服务产品，用户也省去了安装、配置的麻烦，只需一个url，一个浏览器，便可享受高品质的服务，比如B站等，减少了开发者的投入，便捷了用户的使用</p>
+<p><strong>可以说web是轻量化应用中“性价比”极高的一条道路</strong>            ——（以上均个人看法）</p>
+<p>GIS专业，将编程与地理相链接，但编程上的确与计算机科班出身有差距，但是也再走出一条具有GIS特色的编程之路</p>
+<p>这个网站的背景便是这学期的webGIS课程，不仅学习了前端，更学习了如何用web网页去发布，处理，导入一些地图服务</p>
+<p>本站尚没有达到完全GIS网站化的水平，且是<strong>投机取巧</strong>利用HEXO框架来写，是纯前端</p>
+<p>看似较为完备的网站下，并不是我的优势，而是框架的有点，我其实不过就是部署一下，配置一些文件，导入一些css，js罢的拼接搬运工，<strong>而网站背后的不足，则是我编程水平不足的体现</strong></p>
+<p>但是吾虽愚笨，也对这个并不完善的小网站视之若宝，它是一个由我创建的个人空间，我将他部署发布到公网，大家每个人都可以来到我的网站来观看到我的<strong>作品</strong>，这对我来说是十分欣喜的，我准备将它来记录我的时刻与成长，来将我的一些所思所想所感所悟所学分享出来，记录下来，可能是一些对自我的反省，抑或是一些有趣操作的总结，也可能是自己遇到的某个较难任务攻克后写的技术文档供后面遇到相同问题时解决。</p>
+<p>以后我还想以此博客网站为始，扩展出我的个人公众号，B站…等知识分享矩阵</p>
+<p>还有我是一名GIS学生，将来也可能是GIS的从业者，我将来准备给我的网站添加一些GIS元素</p>
+<p>目前有些想法的是</p>
+<ul>
+<li>左上角有个天气挂件，可以显示当前来访者城市的天气情况</li>
+<li>右侧公告栏开启欢迎语，可以自动根据用户的ip获取到他的城市甚至区县，</li>
+</ul>
+<p>比如欢迎来自<strong>湖北省 武汉市 蔡甸区</strong>的小伙伴，您距离博主仅有<strong>1.0km</strong>；</p>
+<ul>
+<li>还有可能实现简易的导航功能，当用户搜索一个位置时，可以通过调用高德来完成导航的预览</li>
+<li>调用高德的足迹，可视化的展示我去过的地方，留下的经历</li>
+<li>还准备学习Echart，将自己每月的文章发布数量用可视化的方式展示出来</li>
+<li>等等等等</li>
+</ul>
+<h1>建站历程</h1>
+<p>构建一个博客的历程，并不是一帆风顺的，相比于本地的index网页来说，发布到公网肯定会经历一个又一个的错误，有时不知道是什么错误，查半天才能找到，还有一次把CNAME文件写混了导致域名定向总是失败，甚至改回来了还是不行，结果是清楚cookie后一刷新就可以了</p>
+<p>还有比如说部署再github上访问速度太慢，想分享给身边的人他们都打不开看不到</p>
+<p>于是就想部署到gitee上，不过这laji的gitee又要手举身份证拍照实名认证，又审核三四天才通过，真是服了，限制是的有些多了</p>
+<p>然后部署再gitee上后以为速度是可以了，结果网页是能比较快的打开，但是图片都是404加载不出来，后面发现了是图床的问题，图床在外面，里面访问速度也很慢，于是试试七牛云，结果不出所料，还是慢，没半点效果</p>
+<p>后来在gitee上很偶然的居然联系上了love哥，<a href="lovewhoilove.gitee.io">love哥的网站</a>我是真的佩服，第一个看到就惊艳到了，这可真是GISer的藏宝库呀</p>
+<p>然后请教了他是用的腾讯云的cos储存，不贵，一年十几块钱，于是我也果不其然使用了，刚用上网站图片就能立刻显示了，<strong>这是属于我的博客网站第一次大事记</strong>——可以让大多数人无需工具即可正常访问，修改后就立刻分享给了老师，得到了老师的鼓励</p>
+<p>然后现在差不多属于是博客的页面完善阶段，现在图标还没有补齐，有些page的显示仍然有些问题</p>
+<p><strong>正在向一个完整的博客去构建…</strong></p>
+<h1>旅途收获</h1>
+<p>一个人建站，是一个快乐且痛苦的过程，痛苦在改不完的bug，快乐是解决bug后的舒适与成就</p>
+<p>所以这两个也正是相互依存，相互制约的，没有了痛苦，就不会对比出完成时的喜悦，没有快乐，也不会去做这件事</p>
+<p>而且，当我在hexo这条道路上前行时，Hexo有一个很有社交性的功能<strong>友情链接</strong>，通过一个个的友链跳转，发现了很多隐藏的大佬，了解了很多见到了很多记录生活的大佬。</p>
+<p>发现真是江山代有才人出呀，尤其让我震惊的是我跟着友链找到的大佬，进了粉丝群后发现群主才<strong>13岁</strong>，上初中，这是真真震惊到我了，这么小，就已经掌握了如此的编程实力，前途真是不可限量</p>
+<p>还有发现tianli博主，竟然还比我小一级，已经成为圈内小有名气的技术大佬了，他写的文章我真看不懂几个，没学过，后端大佬</p>
+<p>慢慢的，见的越多也越发现，真的是<strong>吾生也有涯，而知也无涯</strong>，知道的越多，才发现自己不知道的越多</p>
+<p><strong>路漫漫，行则至，顺便要记得欣赏沿途的风景</strong></p>
+<p>…</p>
+]]></content>
+      <tags>
+        <tag>创站感想</tag>
       </tags>
   </entry>
   <entry>
@@ -4815,55 +4864,6 @@ Arcgis中calcuator公式:<br>
       <categories>
         <category>GIS资源</category>
       </categories>
-  </entry>
-  <entry>
-    <title>网站期许</title>
-    <url>/2023/12/04/%E7%BD%91%E7%AB%99%E6%9C%9F%E8%AE%B8/</url>
-    <content><![CDATA[<h1>起因/背景</h1>
-<p>大三上学习，做为一名GISer，上了一门专业课—WebGIS</p>
-<p>我也和老师看法一致，为了web端是主流，诚然不同的客户端不会消除，桌面应用端也以其强大的处理功能位置不可替代，比如AecMap，ArcgisPro，但随着科技的发展，云服务器的简便高效快捷，开发者无需投入巨大的服务器成本，可以按需灵活的购买云服务产品，用户也省去了安装、配置的麻烦，只需一个url，一个浏览器，便可享受高品质的服务，比如B站等，减少了开发者的投入，便捷了用户的使用</p>
-<p><strong>可以说web是轻量化应用中“性价比”极高的一条道路</strong>            ——（以上均个人看法）</p>
-<p>GIS专业，将编程与地理相链接，但编程上的确与计算机科班出身有差距，但是也再走出一条具有GIS特色的编程之路</p>
-<p>这个网站的背景便是这学期的webGIS课程，不仅学习了前端，更学习了如何用web网页去发布，处理，导入一些地图服务</p>
-<p>本站尚没有达到完全GIS网站化的水平，且是<strong>投机取巧</strong>利用HEXO框架来写，是纯前端</p>
-<p>看似较为完备的网站下，并不是我的优势，而是框架的有点，我其实不过就是部署一下，配置一些文件，导入一些css，js罢的拼接搬运工，<strong>而网站背后的不足，则是我编程水平不足的体现</strong></p>
-<p>但是吾虽愚笨，也对这个并不完善的小网站视之若宝，它是一个由我创建的个人空间，我将他部署发布到公网，大家每个人都可以来到我的网站来观看到我的<strong>作品</strong>，这对我来说是十分欣喜的，我准备将它来记录我的时刻与成长，来将我的一些所思所想所感所悟所学分享出来，记录下来，可能是一些对自我的反省，抑或是一些有趣操作的总结，也可能是自己遇到的某个较难任务攻克后写的技术文档供后面遇到相同问题时解决。</p>
-<p>以后我还想以此博客网站为始，扩展出我的个人公众号，B站…等知识分享矩阵</p>
-<p>还有我是一名GIS学生，将来也可能是GIS的从业者，我将来准备给我的网站添加一些GIS元素</p>
-<p>目前有些想法的是</p>
-<ul>
-<li>左上角有个天气挂件，可以显示当前来访者城市的天气情况</li>
-<li>右侧公告栏开启欢迎语，可以自动根据用户的ip获取到他的城市甚至区县，</li>
-</ul>
-<p>比如欢迎来自<strong>湖北省 武汉市 蔡甸区</strong>的小伙伴，您距离博主仅有<strong>1.0km</strong>；</p>
-<ul>
-<li>还有可能实现简易的导航功能，当用户搜索一个位置时，可以通过调用高德来完成导航的预览</li>
-<li>调用高德的足迹，可视化的展示我去过的地方，留下的经历</li>
-<li>还准备学习Echart，将自己每月的文章发布数量用可视化的方式展示出来</li>
-<li>等等等等</li>
-</ul>
-<h1>建站历程</h1>
-<p>构建一个博客的历程，并不是一帆风顺的，相比于本地的index网页来说，发布到公网肯定会经历一个又一个的错误，有时不知道是什么错误，查半天才能找到，还有一次把CNAME文件写混了导致域名定向总是失败，甚至改回来了还是不行，结果是清楚cookie后一刷新就可以了</p>
-<p>还有比如说部署再github上访问速度太慢，想分享给身边的人他们都打不开看不到</p>
-<p>于是就想部署到gitee上，不过这laji的gitee又要手举身份证拍照实名认证，又审核三四天才通过，真是服了，限制是的有些多了</p>
-<p>然后部署再gitee上后以为速度是可以了，结果网页是能比较快的打开，但是图片都是404加载不出来，后面发现了是图床的问题，图床在外面，里面访问速度也很慢，于是试试七牛云，结果不出所料，还是慢，没半点效果</p>
-<p>后来在gitee上很偶然的居然联系上了love哥，<a href="lovewhoilove.gitee.io">love哥的网站</a>我是真的佩服，第一个看到就惊艳到了，这可真是GISer的藏宝库呀</p>
-<p>然后请教了他是用的腾讯云的cos储存，不贵，一年十几块钱，于是我也果不其然使用了，刚用上网站图片就能立刻显示了，<strong>这是属于我的博客网站第一次大事记</strong>——可以让大多数人无需工具即可正常访问，修改后就立刻分享给了老师，得到了老师的鼓励</p>
-<p>然后现在差不多属于是博客的页面完善阶段，现在图标还没有补齐，有些page的显示仍然有些问题</p>
-<p><strong>正在向一个完整的博客去构建…</strong></p>
-<h1>旅途收获</h1>
-<p>一个人建站，是一个快乐且痛苦的过程，痛苦在改不完的bug，快乐是解决bug后的舒适与成就</p>
-<p>所以这两个也正是相互依存，相互制约的，没有了痛苦，就不会对比出完成时的喜悦，没有快乐，也不会去做这件事</p>
-<p>而且，当我在hexo这条道路上前行时，Hexo有一个很有社交性的功能<strong>友情链接</strong>，通过一个个的友链跳转，发现了很多隐藏的大佬，了解了很多见到了很多记录生活的大佬。</p>
-<p>发现真是江山代有才人出呀，尤其让我震惊的是我跟着友链找到的大佬，进了粉丝群后发现群主才<strong>13岁</strong>，上初中，这是真真震惊到我了，这么小，就已经掌握了如此的编程实力，前途真是不可限量</p>
-<p>还有发现tianli博主，竟然还比我小一级，已经成为圈内小有名气的技术大佬了，他写的文章我真看不懂几个，没学过，后端大佬</p>
-<p>慢慢的，见的越多也越发现，真的是<strong>吾生也有涯，而知也无涯</strong>，知道的越多，才发现自己不知道的越多</p>
-<p><strong>路漫漫，行则至，顺便要记得欣赏沿途的风景</strong></p>
-<p>…</p>
-]]></content>
-      <tags>
-        <tag>创站感想</tag>
-      </tags>
   </entry>
   <entry>
     <title>解决困难问题的能力</title>
