@@ -3,8 +3,7 @@
   <entry>
     <title>地学网站汇总【转载】</title>
     <url>/2023/11/18/%E5%9C%B0%E5%AD%A6%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</url>
-    <content><![CDATA[<div class="tabs" id="地学网站"><ul class="nav-tabs"><button type="button" class="tab  active" data-href="地学网站-1"><i class="fa-solid fa-earth-americas fa-spin"></i>国家数据平台</button><button type="button" class="tab " data-href="地学网站-2"><i class="fa-solid fa-database"></i>专题数据库</button><button type="button" class="tab " data-href="地学网站-3"><i class="fa-solid fa-square-pen"></i>数据出版</button><button type="button" class="tab " data-href="地学网站-4"><i class="fa-solid fa-trophy fa-shake"></i>成果报告</button><button type="button" class="tab " data-href="地学网站-5"><i class="fa-solid fa-newspaper"></i>权威公报</button><button type="button" class="tab " data-href="地学网站-6"><i class="fa-solid fa-paperclip"></i>标准规范</button><button type="button" class="tab " data-href="地学网站-7"><i class="fa-solid fa-toolbox f"></i>科学研究工具</button><button type="button" class="tab " data-href="地学网站-8"><i class="fa-solid fa-file-arrow-down fa-bounce"></i>文献下载</button><button type="button" class="tab " data-href="地学网站-9"><i class="fa-solid fa-graduation-cap fa-shake"></i>学术讲座</button><button type="button" class="tab " data-href="地学网站-10"><i class="fa-solid fa-feather"></i>第三方数据库集合</button></ul><div class="tab-contents"><div class="tab-item-content active" id="地学网站-1"><div class="table-container">
-<table>
+    <content><![CDATA[<div class="tabs" id="地学网站"><ul class="nav-tabs"><button type="button" class="tab  active" data-href="地学网站-1"><i class="fa-solid fa-earth-americas fa-spin"></i>国家数据平台</button><button type="button" class="tab " data-href="地学网站-2"><i class="fa-solid fa-database"></i>专题数据库</button><button type="button" class="tab " data-href="地学网站-3"><i class="fa-solid fa-square-pen"></i>数据出版</button><button type="button" class="tab " data-href="地学网站-4"><i class="fa-solid fa-trophy fa-shake"></i>成果报告</button><button type="button" class="tab " data-href="地学网站-5"><i class="fa-solid fa-newspaper"></i>权威公报</button><button type="button" class="tab " data-href="地学网站-6"><i class="fa-solid fa-paperclip"></i>标准规范</button><button type="button" class="tab " data-href="地学网站-7"><i class="fa-solid fa-toolbox f"></i>科学研究工具</button><button type="button" class="tab " data-href="地学网站-8"><i class="fa-solid fa-file-arrow-down fa-bounce"></i>文献下载</button><button type="button" class="tab " data-href="地学网站-9"><i class="fa-solid fa-graduation-cap fa-shake"></i>学术讲座</button><button type="button" class="tab " data-href="地学网站-10"><i class="fa-solid fa-feather"></i>第三方数据库集合</button></ul><div class="tab-contents"><div class="tab-item-content active" id="地学网站-1"><table>
 <thead>
 <tr>
 <th style="text-align:center">名称</th>
@@ -649,9 +648,7 @@
 <td style="text-align:left"><a href="https://www.sciengine.com/">https://www.sciengine.com/</a></td>
 </tr>
 </tbody>
-</table>
-</div></div><div class="tab-item-content" id="地学网站-2"><div class="table-container">
-<table>
+</table></div><div class="tab-item-content" id="地学网站-2"><table>
 <thead>
 <tr>
 <th style="text-align:center">介绍</th>
@@ -781,7 +778,7 @@
 <td style="text-align:left"><a href="https://www-app.gdeei.cn/l3a1/public/home-page/stat">https://www-app.gdeei.cn/l3a1/public/home-page/stat</a></td>
 </tr>
 <tr>
-<td style="text-align:center">重庆市“三线一单”智检服务 (cqree.cn)</td>
+<td style="text-align:center">重庆市“三线一单”智检服务 (<a href="http://cqree.cn">cqree.cn</a>)</td>
 <td style="text-align:center">生态保护修复</td>
 <td style="text-align:left"><a href="http://sxyd.cqree.cn:10042/#/login">http://sxyd.cqree.cn:10042/#/login</a></td>
 </tr>
@@ -2201,10 +2198,9 @@
 <td style="text-align:left"><a href="http://www.gsdi.org/">http://www.gsdi.org/</a></td>
 </tr>
 <tr>
-<td style="text-align:center">Mosaic\</td>
-<td style="text-align:center">地理与气象分析库</td>
-<td style="text-align:left">地理、气象</td>
-<td><a href="https://gma.luosgeo.com/UserGuide/rasp/Mosaic.html">https://gma.luosgeo.com/UserGuide/rasp/Mosaic.html</a></td>
+<td style="text-align:center">Mosaic|地理与气象分析库</td>
+<td style="text-align:center">地理、气象</td>
+<td style="text-align:left"><a href="https://gma.luosgeo.com/UserGuide/rasp/Mosaic.html">https://gma.luosgeo.com/UserGuide/rasp/Mosaic.html</a></td>
 </tr>
 <tr>
 <td style="text-align:center">NASA  World Wind</td>
@@ -2522,9 +2518,7 @@
 <td style="text-align:left"><a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/</a></td>
 </tr>
 </tbody>
-</table>
-</div></div><div class="tab-item-content" id="地学网站-3"><div class="table-container">
-<table>
+</table></div><div class="tab-item-content" id="地学网站-3"><table>
 <thead>
 <tr>
 <th style="text-align:center">名称</th>
@@ -2669,9 +2663,7 @@
 <td style="text-align:left"><a href="https://pubs.usgs.gov/">https://pubs.usgs.gov/</a></td>
 </tr>
 </tbody>
-</table>
-</div></div><div class="tab-item-content" id="地学网站-4"><div class="table-container">
-<table>
+</table></div><div class="tab-item-content" id="地学网站-4"><table>
 <thead>
 <tr>
 <th style="text-align:center">名称</th>
@@ -2716,9 +2708,7 @@
 <td style="text-align:left"><a href="http://www.ipcc-data.org">http://www.ipcc-data.org</a></td>
 </tr>
 </tbody>
-</table>
-</div></div><div class="tab-item-content" id="地学网站-5"><div class="table-container">
-<table>
+</table></div><div class="tab-item-content" id="地学网站-5"><table>
 <thead>
 <tr>
 <th style="text-align:center">名称</th>
@@ -2738,9 +2728,7 @@
 <td style="text-align:left"><a href="https://www.cgs.gov.cn/ddztt/ddzt">https://www.cgs.gov.cn/ddztt/ddzt</a></td>
 </tr>
 </tbody>
-</table>
-</div></div><div class="tab-item-content" id="地学网站-6"><div class="table-container">
-<table>
+</table></div><div class="tab-item-content" id="地学网站-6"><table>
 <thead>
 <tr>
 <th style="text-align:center">名称</th>
@@ -2790,9 +2778,7 @@
 <td style="text-align:left"><a href="https://www.wdfxw.net">https://www.wdfxw.net</a></td>
 </tr>
 </tbody>
-</table>
-</div></div><div class="tab-item-content" id="地学网站-7"><div class="table-container">
-<table>
+</table></div><div class="tab-item-content" id="地学网站-7"><table>
 <thead>
 <tr>
 <th style="text-align:center">名称</th>
@@ -3137,9 +3123,7 @@
 <td style="text-align:left"><a href="http://www.triivi.com/">http://www.triivi.com/</a></td>
 </tr>
 </tbody>
-</table>
-</div></div><div class="tab-item-content" id="地学网站-8"><div class="table-container">
-<table>
+</table></div><div class="tab-item-content" id="地学网站-8"><table>
 <thead>
 <tr>
 <th style="text-align:center">名称</th>
@@ -3834,9 +3818,7 @@
 <td style="text-align:left"><a href="https://zh.z-lib.org/">https://zh.z-lib.org/</a></td>
 </tr>
 </tbody>
-</table>
-</div></div><div class="tab-item-content" id="地学网站-9"><div class="table-container">
-<table>
+</table></div><div class="tab-item-content" id="地学网站-9"><table>
 <thead>
 <tr>
 <th style="text-align:center">名称</th>
@@ -3896,9 +3878,7 @@
 <td style="text-align:left"><a href="https://isobarscience.com/">https://isobarscience.com/</a></td>
 </tr>
 </tbody>
-</table>
-</div></div><div class="tab-item-content" id="地学网站-10"><div class="table-container">
-<table>
+</table></div><div class="tab-item-content" id="地学网站-10"><table>
 <thead>
 <tr>
 <th style="text-align:center">名称</th>
@@ -3960,7 +3940,7 @@
 <tr>
 <td style="text-align:center">竹山数据-全球地表演化3D模型</td>
 <td style="text-align:center">地球演化</td>
-<td style="text-align:left"><a href="https://www.zhushandata.com/projects/%E5%85%A8%E7%90%83%E5%9C%B0%E8%A1%A8%E6%BC%94%E5%8C%96%E7%B3%BB%E7%BB%9F/">https://www.zhushandata.com/projects/%E5%85%A8%E7%90%83%E5%9C%B0%E8%A1%A8%E6%BC%94%E5%8C%96%E7%B3%BB%E7%BB%9F/</a></td>
+<td style="text-align:left"><a href="https://www.zhushandata.com/projects/%E5%85%A8%E7%90%83%E5%9C%B0%E8%A1%A8%E6%BC%94%E5%8C%96%E7%B3%BB%E7%BB%9F/">https://www.zhushandata.com/projects/全球地表演化系统/</a></td>
 </tr>
 <tr>
 <td style="text-align:center">地学之家</td>
@@ -3978,10 +3958,11 @@
 <td style="text-align:left"><a href="http://www.moonapi.com/">http://www.moonapi.com/</a></td>
 </tr>
 </tbody>
-</table>
-</div></div></div><div class="tab-to-top"><button type="button" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div>
+</table></div></div><div class="tab-to-top"><button type="button" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div>
 <div class="note red no-icon flat"><p><strong>注</strong>：该网站汇总表由<strong>成都地调中心刘洪老师</strong>制作，转载自lovewhoilove的小站，请申明来源。</p>
-<p>作者: lovewhoilove<br>链接: <a href="https://lovewhoilove.gitee.io/posts/287358e2/">https://lovewhoilove.gitee.io/posts/287358e2/</a><br>来源: </p>
+<p>作者: lovewhoilove<br>
+链接: <a href="https://lovewhoilove.gitee.io/posts/287358e2/">https://lovewhoilove.gitee.io/posts/287358e2/</a><br>
+来源:</p>
 </div>]]></content>
       <categories>
         <category>GIS资源</category>
@@ -3990,22 +3971,27 @@
   <entry>
     <title>华科Kab之旅【受益颇丰】</title>
     <url>/2023/12/17/22%E5%8D%8E%E7%A7%91kab/</url>
-    <content><![CDATA[<h1 id="华中科技大学-大学生微创业活动"><a href="#华中科技大学-大学生微创业活动" class="headerlink" title="华中科技大学-大学生微创业活动"></a>华中科技大学-大学生微创业活动</h1><p>第一次来到华科这种高等学府里面来听创业的比赛，里面高手云集，是我20年来靠近大佬最近的一次，前面一排的领导，华科的党委副书记、中青报大牛，广发证券总经理助理…等等，还有很多优秀的博士、本科生团队</p>
-<h2 id="一、华中科技大学党委副书记-张耀-致辞"><a href="#一、华中科技大学党委副书记-张耀-致辞" class="headerlink" title="一、华中科技大学党委副书记 张耀 致辞"></a>一、华中科技大学党委副书记 张耀 致辞</h2><p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E5%BC%A0%E8%80%80%E5%89%AF%E4%B9%A6%E8%AE%B0.jpg" alt="华中科技大学党委副书记 张耀 致辞"></p>
+    <content><![CDATA[<h1>华中科技大学-大学生微创业活动</h1>
+<p>第一次来到华科这种高等学府里面来听创业的比赛，里面高手云集，是我20年来靠近大佬最近的一次，前面一排的领导，华科的党委副书记、中青报大牛，广发证券总经理助理…等等，还有很多优秀的博士、本科生团队</p>
+<h2 id="一、华中科技大学党委副书记-张耀-致辞">一、华中科技大学党委副书记 张耀 致辞</h2>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E5%BC%A0%E8%80%80%E5%89%AF%E4%B9%A6%E8%AE%B0.jpg" alt="华中科技大学党委副书记 张耀 致辞"></p>
 <p>张书记介绍了华科的科研水平和历史实力，华科学子在历年的挑战杯、互联网+中取得了丰硕的成绩，</p>
 <p>后又有对青年的期冀，科技创新始终是国家需要</p>
 <p>希望青年朋友们创想青春，创动未来。</p>
-<h2 id="二、广发证券总经理助理、理事、秘书长谭舜先生讲话"><a href="#二、广发证券总经理助理、理事、秘书长谭舜先生讲话" class="headerlink" title="二、广发证券总经理助理、理事、秘书长谭舜先生讲话"></a>二、广发证券总经理助理、理事、秘书长谭舜先生讲话</h2><p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E8%B0%AD%E6%80%BB.jpg" alt=""></p>
+<h2 id="二、广发证券总经理助理、理事、秘书长谭舜先生讲话">二、广发证券总经理助理、理事、秘书长谭舜先生讲话</h2>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E8%B0%AD%E6%80%BB.jpg" alt=""></p>
 <p>谭总的讲话，首先对华科对比赛的筹办，服务，付出致以诚挚的谢意</p>
 <p>广发证券始终鼓励青年创业，培养创业导师，通过培训、讲座等方式与上万名大学生交流</p>
 <p>初进社会经济的正向循环，鼓励大学生创客，<strong>创新、合作、坚韧、自强</strong></p>
-<h2 id="三、Kab全国推广办公室，中青报-董时女士讲话"><a href="#三、Kab全国推广办公室，中青报-董时女士讲话" class="headerlink" title="三、Kab全国推广办公室，中青报 董时女士讲话"></a>三、Kab全国推广办公室，中青报 董时女士讲话</h2><p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E8%91%A3%E5%A5%B3%E5%A3%AB.jpg" alt=""></p>
+<h2 id="三、Kab全国推广办公室，中青报-董时女士讲话">三、Kab全国推广办公室，中青报 董时女士讲话</h2>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E8%91%A3%E5%A5%B3%E5%A3%AB.jpg" alt=""></p>
 <p>董时女士讲到了kab积极响应国家号召，鼓励科技创新，近年来以<strong>云计算、大数据、人工智能、元宇宙等</strong>元素在项目中得以充分体现</p>
 <p>行业创新正在向着以科技创新引领现代化，以<strong>前沿颠覆式技术、科技等</strong>带动新产业</p>
 <p>科技创新真不断加深，同时在项目中看到越来越有<strong>温度</strong>，比如<strong>AI宝贝项目</strong>，助力宝贝回家，加快寻亲之路</p>
 <p>具有广大的<strong>经济价值和社会价值</strong></p>
 <p><strong>启发</strong>：对于gis的我，可以以gis为工具，来展示，来做为基地，将人工智能，大数据，元宇宙等高科技技术相融合，来充分发挥地理信息的优势</p>
-<h2 id="四、邓汉慧教授对路演项目进行点评"><a href="#四、邓汉慧教授对路演项目进行点评" class="headerlink" title="四、邓汉慧教授对路演项目进行点评"></a>四、邓汉慧教授对路演项目进行点评</h2><p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E9%82%93%E6%B1%89%E6%85%A7%E8%80%81%E5%B8%88.jpg" alt=""></p>
+<h2 id="四、邓汉慧教授对路演项目进行点评">四、邓汉慧教授对路演项目进行点评</h2>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E9%82%93%E6%B1%89%E6%85%A7%E8%80%81%E5%B8%88.jpg" alt=""></p>
 <p><strong>中南政法大学教授，博士生导师</strong> 邓汉慧老师进行对路演项目的点评：</p>
 <p>邓教授上台发言时，感谢了华科在大学阶段对她的培养，想起了20多年前的在华科的求学时光，她曾经也是华科的学生，来到华科所以十分的亲近，又回到了母校，感觉像回家了一样</p>
 <p>同时对广发证券表示深深的感谢，邓老师在第一届就参与了广发证券的比赛，到现在，每一届都参加，可以说是深度的参与者，在这一路上与同学们也是在相互鼓励，奉献。</p>
@@ -4019,39 +4005,63 @@
 <p>还有的走向了市场、发现了社会上需要的问题</p>
 <p>最后感谢华科、感谢中青报、感谢广发对于人才的培养的帮助</p>
 <p>很惊艳的是，邓教授大部分都是不看稿子的，真的是有很多的感触要分享</p>
-<h2 id="五、华科企业孵化董事长-郑峻讲话"><a href="#五、华科企业孵化董事长-郑峻讲话" class="headerlink" title="五、华科企业孵化董事长 郑峻讲话"></a>五、华科企业孵化董事长 郑峻讲话</h2><p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E9%82%93%E9%AA%8F.jpg" alt=""></p>
+<h2 id="五、华科企业孵化董事长-郑峻讲话">五、华科企业孵化董事长 郑峻讲话</h2>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E9%82%93%E9%AA%8F.jpg" alt=""></p>
 <p>郑总讲话：首先是一个学习者，对每一个项目都进行了点评，看到了多层次，多学科，多领域</p>
-<p>在每个创业者身上，能看到创业者的精神，有了这种<strong>创业的精神</strong>，不论是对<strong>学习、工作还是生活</strong>，都是很有帮助的……</p>
-<h2 id="六、评选结果公布"><a href="#六、评选结果公布" class="headerlink" title="六、评选结果公布"></a>六、评选结果公布</h2><p><strong>微创之星</strong>——曦风智慧调频——新能源大规模并网发电守护者</p>
+<p>在每个创业者身上，能看到创业者的精神，有了这种<strong>创业的精神</strong>，不论是对<strong>学习、工作还是生活</strong>，都是很有帮助的…</p>
+<h2 id="六、评选结果公布">六、评选结果公布</h2>
+<p><strong>微创之星</strong>——曦风智慧调频——新能源大规模并网发电守护者</p>
 <p><strong>优秀项目</strong>：</p>
 <ul>
-<li><p>农链佰仟，互联八方——三浪助力智联姜控</p>
+<li>
+<p>农链佰仟，互联八方——三浪助力智联姜控</p>
 </li>
-<li><p>绿色“塑”造——无污染可降解塑料创新者</p>
+<li>
+<p>绿色“塑”造——无污染可降解塑料创新者</p>
 </li>
-<li><p>优之渠——中国水渠农田测控领航者</p>
+<li>
+<p>优之渠——中国水渠农田测控领航者</p>
 </li>
-<li><p>远鸿科技—基于GLM2-6B开放的PPT自动生成系统</p>
+<li>
+<p>远鸿科技—基于GLM2-6B开放的PPT自动生成系统</p>
 </li>
-<li><p>“青椒”——科研课题组数字化管理系统</p>
+<li>
+<p>“青椒”——科研课题组数字化管理系统</p>
 </li>
 </ul>
 <p>颁发证书，进行合影</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E9%A2%81%E5%A5%96.jpg" alt=""></p>
-<h2 id="七、-回顾精彩瞬间"><a href="#七、-回顾精彩瞬间" class="headerlink" title="七、 回顾精彩瞬间"></a>七、 回顾精彩瞬间</h2><p>由短片的形式对营员的三天经历进行回顾</p>
+<h2 id="七、-回顾精彩瞬间">七、 回顾精彩瞬间</h2>
+<p>由短片的形式对营员的三天经历进行回顾</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F22%E5%8D%8E%E7%A7%91Kab%2F%E5%A4%A7%E4%B8%89%E7%89%9B%E4%BA%BA.jpg" alt=""></p>
-<h2 id="八、分享故事经历"><a href="#八、分享故事经历" class="headerlink" title="八、分享故事经历"></a>八、分享故事经历</h2><p><strong>曦风团队</strong></p>
+<h2 id="八、分享故事经历">八、分享故事经历</h2>
+<p><strong>曦风团队</strong></p>
 <p>完整发言</p>
 <blockquote>
-<p>听到了很多个非常优秀的创业项目。我也看到了一些是算作我们这个项目的一些老大哥，在这条路上可能说比我们走的更远更深了一些。而我自己呢也是想和大家分享一下我近几年来的一个创业历程。其实我拥有创业想法也就是在去年的8 9月份的这个时候。我的创业其实来自于节能与挑战杯这样一个比赛。我其实在大四包括研究生整个期间，我是在做新能源离子调频的这样一个硬件软硬件的这样一个类似于一种科研项目的一种形式的一种研究啊。但是呢我一直没想过把它去作为一个商业市场上的一个商业产品去运营。但是在经过但是在我这个研发的过程中呢，我们也在跟现场达的我们了解到，而且去年就是新能源是现在非常火的一个赛道。我非常因为我是华科电气学院，然后电气学院它的一个学科平台的各方面，给我们提供了非常好的这样一个条件。让我有幸亲眼了解到了咱们现在国家的新能源场站是缺乏这样一个依次调频控制的。<br>而现在大规模的建立双碳战略，要提高新能源源发电站占比，那这就是无法不解决的这样一个关键技术。在此过程呢我们我前期其实是一个非常典型的工科生的头脑。我只去关注我的技术，我的比如说在现场应用。但是挑战杯这个参赛过程中，以及我项目不断的从我们的团队只有出最初的demo到到现场去应用，然后最终形成了一个比较合格的一个产品。然后这一个过程中，<strong>我发现我的角色在不断的转变</strong>。<br>最开始是个学生，是个执行者，是个代码的这样一个编写者。我只关注我是让代码写的是不是没有bug，是否完美达到了我想要的结果。但到后面我生成了一个demo，到现场之后发现，那我的产品如果在现场进行一个安装实施，那并不是我简单的只是说我自己假设的一些条件达成了之后，我就可以完成这样一个想法。当然说在这过程我也结识了很多我们的创业伙伴。在此过程中我们不断的把这个心血三年的过程中孵化了一个顺着是潮流的大势以及新能源大规模发展会浪迹好我们形成这一款比较好的产品。然后在去年我们也是决心将大家的心血推向创业市场，然后在去年的十月份我们成立了公司。<br>在此过程中呢，我的创业想法也是受到了很多这个专家评委的认可，这样一个以及华科提供了青创一系列的这样一个培训活动。告诉我了我一个学生，我知道了以后什么是法律，就是法务、税务以及我们这个公司运营，它会涉及到这样那样困难。但是这些当我做好了学习了很多课程的时候，我觉得我做好了创业准备。我创业公司我满仓热血。然后带着团队大家一起投入到商业市场的过程中，我还是发现我还是太年轻了。<br>然后真正开始创业，真正开始推进的过程中，一个接一个的意外向我们袭来。这时候我发现当我们整个开始商业运作，签下合同，到我们生产产品，到运营交付，到协调这一个过程中，我们团队是高速的这样高强度的不停的在运转，每一刻都不知道下一刻会发生什么样一个意外。<br>在此过程中我们团队也是快速的成长起来，各司其职。然后也很幸运，我们在今年也取得了一定的小小的成果。今年1月我们签下了首笔订单，然后三月份也很荣幸获得了全国金奖。历经千辛万苦，我们在今年8月终于把首个订单的这个现场改造实施啊，一系列过程把它收工了。收工之后也得到了业主的这个肯定。然后继续呢我们针对下一期三个分电厂一个设计改造方案呢，也得到了业主的一个准定。然后现在走这个签合同啊，相当于这一系的流程。<br>最终呢我就是想说真的做工程太难了，遇到非常非常多，就是觉得自己解决不了，然后很难冲向于瞬间。但是我觉得有一个信念还是支撑我和我们团队走下来吧，就是<strong>一定会有解决的办法</strong>，就是只要思想不滑坡，方法总比问题多，所以说一直咬牙坚持下去，总是会有峰回路转的过程。<br>过程中我想跟大家共享的就是我觉得团队非常重要，大家每个人都要充分发挥出自己的这样一个主观能动性，就是总有一个人要成功，为什么不是我呢？谢谢大家。</p>
+<p>听到了很多个非常优秀的创业项目。我也看到了一些是算作我们这个项目的一些老大哥，在这条路上可能说比我们走的更远更深了一些。而我自己呢也是想和大家分享一下我近几年来的一个创业历程。其实我拥有创业想法也就是在去年的8 9月份的这个时候。我的创业其实来自于节能与挑战杯这样一个比赛。我其实在大四包括研究生整个期间，我是在做新能源离子调频的这样一个硬件软硬件的这样一个类似于一种科研项目的一种形式的一种研究啊。但是呢我一直没想过把它去作为一个商业市场上的一个商业产品去运营。但是在经过但是在我这个研发的过程中呢，我们也在跟现场达的我们了解到，而且去年就是新能源是现在非常火的一个赛道。我非常因为我是华科电气学院，然后电气学院它的一个学科平台的各方面，给我们提供了非常好的这样一个条件。让我有幸亲眼了解到了咱们现在国家的新能源场站是缺乏这样一个依次调频控制的。<br>
+而现在大规模的建立双碳战略，要提高新能源源发电站占比，那这就是无法不解决的这样一个关键技术。在此过程呢我们我前期其实是一个非常典型的工科生的头脑。我只去关注我的技术，我的比如说在现场应用。但是挑战杯这个参赛过程中，以及我项目不断的从我们的团队只有出最初的demo到到现场去应用，然后最终形成了一个比较合格的一个产品。然后这一个过程中，<strong>我发现我的角色在不断的转变</strong>。<br>
+最开始是个学生，是个执行者，是个代码的这样一个编写者。我只关注我是让代码写的是不是没有bug，是否完美达到了我想要的结果。但到后面我生成了一个demo，到现场之后发现，那我的产品如果在现场进行一个安装实施，那并不是我简单的只是说我自己假设的一些条件达成了之后，我就可以完成这样一个想法。当然说在这过程我也结识了很多我们的创业伙伴。在此过程中我们不断的把这个心血三年的过程中孵化了一个顺着是潮流的大势以及新能源大规模发展会浪迹好我们形成这一款比较好的产品。然后在去年我们也是决心将大家的心血推向创业市场，然后在去年的十月份我们成立了公司。<br>
+在此过程中呢，我的创业想法也是受到了很多这个专家评委的认可，这样一个以及华科提供了青创一系列的这样一个培训活动。告诉我了我一个学生，我知道了以后什么是法律，就是法务、税务以及我们这个公司运营，它会涉及到这样那样困难。但是这些当我做好了学习了很多课程的时候，我觉得我做好了创业准备。我创业公司我满仓热血。然后带着团队大家一起投入到商业市场的过程中，我还是发现我还是太年轻了。<br>
+然后真正开始创业，真正开始推进的过程中，一个接一个的意外向我们袭来。这时候我发现当我们整个开始商业运作，签下合同，到我们生产产品，到运营交付，到协调这一个过程中，我们团队是高速的这样高强度的不停的在运转，每一刻都不知道下一刻会发生什么样一个意外。<br>
+在此过程中我们团队也是快速的成长起来，各司其职。然后也很幸运，我们在今年也取得了一定的小小的成果。今年1月我们签下了首笔订单，然后三月份也很荣幸获得了全国金奖。历经千辛万苦，我们在今年8月终于把首个订单的这个现场改造实施啊，一系列过程把它收工了。收工之后也得到了业主的这个肯定。然后继续呢我们针对下一期三个分电厂一个设计改造方案呢，也得到了业主的一个准定。然后现在走这个签合同啊，相当于这一系的流程。<br>
+最终呢我就是想说真的做工程太难了，遇到非常非常多，就是觉得自己解决不了，然后很难冲向于瞬间。但是我觉得有一个信念还是支撑我和我们团队走下来吧，就是<strong>一定会有解决的办法</strong>，就是只要思想不滑坡，方法总比问题多，所以说一直咬牙坚持下去，总是会有峰回路转的过程。<br>
+过程中我想跟大家共享的就是我觉得团队非常重要，大家每个人都要充分发挥出自己的这样一个主观能动性，就是总有一个人要成功，为什么不是我呢？谢谢大家。</p>
 </blockquote>
 <p>这位大佬全程脱稿，根本就没有带稿子，相对于是对整个过程烂熟于心，这才是真正完全懂得的大佬</p>
 <p>绿色塑造无污染可降解塑料创新者项目代表湖南涉外经济学院顾海浩</p>
 <blockquote>
-<p>尊敬的领导、嘉宾、评委老师，亲爱的同学们，大家好。我是来自湖南社外经济学院的顾海浩，是新环团队的总负责人，目前是长沙新环克劳制品有限公司法定代表人。很荣幸能够评选上本次KAB微创意的优秀项目。三年来新环一直着力打造无污染聚乳酸的这样的一个目标，希望能够给为为人民、为社会带来贡献。三年来新环共见有72家海内外企业，出口16个国家，带动一些学生就业，促进乡村振兴的地区发展。<br>但我想说的是，新环能够走到今天，绝对不是一蹴而就的。我们经历的这三年是充实的三年，是坚持的三年，是不负青春的三年。在我的身边，有很多同学和我一样投身于大学生创新创业，但绝大部分同学遇到挫折就放弃了。<br>在此我想给大家讲一个我切身体会的故事。前几年我很荣幸获得了自己的第一份实习工作。作为高校的行政实习教师，我很高兴告告诉了我的父亲。我说我现在在学校进行实习，一个月可以拿2300元。一般来说父母听到孩子是能够去有一份实习工作，也能够赚钱了。我想问一下大家，如果说大家的父母的话，听到了自己能够去进行实习，能够自己赚钱呢，一般来说会是一个什么样的心情呢？<br>“开心”<br>对，应该是开心说我们家小孩终于长大，终于能够去赚钱了。但是我的父亲告诉我什么呢？他说我一个月赚的钱没有他赚了一天要多。大家听到的是不是觉得他跟我当时一样，应该是很气愤。但是呢我的父亲告诉我，他说当时他在0几年创02年03年进行创业的时候，因为需要养家，他在这个互联网并不发达的一个时代里面，挨家挨户的去敲门，去推荐自己的产品。他告诉我，<strong>他这一生没有办法忘记</strong>。无法忘记的一个瞬间是一位客户因为脾气很暴躁，直接把样品摔在了地上。但是我的父亲他把产品继续捡起来，依然微笑的去面对这个客户。<br>我觉得这种气量是我遥不可及的。所以作为我们作为大学生去创业的话，真的是需要一个持之以恒的性格。在创业期间我的思维有一个转折点，是我去参加湖南省互联网加大学生创新创业大赛青年注目红色治理赛道推进会的时候。有一位来自教育部高等学校呃高等教育司的一位嘉宾说，<strong>他说一个人带动一群人去挣100万，它的价值远远超过一个人赚1000万。</strong>我想深刻的去理解这句话，于是在思考我们的项目能为人民、为社会、为国家、为世界能做出什么？<br>于是我们通过利用整条产品生产线、生产链的特征和优势，针对不同的问题，我们对上游端向乡村振兴地区农户去购买原材料，去带动当地的经济发展。公司带动应届毕业生就业等问题。对于创业，我认为是可以改变一个人。创业涉及到各个方面，也意在于培养<strong>复合型人才</strong>团队。注册公司的时候，我对税务一概不知，于是我就开始做各种税务知识，企业所得税、出口税等等各种税务团队。想去了解非洲市场，我就去报名参加第三届中国非洲经贸博览会，去与非洲国家的领导人理事参展，面对面交流，了解市场缺陷和缺口。学校能够给我们提供很多资源，但关键在于我们如何去利用这样的资源。<br>最后我向我想我仅代表新环团队，向各位领导、嘉宾及评委老师表示感谢。我们也希望自己的故事能够带动更多高校的大学生涉足创新创业，为人民、为社会、为国家带动自己的力量，也奉献自己的力量。谢谢大家。</p>
+<p>尊敬的领导、嘉宾、评委老师，亲爱的同学们，大家好。我是来自湖南社外经济学院的顾海浩，是新环团队的总负责人，目前是长沙新环克劳制品有限公司法定代表人。很荣幸能够评选上本次KAB微创意的优秀项目。三年来新环一直着力打造无污染聚乳酸的这样的一个目标，希望能够给为为人民、为社会带来贡献。三年来新环共见有72家海内外企业，出口16个国家，带动一些学生就业，促进乡村振兴的地区发展。<br>
+但我想说的是，新环能够走到今天，绝对不是一蹴而就的。我们经历的这三年是充实的三年，是坚持的三年，是不负青春的三年。在我的身边，有很多同学和我一样投身于大学生创新创业，但绝大部分同学遇到挫折就放弃了。<br>
+在此我想给大家讲一个我切身体会的故事。前几年我很荣幸获得了自己的第一份实习工作。作为高校的行政实习教师，我很高兴告告诉了我的父亲。我说我现在在学校进行实习，一个月可以拿2300元。一般来说父母听到孩子是能够去有一份实习工作，也能够赚钱了。我想问一下大家，如果说大家的父母的话，听到了自己能够去进行实习，能够自己赚钱呢，一般来说会是一个什么样的心情呢？<br>
+“开心”<br>
+对，应该是开心说我们家小孩终于长大，终于能够去赚钱了。但是我的父亲告诉我什么呢？他说我一个月赚的钱没有他赚了一天要多。大家听到的是不是觉得他跟我当时一样，应该是很气愤。但是呢我的父亲告诉我，他说当时他在0几年创02年03年进行创业的时候，因为需要养家，他在这个互联网并不发达的一个时代里面，挨家挨户的去敲门，去推荐自己的产品。他告诉我，<strong>他这一生没有办法忘记</strong>。无法忘记的一个瞬间是一位客户因为脾气很暴躁，直接把样品摔在了地上。但是我的父亲他把产品继续捡起来，依然微笑的去面对这个客户。<br>
+我觉得这种气量是我遥不可及的。所以作为我们作为大学生去创业的话，真的是需要一个持之以恒的性格。在创业期间我的思维有一个转折点，是我去参加湖南省互联网加大学生创新创业大赛青年注目红色治理赛道推进会的时候。有一位来自教育部高等学校呃高等教育司的一位嘉宾说，<strong>他说一个人带动一群人去挣100万，它的价值远远超过一个人赚1000万。<strong>我想深刻的去理解这句话，于是在思考我们的项目能为人民、为社会、为国家、为世界能做出什么？<br>
+于是我们通过利用整条产品生产线、生产链的特征和优势，针对不同的问题，我们对上游端向乡村振兴地区农户去购买原材料，去带动当地的经济发展。公司带动应届毕业生就业等问题。对于创业，我认为是可以改变一个人。创业涉及到各个方面，也意在于培养</strong>复合型人才</strong>团队。注册公司的时候，我对税务一概不知，于是我就开始做各种税务知识，企业所得税、出口税等等各种税务团队。想去了解非洲市场，我就去报名参加第三届中国非洲经贸博览会，去与非洲国家的领导人理事参展，面对面交流，了解市场缺陷和缺口。学校能够给我们提供很多资源，但关键在于我们如何去利用这样的资源。<br>
+最后我向我想我仅代表新环团队，向各位领导、嘉宾及评委老师表示感谢。我们也希望自己的故事能够带动更多高校的大学生涉足创新创业，为人民、为社会、为国家带动自己的力量，也奉献自己的力量。谢谢大家。</p>
 </blockquote>
 <p>一个真切的，真情的，有温度的创业青年的成长，更惊叹的是这位才仅仅大三，与我年龄相仿的年纪，便已经有如此认知如此气概，日后不可估量</p>
-<h2 id="九、经验访谈交流"><a href="#九、经验访谈交流" class="headerlink" title="九、经验访谈交流"></a>九、经验访谈交流</h2><blockquote>
+<h2 id="九、经验访谈交流">九、经验访谈交流</h2>
+<blockquote>
 <p>主持人：科技发展不仅带来了很多生活，然后也给新生也带来了很多机遇，然后我们第一个问题给到盛建中其实应该是一个这个项目的AI宝贝，和我们介绍一下你们在做的事情，</p>
 <p>盛：各位领导，各位老师和各位小伙伴们，大家好，大家下午好，我是华东科技大学软件学院AI宝贝志援服务队的盛建中，我们主要做的一个工作就是解决一个群寻亲，一个核心就是人脸不清晰的问题，以前我们没有清晰的照片，我们想要找到这一个小孩是非常困难的，因为寻亲只有两条途径，第一条就是通过记人群景，就是要有一张清晰的照片，然后给到公安机关去做人脸匹配，然后找到合适的候选人，然后再再来做DNA的采取来找回小孩。第二张图情就是他们通过家人个人这个发款单的这种原定，但是这两种途径都会因为那个照片模糊不清晰而导致他寻亲失败，现在我们就利用我们华东科技大学的那个技术做伴，我们研发了一个AI的图像的自动修复的技术，能够让失踪多年的那个儿童的照片变得清晰，方便公安机关进行寄生取亲，同时我们有了清晰的照片之后，我们可以把这些寻亲信息以及清晰的照片做成工业的制成品，比如说我们研发的寻亲胶带，然后通过这一种方式可以把寻亲信息更加广泛的传播到社会的方方面面，从而提高和加速群亲成功的概率。那么目前我们已经协助公安机关成功寻回了包括电影《亲爱的》原型等11位失踪多年的儿童，然后我们也成功的受到了中央电视台新闻联播的关注，以及广大的媒体朋友和广大网友的关注，谢谢各位。</p>
 <p>主持人：光艺青年动让社会变得更加的很好，那所老师是梅花创投，我们都知道他是关注这种科创到期的时段后创，那从你们的角度考虑，就是我们在评估年一因素啊，我们分享一下，</p>
@@ -4065,11 +4075,178 @@
       </categories>
   </entry>
   <entry>
+    <title>塞莱斯廷预言</title>
+    <url>/2024/03/14/31%E5%A1%9E%E8%8E%B1%E6%96%AF%E5%BB%B7%E9%A2%84%E8%A8%80%E9%98%85%E8%AF%BB/</url>
+    <content><![CDATA[<h1>十个觉悟</h1>
+<h2 id="第一个觉悟">第一个觉悟</h2>
+<p>觉察人生中有神秘的事情发生，可以改变我们的一生，也就是感觉到人生背后有某种力量再操作</p>
+<p>在生活中的确有这种思考，有时就是一个十分巧合的机缘偶遇，比如打印完班级同学信息后；打印表格准备第二天开班会使用，花了好久的时间，但打印完成以后正巧碰上了郭学姐，她给我分享了一些关于考研的事项，当时是提议可以去武地大，并告诫我了一些当时的错误做法，当时心气正盛准备就地大了，后来学姐一说又转头提到了深大，这是我第一次听到这个学校；于是一些事情就由此一个小事开展了；</p>
+<h2 id="第二个觉悟">第二个觉悟</h2>
+<p>第二个觉悟扩展了我们对历史时间的认知，它要求我们不襟要从现在的角度，而应该从整个千年历史的角度来观察人类的文化。它让我们面对自己的偏见，帮助我们超越它；</p>
+<p>刚刚经历了这一段比较绵长的历史（把我们的知觉安置在一个较长的历史视界里：公元1000年时，即中古世纪，那个时代的“现实”是由基督教的神职人员界定的，对于人民群众有无比的影响力，那时人的世界，基本是精神的，所有人都在经历着上帝的权威与魔鬼的诱惑这场考验，那时的一切对错真假都是由神职人员界定的；到了14和15世纪开始，人们陆续发现神职人员身上有一些不正当行为，这些不正当行为使人们震惊，后来深陷异常公开的叛变之中，有群体要推翻罗马教廷；新的教会纷纷成立；与之而来的是惶恐和不安，好似世界观的崩塌，人心大乱P34）。如今你是生活在一个比较漫长的现在，一旦你以信的眼光来看待人类的世界，你就会清楚地看出现代人的之谜——那种一心一意的、全身贯注的对于经济成长的追求</p>
+<p>第二个觉悟中的手稿预言：探险家将会被派遣到世界中，利用科学的方法，探索人类在地球上的生存意义，但是他们不会马上回来报告发现的结果</p>
+<p>觉悟要靠自己发现，他即使把所有的觉悟告诉我也没有效果，你必须用不同的方式去发现每一个觉悟；</p>
+<p>我可以告诉你每一个觉悟的内容，但那只是信息，而不是真正的觉悟。你必须在自己的人生过程中一个个的发现他们</p>
+<h1>能的奥秘</h1>
+<p>女物理教师：手稿预言的第三个觉悟；能</p>
+<p>它指的是人类对物质世界的新认知，手稿预言，总有一天人类会察觉到以前肉眼所看不到的那种“能”。</p>
+<p>它预测，在第二个千禧年即将结束时，人类会发现一种新的“能”，成为宇宙间所有物体的生存根基，它会从物体身上放射出来；</p>
+<p>人类如果想察觉这种“能”的存在，就必须先加强对“美”的感受能力；</p>
+<p>美感意识好像是一个测量器，告诉我们，我们距离察觉“能”的存在还有多远。这一点是很明显的，因为一旦观察到这种“能”，你就会明了它和美是连续的；</p>
+<p>能场的概念；</p>
+<p>一天中有两个时间最适合观察能场，一个是黄昏，一个是日出</p>
+<p>日出观能场：P76</p>
+<blockquote>
+<p>再接下来我能意识到的是有人在砰砰地敲我的房门。我看看表，早晨五点。当服务员再<br>
+次敲门时，我说，“谢谢！”声音很大，以便他能听见。随后我下了床，从狭小的窗户向外望<br>
+去。东方的一线曙光标志着新的一天的来临。<br>
+我走到厅的那一头洗漱一番，麻利地穿好衣服下楼。餐厅已营业，竟有一大群人在用<br>
+餐。我只吃了点水果，便急急忙忙走出门外。<br>
+地上有些雾气，远处的草地晨雾弥漫。树丛中传来一声声鸟鸣。当我离开山庄，太阳刚<br>
+从东边的地平线上探出头来。朝霞十分美丽。天空湛蓝，天边则是一片亮丽的桃色。<br>
+我比预定时间早十五分钟到了小山丘，我坐下来，靠着一棵大树的树干，欣赏着头顶上<br>
+方缠绕如网的树枝。几分钟后，我听见有人沿着小路朝我走过来，我往那边看去，以为能看<br>
+到萨拉。然而来人却是我不认识的，一个四十多岁的男子。他离开小路只顾朝我坐着的地方<br>
+走过来。当走到离我十英尺的地方，他看见了我，显得有些愕然，这也使我稍感不安。<br>
+“哦，你好。”他向我打个招呼，带着很重的纽约口音。他穿一身牛仔衣服，脚上是一双<br>
+旅游鞋，人看上去很精干、灵敏。他的头发卷曲，前额有些脱发。<br>
+我点了点头。<br>
+“我打搅你了，很抱歉。”他说。<br>
+“没关系。”<br>
+他告诉我他叫菲尔·斯通，我也介绍了自己，说我在等一个朋友。<br>
+“你在这儿多半是在做什么研究？”我又说。<br>
+“其实不是。”他回答。“我为南加利弗尼亚大学工作。我们在秘鲁的另一个省做有关热带<br>
+雨林资源枯竭的研究，我正好有机会开车路过这儿，就停留一下。我喜欢到风格独特的森林<br>
+转转。”<br>
+他向周围看了看。“你有没有想到这儿有些树差不多有五百年历史了？这真正是一片原始<br>
+森林，现在很难见到了。这儿一切都很完美、恰到好处：大树挡住了一部分阳光，地上的热<br>
+带植物得以蔓延滋长，十分茂盛。雨林区域的热带植物也很古老，但其生长方式并不一样。<br>
+它基本上是丛林，更像温带地区如美国的古老森林一样。”<br>
+“我从来没有见过这样的树林。”我说。<br>
+“是的。”他说。“只有很少一些留存下来了。据我所知，政府将大部分森林卖给了木材公<br>
+司，在他们眼里，这些树只是一块块木板而已。毁灭这样的森林真是该死。你看能量！”<br>
+“你能在这儿看到能量？”我问他。<br>
+他注视着我，好像在考虑要不要说下去。<br>
+“是的，我能够看到。”他最后说道。<br>
+“我还不能。”我说。“我昨天试过，那时有人在田里对着庄稼沉思冥想。”<br>
+“喔。我开始时也看不清那么大能量场。”他说。“我只能从我的手指看起。”<br>
+“你这是什么意思？”<br>
+“让我们到那边去。”他手指着一处地方说。那儿树林略为稀疏一些，透过树梢，能望见<br>
+一方蓝天。“我来教你。”<br>
+我们到了那儿，他说：“头往后仰，食指相接，对着蓝天。现在将指尖分开约一英寸，眼<br>
+睛就看着两指尖之间的那块空间。你看到了什么？”<br>
+“我眼睛有些模糊。”<br>
+“没关系。”他说。“眼睛稍微放松一下，手指靠近些，随后再分开。”<br>
+他说的时候，我随意地动动手指，不明白他为什么要我眼睛放松。我最后还是凝视起手<br>
+指之间的那个地方。两指的指尖有些模糊起来，这时，我在指尖之间看到了像是缕缕烟气的<br>
+东西。<br>
+“哈，看到了！”我叫了起来，把我看到的告诉了他。<br>
+“就是！就是！”他说。“你现在不妨玩味一下。”<br>
+我把所有的手指相碰，随后是两只手掌相碰，两条前臂相碰。每一次我都能在手指之<br>
+间，手掌之间，手臂之间看到闪烁着的能量。我放下手臂，看着菲尔。<br>
+“嗨，你想要观察我吗？”他问。他站直了身子，后退了几英尺，摆正头和身体的位置，<br>
+以天空作为背景。我试着看了一会，这时有个声音从背后传来，分散了我的注意力。我回头<br>
+一看，是萨拉。<br>
+菲尔雨露微笑地迎上去，“这就是你要等的人？”<br>
+萨拉也笑着走过来。“嘿，你好。”她同菲尔打招呼。<br>
+他们热情拥抱。萨拉对我说：“对不起，我来晚了。不知怎么搞的，我的生物闹钟没有<br>
+响。但现在我明白为什么了。是要给你们俩一个谈话的机会。你们在干什么？”<br>
+“他正在学如何看两指之间的部分。”菲尔说。<br>
+萨拉望着我。“去年，菲尔和我来这儿，就是在这个地方练这个的。”他瞥了一眼菲<br>
+尔。“我们背对背，也许他能看见我俩之间的能量。”<br>
+他们在我面前背靠背站着。我让他们朝我近一些，他们走上几步，直到与我的距离大约<br>
+为四英尺。他们映衬着蓝天，如同勾勒出一道轮廓。让我惊奇的是，他们之间的空间看上去<br>
+更为明亮。呈黄色，或者说黄澄澄的粉红。<br>
+“他看到了。”菲尔说，他同时打量着我脸上的表情。<br>
+萨拉转过身，抓住菲尔的手臂，然后他们慢慢地朝后退去，直到有十英尺之远。他们的<br>
+头顶周围是一片粉红带白的能量场。<br>
+“好了。”萨拉严肃起来。她走过来站在我身边。“现在你注意看这儿美妙的景色。”<br>
+我立刻被身边形态各异的树木所吸引。我似乎能用一种全面的眼光来注视那<br>
+一棵棵高大的栎树，不只是树的某个部分，而且能观照树的整体。我对那些<br>
+伸展的枝杈的千姿百态惊叹不已。我看看这棵，再看看那棵，四下张望。我<br>
+觉得每棵栎树都更加亲近了，好像我是第一次看到似的，或确切地说是第一<br>
+次真正欣赏这些树木。<br>
+突然，在大树绿荫下生长着的热带植物引起了我的注意；它们向我展现出各自的独特风<br>
+采。我还注意到一种植物往往与属于同类的其它植物一起生长，形成一个个小群体。比如高<br>
+耸的香蕉树周围常常长着矮些的喜林芋，而喜林芋多半为更低矮的蕨类植物所簇拥。当我观<br>
+赏这些小型的植物群，它们的多彩多姿同样给我留下了很深刻的印象。<br>
+在不到十英尺的远处，我看到了一种很特别的阔叶植物。我以前只是把它当作室内观赏<br>
+植物，是喜林芋的一个不常见的变种。它的叶子碧绿，有四英尺之宽。它劲枝硕叶，生机盎<br>
+然。<br>
+“好吧，你就朝它看，不过精神要放松。”萨拉对我说。<br>
+我平心静气地凝神观望。我先注意看离植物某个部分六英寸的地方，渐渐地我开始能看<br>
+出一闪一闪的光来；再调整一下视力，我就看到了环绕着植物的若隐若现的白色光芒。<br>
+“我现在看见了。”我说。<br>
+“再看看其它植物。”萨拉说。<br>
+我惊骇地退后一步。放眼看去，每棵树的周边有一片白色的光，这种光能够被人看见，<br>
+但又完全是透明的，使得植物的色彩和形态十分清晰。我意识到，我所看到的正是这些植物<br>
+的独特之美的延伸。就好像是，先注意到这些植物，再注意到它们的独特风采，最后注意到<br>
+是由植物具体形态呈现出的纯粹的美的升华，此时，我看到了能量场。<br>
+“试试你能否看到这个。”萨拉说。她在我前面坐下来，面对着喜林芋。一缕白光从索绕<br>
+着她身体的光圈里突出来，吞没了喜林芋。而喜林芋的能量场也随之扩大了好几英尺。<br>
+“天哪！”我叫了起来，引得两位一阵大笑。我意识到事情的有趣，也随之笑起来，不过<br>
+我并不因欣然接受几分钟前还满腹狐疑的现象则感到有什么难堪。我觉得，看到能量场不再<br>
+是不现实的玄想，实际上，它使得我身边的事物看起来比以往更确切，更真实。<br>
+同时，我周围的一切也似乎面貌一新。在我的经历中，与这种体验有联系的也许只是我<br>
+看过的一部电影。电影渲染一座树林的色彩，为了让它显得更神秘更富于魅力。此刻，这植<br>
+物，树叶，还有天空，都带着一种风采，一片淡淡的光芒清晰地呈现出来，显示出一股生<br>
+机，也许是意识，超出了我们平时的想象。明白了这一点，就再不会将一片树林简单地看作<br>
+一片树林。<br>
+我看看菲尔。“坐下来，把你的能量释放给喜林芋。”我对他说。“我想比较一下。”<br>
+菲尔显得有些为难。“我做不到。”他说。“我不知道为什么。”<br>
+我望着萨拉。<br>
+“有些人能做到，有些则不能。”她说。“对此我们还无法解释。玛乔丽对她的研究生进行<br>
+筛选，确认哪些学生有此能力。有些心理学家试图将这种能力同人的个性联系起来，但至今<br>
+还没有定论。”<br>
+“我来试试。”我说。<br>
+“好吧，请吧。”萨拉对我说。<br>
+我又坐下来，面对着植物。萨拉和菲尔站在我的右侧。<br>
+“那么，我怎么开始？”<br>
+“就把你的注意力集中到植物上，好像在用你的能量给它充气。”萨拉说。<br>
+我看着植物，想象我的能量源源不断进入它的体内。过了几分钟，我抬起头看看他们俩<br>
+个。<br>
+“很可惜，”萨拉打趣地说，“你不属于那命定的少数人。”<br>
+我对菲尔扮了个鬼脸。<br>
+下面路上传来愤怒的声音，打断了我们的谈话。我们看见有一群人从树林中经过，他们<br>
+中有人大声地谈论着什么。<br>
+“那些是什么人？”菲尔问萨拉。<br>
+“我不知道。”她说。“有许多当地人对我们做的事不高兴，我想。”<br>
+我转身望望周围的树林，一切又都恢复了常态。<br>
+“哎，我又看不到能量场了！”<br>
+“有什么干扰你了，是吧？”萨拉说了一句。<br>
+菲尔笑着拍拍我的肩膀。“学会了观察你随时都能看。这就像骑自行车。你所要做的只是<br>
+发现美，然后由此扩展开去。”<br>
+我突然想起要看一下时间。太阳已开得很高了，一阵轻微的晨风吹拂着树叶。我看了下<br>
+手表：上午7:50。<br>
+“我想我们该回去了。”我说。<br>
+萨拉和菲尔都同意。我们离去的时候，我回头看着绿树成荫的山坡。“这是一个美丽的地<br>
+方。”我说，“真遗憾美国这样的地方太少了。”<br>
+“当你在别处看到能量场。”菲尔说，“你就会想到这片树林多么生气勃勃。你看这些栎<br>
+树。它们在秘鲁非常少见，但是却生长在维西安特。一片经过砍伐的树林，尤其是那些为了<br>
+商业利润，砍掉阔叶树而种植松树的林子，能量要低得多。一座城市，撇开人不说，有着完<br>
+全不同的能量。”<br>
+我试着注视路边的植物，但行走妨碍我集中注意力。<br>
+“你能肯定我会再看到这些能量场？”我问。<br>
+“没问题。”萨拉回答说。“我还没有听说过谁先前能看到，而后来不再能重复那样的经<br>
+历。我们曾在这儿遇见一位眼科学家，他学会观察能量后非常兴奋。他正好是研究视力变异<br>
+的，包括各种色盲。他得出结论，某些人患有他所说的眼睛接受惰性。他帮助人们识别以前<br>
+从没有见过的色彩。在他看来，观察能量场与识别色彩是同一回事，唤醒某些潜在的感知功<br>
+能，而从理论上说，这是每个人都能做到的。”</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>阅读分享</category>
+      </categories>
+  </entry>
+  <entry>
     <title>ArcGIS实现REM制作</title>
     <url>/2024/03/12/29ArcGIS%E5%AE%9E%E7%8E%B0REM%E5%88%B6%E4%BD%9C/</url>
-    <content><![CDATA[<h1 id="数据获取（1mdem）"><a href="#数据获取（1mdem）" class="headerlink" title="数据获取（1mdem）"></a>数据获取（1mdem）</h1><p>数据下载参见教程</p>
+    <content><![CDATA[<h1>数据获取（1mdem）</h1>
+<p>数据下载参见教程</p>
 <p><a href="https://dancoecarto.com/downloading-and-preparing-lidar-dems-for-rem-processing">https://dancoecarto.com/downloading-and-preparing-lidar-dems-for-rem-processing</a></p>
-<h1 id="下载后处理"><a href="#下载后处理" class="headerlink" title="下载后处理"></a>下载后处理</h1><h2 id="对栅格进行镶嵌"><a href="#对栅格进行镶嵌" class="headerlink" title="对栅格进行镶嵌"></a>对栅格进行镶嵌</h2>]]></content>
+<h1>下载后处理</h1>
+<h2 id="对栅格进行镶嵌">对栅格进行镶嵌</h2>
+]]></content>
   </entry>
   <entry>
     <title>多线程下载usgsDEM数据</title>
@@ -4078,7 +4255,8 @@
 <p>参考链接：多线程下载USGS Lidar Explorer Map点云数据 - 行走的蓑衣客 - 博客园 ：</p>
 <p><a href="https://www.cnblogs.com/suoyike1001/p/16998574.html">https://www.cnblogs.com/suoyike1001/p/16998574.html</a></p>
 </blockquote>
-<h2 id="数据获取"><a href="#数据获取" class="headerlink" title="数据获取"></a>数据获取</h2><p><strong>1.进入数据下载网站：</strong></p>
+<h2 id="数据获取">数据获取</h2>
+<p><strong>1.进入数据下载网站：</strong></p>
 <p>USGS Lidar Explorer Map ：<a href="https://apps.nationalmap.gov/lidar-explorer/#/">https://apps.nationalmap.gov/lidar-explorer/#/</a></p>
 <p>（实测在国内不科学上网可以正常进行检索，但加载上可能会有点卡顿）</p>
 <p><strong>2.选择DEM数据</strong></p>
@@ -4091,7 +4269,6 @@
 <p><strong>5.处理观察结果集合，选择可以完成覆盖的且尽量一致的数据</strong>，比如2018就都是2018年的，</p>
 <p>新建一个excel表格来存放链接数据：</p>
 <p>第一行为表头，数据从第二行开始</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -4118,10 +4295,10 @@
 </tr>
 </tbody>
 </table>
-</div>
 <p>将需要下载的数据填写完整</p>
 <p>名称那里可以选择最后字段（利用ctrl+E快捷键）</p>
-<h2 id="下载数据"><a href="#下载数据" class="headerlink" title="下载数据"></a>下载数据</h2><p><strong>1.copy代码，安装import对应的xlrd等库</strong>（<code>pip install xlrd</code>或<code>pip install xlrd -i  https://pypi.tuna.tsinghua.edu.cn/simple/</code>）</p>
+<h2 id="下载数据">下载数据</h2>
+<p><strong>1.copy代码，安装import对应的xlrd等库</strong>（<code>pip install xlrd</code>或<code>pip install xlrd -i  https://pypi.tuna.tsinghua.edu.cn/simple/</code>）</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> xlrd</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> threading</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"> <span class="comment"># [yk1]</span></span><br><span class="line">a = xlrd.open_workbook(<span class="string">&#x27;20240202.xls&#x27;</span>, <span class="string">&#x27;r&#x27;</span>)  <span class="comment"># 打开.xlsx文件,在这之前要把所有的下载链接都填到excel表中</span></span><br><span class="line">sht = a.sheets()[<span class="number">0</span>]  <span class="comment"># 打开表格中第一个sheet</span></span><br><span class="line"><span class="comment"># row1 = sht.row_values(0)</span></span><br><span class="line"><span class="comment"># 设置要下载的数据的范围，对应于 Excel 中的行数</span></span><br><span class="line">start = <span class="number">1</span></span><br><span class="line"><span class="comment"># 获取excel表的所有行数</span></span><br><span class="line">nrows = sht.nrows;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fetch</span>(<span class="params">url, filename</span>):</span><br><span class="line">    r = requests.get(url)</span><br><span class="line">    url2 = url[-<span class="number">3</span>:]  <span class="comment"># 根据链接地址获取文件后缀</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">dir</span> = <span class="string">r&quot;F:\MAP\jihe0202\\&quot;</span> + filename + <span class="string">&quot;.&quot;</span> + url2  <span class="comment"># 保存文件夹路径</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="built_in">dir</span>, <span class="string">&quot;wb&quot;</span>) <span class="keyword">as</span> code:</span><br><span class="line">        code.write(r.content)  <span class="comment"># 保存文件</span></span><br><span class="line">    <span class="built_in">print</span>(url)  <span class="comment"># 打印当前的 URL</span></span><br><span class="line">    jindu = (i - start) / (nrows - start) * <span class="number">100</span>  <span class="comment"># 计算下载进度</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;下载进度：&quot;</span>, jindu, <span class="string">&quot;%&quot;</span>)  <span class="comment"># 显示下载进度</span></span><br><span class="line"></span><br><span class="line"><span class="comment">######单进程下载#########</span></span><br><span class="line"><span class="comment"># for i in range(start, nrows):</span></span><br><span class="line"><span class="comment">#     url = sht.cell(i, 3).value  # 依次读取每行第3列的数据，也就是 URL</span></span><br><span class="line"><span class="comment">#     if url:</span></span><br><span class="line"><span class="comment">#         logging.info(url)</span></span><br><span class="line"><span class="comment">#         f = requests.get(url)</span></span><br><span class="line"><span class="comment">#         roadName=sht.cell(i,2).value</span></span><br><span class="line"><span class="comment">#         markNo=sht.cell(i, 1).value</span></span><br><span class="line"><span class="comment">#         ii = str(roadName)+&quot;_&quot;+markNo  # 按照下载顺序（行号）构造文件名,filename</span></span><br><span class="line"><span class="comment">#         url2 = url[-3:]  # 根据链接地址获取文件后缀</span></span><br><span class="line"><span class="comment">#         dir = r&quot;G:\Mississippi\ALS Region\ALS Data\\&quot;+ii + &quot;.&quot; + url2  # 构造完整文件名称</span></span><br><span class="line"><span class="comment">#         with open(dir, &quot;wb&quot;) as code:</span></span><br><span class="line"><span class="comment">#             code.write(f.content)  # 保存文件</span></span><br><span class="line"><span class="comment">#         print(url)  # 打印当前的 URL</span></span><br><span class="line"><span class="comment">#         jindu = (i - start) / (nrows - start) * 100  # 计算下载进度</span></span><br><span class="line"><span class="comment">#         print(&quot;下载进度：&quot;, jindu, &quot;%&quot;)  # 显示下载进度</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#######多进程下载#######</span></span><br><span class="line">t1 = time.time()</span><br><span class="line">t_list = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(start, nrows):</span><br><span class="line">    user_agent_list = [</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) Gecko/20100101 Firefox/61.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.2.15) Gecko/20110303 Firefox/3.6.15&quot;</span>,</span><br><span class="line">    ]</span><br><span class="line">    headers = &#123;<span class="string">&#x27;User-Agent&#x27;</span>: random.choice(user_agent_list)&#125;  <span class="comment"># 分配随机user agent，避免认为是恶意攻击</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    url = sht.cell(i, <span class="number">2</span>).value  <span class="comment"># 依次读取每行第3列的数据，也就是 URL</span></span><br><span class="line">    <span class="keyword">if</span> url:</span><br><span class="line">        logging.info(url)</span><br><span class="line">        roadName = sht.cell(i, <span class="number">1</span>).value</span><br><span class="line">        <span class="comment"># markNo=sht.cell(i, 1).value</span></span><br><span class="line">        <span class="comment"># filename = str(roadName)+&quot;_&quot;+markNo  # 按照下载顺序（行号）构造文件名</span></span><br><span class="line">        filename = sht.cell(i, <span class="number">1</span>).value</span><br><span class="line">        <span class="comment"># filename = url.split(&#x27;.&#x27;)[2].split(&#x27;_&#x27;)[-3]</span></span><br><span class="line">        t = threading.Thread(target=fetch, args=(url, filename))</span><br><span class="line">        t_list.append(t)</span><br><span class="line">        t.start()</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> t_list:</span><br><span class="line">    t.join()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;多线程版爬虫耗时：&quot;</span>, time.time() - t1)</span><br></pre></td></tr></table></figure>
 <p><strong>2.修改excel文件路径</strong></p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = xlrd.open_workbook(<span class="string">&#x27;20240202.xls&#x27;</span>, <span class="string">&#x27;r&#x27;</span>) </span><br></pre></td></tr></table></figure>
@@ -4148,18 +4325,18 @@
     <title>获取1m精度的DEM数据</title>
     <url>/2024/01/27/27%E4%BD%BF%E7%94%A8%E6%A8%AA%E6%88%AA%E9%9D%A2%E6%B3%95%E5%9C%A8QGIS%E4%B8%AD%E5%88%9B%E5%BB%BAREM/</url>
     <content><![CDATA[<blockquote>
-<p><strong>声明</strong>：本教程转载于<a href="https://dancoecarto.com/downloading-and-preparing-lidar-dems-for-rem-processing，非本人制作，仅供学习交流使用。">https://dancoecarto.com/downloading-and-preparing-lidar-dems-for-rem-processing，非本人制作，仅供学习交流使用。</a></p>
+<p><strong>声明</strong>：本教程转载于<a href="https://dancoecarto.com/downloading-and-preparing-lidar-dems-for-rem-processing%EF%BC%8C%E9%9D%9E%E6%9C%AC%E4%BA%BA%E5%88%B6%E4%BD%9C%EF%BC%8C%E4%BB%85%E4%BE%9B%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81%E4%BD%BF%E7%94%A8%E3%80%82">https://dancoecarto.com/downloading-and-preparing-lidar-dems-for-rem-processing，非本人制作，仅供学习交流使用。</a></p>
 </blockquote>
 <p>在本教程中，您将使用横截面方法将沿所选河流的数字高程模型 （DEM） 转换为 QGIS 中的相对高程模型 （REM）。如果您还没有尝试<a href="https://dancoecarto.com/creating-rems-in-qgis-the-idw-method">过使用IDW方法在QGIS中创建REM</a>教程，我建议您首先从这些方法开始，因为它们通常更快，更容易复制。</p>
 <p>示例数据集是内华达州西部卡森河沿岸的裸露土地雷达 DEM（又名数字地形模型或 DTM）。</p>
-<p>本教程面向具有一定 GIS 使用经验并在其计算机上安装了 <a href="https://qgis.org/en/site/">QGIS</a> 的用户。用户还需要沿着他们选择的河流使用 DEM 才能开始使用（<a href="https://dancoecarto.com/downloading-and-preparing-lidar-dems-for-rem-processing">如果您需要 DEM，请转到此处</a>）。本教程可能需要大约 3 小时才能完成，但时间可能会有所不同，具体取决于河流的长度和处理时间。  </p>
+<p>本教程面向具有一定 GIS 使用经验并在其计算机上安装了 <a href="https://qgis.org/en/site/">QGIS</a> 的用户。用户还需要沿着他们选择的河流使用 DEM 才能开始使用（<a href="https://dancoecarto.com/downloading-and-preparing-lidar-dems-for-rem-processing">如果您需要 DEM，请转到此处</a>）。本教程可能需要大约 3 小时才能完成，但时间可能会有所不同，具体取决于河流的长度和处理时间。</p>
 <p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/8dc60b0a-fdc2-4c3d-bcfe-9a24baf8a642_rw_1920.jpg?h=d50bbb6930e83caa517eb15c3dead5dd" alt=""></p>
 <p>REMs，简介</p>
 <p>在洪泛区，激光雷达数字高程模型 （DEM） 可以转换为相对高程模型 （REM），以便更好地可视化使用航空照片或标准 DEM 难以辨别的河流要素。 REM 也称为河流以上高度 （HAR） 栅格，是通过对基线高程进行去趋势以跟随河流的水面而生成的。在 DEM 中，基线高程（0 英尺或米）位于海平面，河流下游部分的高程低于上游部分。在 REM 中，基线高程（0 英尺或米）会随着河流的水面而去趋势化 - 当人们远离河流时，高程呈上升趋势，显示河流上方的“相对”高度。</p>
-<p>REM 通过生动地显示蜿蜒的疤痕、梯田和牛轭湖等河流特征，在辨别过去河道迁移的位置方面非常有用。此类信息在河道迁移和洪水研究以及许多其他工程、栖息地和文化评估中非常有用。  </p>
+<p>REM 通过生动地显示蜿蜒的疤痕、梯田和牛轭湖等河流特征，在辨别过去河道迁移的位置方面非常有用。此类信息在河道迁移和洪水研究以及许多其他工程、栖息地和文化评估中非常有用。</p>
 <p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/fc51cea7-be63-423e-9c01-d8001c62d406_rw_1920.jpg?h=c6ba787d847baac54454f886f292608f" alt=""></p>
 <p>左图：卡森河的数字高程模型，基线高程 （0） 位于海平面。右图：河流水面基线高程 （0） 相同区域的相对高程模型 （REM）。</p>
-<p>然而，我个人制作河流REM的另一个原因是它们本质上是美丽的。许多 REM 转化为美妙流畅的艺术图像，是河流自然历史的视觉时间胶囊。它们是一门既能满足科学又能满足对世界的审美好奇心的主题。  </p>
+<p>然而，我个人制作河流REM的另一个原因是它们本质上是美丽的。许多 REM 转化为美妙流畅的艺术图像，是河流自然历史的视觉时间胶囊。它们是一门既能满足科学又能满足对世界的审美好奇心的主题。</p>
 <p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/174a3b3e-ec64-4419-aed7-ba6f325c9ea7_rw_1920.jpg?h=ba27f731ec7b936859b6087eb41d16ff" alt=""></p>
 <p>可以使用多种不同的方法创建 REM。我为两种技术编写了QGIS方法，<a href="https://dancoecarto.com/creating-rems-in-qgis-the-idw-method">即IDW方法</a>（上一个教程）和Cross-Section方法（本教程）。这些方法改编自 <a href="https://apps.ecology.wa.gov/publications/documents/1406025.pdf">Olson 等人 （2014）</a> 描述的 ArcGIS Desktop 步骤。这些技术使用点 （IDW） 和线（横截面）GIS 数据，这些数据具有与河流表面相对应的高程。对这些数据进行插值以创建新的栅格表面，然后从原始 DEM 栅格中减去这些数据以创建 REM。</p>
 <p>有时，需要对模型进行多次迭代才能准确表示高程为 0 的水面。降低模型精度的一些常见因素和特征包括：高程梯度陡峭的河流、蜿蜒度高的河流、水坝、陡峭的瀑布、潮汐区、辫状河道和不同时间段的镶嵌数据集。</p>
@@ -4207,13 +4384,13 @@
 <p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/16513745-b275-41b9-998a-01dce67af922_rw_1920.jpg?h=0a79db952b4807c5de952f7aa724caf9" alt=""></p>
 <p>J. 夸张的柔和浅色山体阴影应该为您的 DEM 增加一点清晰度，这将使主要河道在即将到来的步骤中更容易看到。</p>
 <p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/c0acc02e-ee27-48a9-8fd5-763ec21e5565_rw_1920.jpg?h=7386374ea208a276300cf19113de9751" alt=""></p>
-<p>K. Create cross section file. </p>
-<p>Add a line file type of your choice. </p>
-<p>In this case I added a shapefile (shown below). </p>
-<p>Select the file location and name (I usually name it something like river_name_xs). </p>
-<p>For Geometry type select Line. </p>
-<p>Check that the CRS is the same as your input file. </p>
-<p>Under New field type zval for Name, Select Decimal Number for Type, then click on the Add to Fields List. </p>
+<p>K. Create cross section file.</p>
+<p>Add a line file type of your choice.</p>
+<p>In this case I added a shapefile (shown below).</p>
+<p>Select the file location and name (I usually name it something like river_name_xs).</p>
+<p>For Geometry type select Line.</p>
+<p>Check that the CRS is the same as your input file.</p>
+<p>Under New field type zval for Name, Select Decimal Number for Type, then click on the Add to Fields List.</p>
 <p>Select Ok.</p>
 <p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/81999e6d-954d-4600-8702-5d35c53e53eb_rw_1920.jpg?h=e8ac1e1ec9d18d68a2bc84399be7a8e9" alt=""></p>
 <p>L.转至图层属性&gt;符号系统以获取新线文件。</p>
@@ -4234,7 +4411,7 @@
 <p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/42a32a0e-78b6-4faa-b378-aefb22cd6170_rw_1920.jpg?h=b5b9f22ebdc744e7d8c83c21e6425a19" alt=""></p>
 <p>问。 如果在创建线后需要编辑任何线，请使用顶点工具（如下所示）。</p>
 <p>激活工具后，将光标悬停在节点或线段上，直到它变为红色，然后单击一次进行选择。</p>
-<p>After that you can move the node or segment to the desired location.</p>
+<p>After that you can move the node or segment to the desired location.</p>
 <p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/d64431ac-f380-4e5b-9ce5-218c002d0f2b_rw_1920.jpg?h=cc5b39953025e93437f3ce2a38bde233" alt=""></p>
 <p>R. 完成所有横截面线后，右键单击横截面线图层，然后选择打开属性表。</p>
 <p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/c57d5405-503f-41b6-9304-62bab4a2f8cb_rw_1200.jpg?h=f72da316c0079670b9b59fa96558f356" alt=""></p>
@@ -4252,7 +4429,7 @@
 <p>五. 转到“处理&gt;工具箱”，然后在屏幕右侧显示的“处理工具箱”中选择“插值”。</p>
 <p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/c1e12119-aa8f-4569-835b-3fa0047366f0_rw_1920.jpg?h=74df480032cd083838c67c42b8055a52" alt=""></p>
 <p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/1f5db461-cf3a-4ae4-8183-07580ad91ac6_rw_1920.jpg?h=d2c2e4811a469991615db7620b76f94e" alt=""></p>
-<p>十. 在 TIN 插值工具窗口中，选择矢量图层的横截面图层。 </p>
+<p>十. 在 TIN 插值工具窗口中，选择矢量图层的横截面图层。</p>
 <p>对于插值属性，选择 zval 属性。</p>
 <p>单击绿色加号按钮，然后在“类型”下拉菜单下，选择“断线”。</p>
 <p>在右侧的范围下拉菜单中，选择从图层计算，然后选择横截面图层。</p>
@@ -4298,18 +4475,30 @@
   <entry>
     <title>从0开始在ECS安装宝塔面板</title>
     <url>/2024/01/16/25%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%9C%A8ECS%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E8%BF%9B%E8%A1%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h1 id="建站过程"><a href="#建站过程" class="headerlink" title="建站过程"></a>建站过程</h1><h2 id="1-购买-试用ECS服务器"><a href="#1-购买-试用ECS服务器" class="headerlink" title="1.购买/试用ECS服务器"></a>1.购买/试用ECS服务器</h2><p>进行新用户认证</p>
+    <content><![CDATA[<h1>建站过程</h1>
+<h2 id="1-购买-试用ECS服务器">1.购买/试用ECS服务器</h2>
+<p>进行新用户认证</p>
 <p>试用创建服务器实例</p>
-<h2 id="2-激活链接服务器"><a href="#2-激活链接服务器" class="headerlink" title="2.激活链接服务器"></a>2.激活链接服务器</h2><p>输入安装命令</p>
+<h2 id="2-激活链接服务器">2.激活链接服务器</h2>
+<p>输入安装命令</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh https://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh ed8484bec</span><br></pre></td></tr></table></figure>
-<h2 id="3-激活后进入"><a href="#3-激活后进入" class="headerlink" title="3.激活后进入"></a>3.激活后进入</h2><p>将chatai文件夹放入服务器目录/usr/local下</p>
-<h2 id="4-获取api密钥"><a href="#4-获取api密钥" class="headerlink" title="4.获取api密钥"></a>4.获取api密钥</h2><p>登录后台 -&gt; AI机器人 -&gt; 机器人应用 -&gt; 发布 -&gt; (企业微信)<br>PS: 前台用户端获取密钥的方法也是同理的</p>
-<h2 id="5-修改config文件"><a href="#5-修改config文件" class="headerlink" title="5.修改config文件"></a>5.修改config文件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp config-template.json config.json</span><br></pre></td></tr></table></figure>
+<h2 id="3-激活后进入">3.激活后进入</h2>
+<p>将chatai文件夹放入服务器目录/usr/local下</p>
+<h2 id="4-获取api密钥">4.获取api密钥</h2>
+<p>登录后台 -&gt; AI机器人 -&gt; 机器人应用 -&gt; 发布 -&gt; (企业微信)<br>
+PS: 前台用户端获取密钥的方法也是同理的</p>
+<h2 id="5-修改config文件">5.修改config文件</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cp config-template.json config.json</span><br></pre></td></tr></table></figure>
 <p>以后对config.json进行修改</p>
-<p>打开项目的config.json, 修改参数:<br>“open_ai_api_key”:  “0d39473e20xxx@8f7f1ae95d274dee64b4ecxxxxx”,<br>“open_ai_api_base”: “<a href="https://ai.darenkeji.top/api/v1">https://ai.darenkeji.top/api/v1</a>“,<br>[注意: 需要拉群的话在”group_name_white_list”内添加群名进白名单]</p>
-<h2 id="6-安装依赖"><a href="#6-安装依赖" class="headerlink" title="6.安装依赖"></a>6.安装依赖</h2><p>打开文件下的终端，执行以下命令</p>
+<p>打开项目的config.json, 修改参数:<br>
+“open_ai_api_key”:  “0d39473e20xxx@8f7f1ae95d274dee64b4ecxxxxx”,<br>
+“open_ai_api_base”: “<a href="https://ai.darenkeji.top/api/v1">https://ai.darenkeji.top/api/v1</a>”,<br>
+[注意: 需要拉群的话在&quot;group_name_white_list&quot;内添加群名进白名单]</p>
+<h2 id="6-安装依赖">6.安装依赖</h2>
+<p>打开文件下的终端，执行以下命令</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip3 install -r requirements.txt               </span><br><span class="line">pip3 install -r requirements-optional.txt      </span><br></pre></td></tr></table></figure>
-<h2 id="PS-安装依赖过程中可能遇到的一些问题"><a href="#PS-安装依赖过程中可能遇到的一些问题" class="headerlink" title="PS 安装依赖过程中可能遇到的一些问题"></a>PS 安装依赖过程中可能遇到的一些问题</h2><ul>
+<h2 id="PS-安装依赖过程中可能遇到的一些问题">PS 安装依赖过程中可能遇到的一些问题</h2>
+<ul>
 <li>查找不到对应的版本号时，可以将版本号限制去掉，这样就会自动安装最新款</li>
 <li><strong>tiktoken的安装报错</strong></li>
 </ul>
@@ -4319,12 +4508,12 @@
 <p><img src="" alt="查看python版本"></p>
 <p>2.尝试更新python的版本（在阿里云服务中）</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
-<p>总体，通过这个方法<a href="https://blog.csdn.net/Lin1169404361/article/details/123285756">服务器升级安装python_服务器安装的python是2.7.5怎么升级-CSDN博客</a>,可以在服务器中安装python3.8.0 </p>
+<p>总体，通过这个方法<a href="https://blog.csdn.net/Lin1169404361/article/details/123285756">服务器升级安装python_服务器安装的python是2.7.5怎么升级-CSDN博客</a>,可以在服务器中安装python3.8.0</p>
 <p>最后需要替换一下：强制删除后加替换</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo rm /usr/bin/python3</span><br><span class="line">sudo rm /usr/bin/pip3</span><br><span class="line">ln -s /usr/local/python38/bin/python3 /usr/bin/python3</span><br><span class="line">ln -s /usr/local/python38/bin/pip3 /usr/bin/pip3</span><br></pre></td></tr></table></figure>
 <p>就查看python版本时：python -V</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[root@iZbp10cvqyqa8698doj8h1Z Python-3.8.0]# python3 -V</span><br><span class="line">Python 3.8.0</span><br></pre></td></tr></table></figure>
-<p>segment_anything: </p>
+<p>segment_anything:</p>
 <p>测试代码：</p>
  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">main 里面的代码</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>结果图片</p>
@@ -4338,24 +4527,38 @@
   <entry>
     <title>《GIS入门指南》阅读</title>
     <url>/2024/01/14/24GIS%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97%E9%98%85%E8%AF%BB/</url>
-    <content><![CDATA[<h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><ul>
+    <content><![CDATA[<h2 id="序言">序言</h2>
+<ul>
 <li>各位大佬对本书的序言</li>
 </ul>
-<h2 id="作者的想法"><a href="#作者的想法" class="headerlink" title="作者的想法"></a>作者的想法</h2><p>ArcNews(2014 Spring)中看到一篇Anthony C.<br>Robinson有关地理空间教育的文章{Redesigning Geospatial<br>Education}，Robinson首次在Coursera上讲授了一门有关{Maps<br>and the Geospatial Revolution}的MOOC公开课，在这篇文章中<br>作者坦言，在地理空间教育中应该从常规的GIS理论、地理空间数据<br>库的介绍上逐步引导至有关真实世界中的问题，让学生能够在这一过<br>程中学以致用。</p>
-<h2 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h2><p>巧妇难为无米之炊，介绍了数据对于GIS的重要性，详细介绍数据的获取方式</p>
+<h2 id="作者的想法">作者的想法</h2>
+<p>ArcNews(2014 Spring)中看到一篇Anthony C.<br>
+Robinson有关地理空间教育的文章{Redesigning Geospatial<br>
+Education}，Robinson首次在Coursera上讲授了一门有关{Maps<br>
+and the Geospatial Revolution}的MOOC公开课，在这篇文章中<br>
+作者坦言，在地理空间教育中应该从常规的GIS理论、地理空间数据<br>
+库的介绍上逐步引导至有关真实世界中的问题，让学生能够在这一过<br>
+程中学以致用。</p>
+<h2 id="第一部分">第一部分</h2>
+<p>巧妇难为无米之炊，介绍了数据对于GIS的重要性，详细介绍数据的获取方式</p>
 <ul>
 <li>稻歌GoogleMap下载器 下载谷歌地图的好工具</li>
 <li>地理空间数据云   不过介绍的有些过时了，当下的地理空间数据云已经是有些不同了</li>
 </ul>
-<h2 id="第二部分的软件"><a href="#第二部分的软件" class="headerlink" title="第二部分的软件"></a>第二部分的软件</h2><ul>
-<li><p>地图汇已经不在使用了</p>
+<h2 id="第二部分的软件">第二部分的软件</h2>
+<ul>
+<li>
+<p>地图汇已经不在使用了</p>
 </li>
-<li><p>地图故事也不使用这一个了，转为了GISonline</p>
-<p>大概是42-51页的软件篇部分，大家可以随意翻翻，现在很少接触这两款东西了，我们学习仍然是以主流的GIS软件平台ArcGIS为主 </p>
+<li>
+<p>地图故事也不使用这一个了，转为了GISonline</p>
+<p>大概是42-51页的软件篇部分，大家可以随意翻翻，现在很少接触这两款东西了，我们学习仍然是以主流的GIS软件平台ArcGIS为主</p>
 </li>
 </ul>
-<h2 id="第三部分-应用篇"><a href="#第三部分-应用篇" class="headerlink" title="第三部分 应用篇"></a>第三部分 应用篇</h2><p>以5个生动有趣的例子介绍了我们GIS在生活的中的应用</p>
-<h2 id="第四部分-解惑篇"><a href="#第四部分-解惑篇" class="headerlink" title="第四部分 解惑篇"></a>第四部分 解惑篇</h2><p>GIS工程师开发 需要编程！</p>
+<h2 id="第三部分-应用篇">第三部分 应用篇</h2>
+<p>以5个生动有趣的例子介绍了我们GIS在生活的中的应用</p>
+<h2 id="第四部分-解惑篇">第四部分 解惑篇</h2>
+<p>GIS工程师开发 需要编程！</p>
 <p>坐标系统、投影变换、拓扑关系等</p>
 ]]></content>
       <tags>
@@ -4371,11 +4574,14 @@
   <entry>
     <title>距离研究生初试一年</title>
     <url>/2023/12/25/23%E8%80%83%E7%A0%94%E5%90%AF%E5%8A%A8/</url>
-    <content><![CDATA[<h1 id="考研期许"><a href="#考研期许" class="headerlink" title="考研期许"></a>考研期许</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>我是挺想考取一个研究生的，感觉现在毕业的话有点早，能做的不多，基本入职都是重事的最基础的工作，然后慢慢干起来，感觉发展比较受限，能做的东西不多，而且yangzu的平台不够，去哪里靠这个名头比较小，想要还是努力去靠一个211努力985，能够在更高的平台去学习，去认识更加优秀的人，能去一个尊师重道，老师水平很高，学生水平也很高，科研经费充足，管理人性化(当然这只是期许)的高校的项目组是十分令学生向往的</p>
+    <content><![CDATA[<h1>考研期许</h1>
+<h2 id="背景">背景</h2>
+<p>我是挺想考取一个研究生的，感觉现在毕业的话有点早，能做的不多，基本入职都是重事的最基础的工作，然后慢慢干起来，感觉发展比较受限，能做的东西不多，而且yangzu的平台不够，去哪里靠这个名头比较小，想要还是努力去靠一个211努力985，能够在更高的平台去学习，去认识更加优秀的人，能去一个尊师重道，老师水平很高，学生水平也很高，科研经费充足，管理人性化(当然这只是期许)的高校的项目组是十分令学生向往的</p>
 <p>看到他们考研的，自己也感慨万千，从大一刚入学，就看到有一个很牛的学长在图书馆天天学习，每次我去图书馆他都在，到大二时有疫情，在5楼会议室里，bqy学长和wgh学长也很努力认真的天天复习，到现在考研自习室里面紧凑的书籍，忙碌的人们，</p>
 <p>到今天考研初始已经结束了，每个考研的人的压力都泄去了，</p>
 <p>送走了，见证了一批又一批，接下来就到我们了</p>
-<h2 id="把自己当作一个产品去培养"><a href="#把自己当作一个产品去培养" class="headerlink" title="把自己当作一个产品去培养"></a>把自己当作一个产品去培养</h2><p>到时考研时能把自己这个产品推给学校，找工作时能把自己这个产品推给公司，让学校和公司都很喜欢</p>
+<h2 id="把自己当作一个产品去培养">把自己当作一个产品去培养</h2>
+<p>到时考研时能把自己这个产品推给学校，找工作时能把自己这个产品推给公司，让学校和公司都很喜欢</p>
 <p>这就是很好的</p>
 <ul>
 <li>要关注自我的提升   脑科学是一门十分正确的学科</li>
@@ -4395,8 +4601,9 @@
   <entry>
     <title>flask框架web开发实践</title>
     <url>/2023/12/16/21flask%E6%A1%86%E6%9E%B6web%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/</url>
-    <content><![CDATA[<p>参考文献：<a href="https://blog.csdn.net/plumlee/article/details/127945625?spm=1001.2014.3001.5506">python上手—flask框架web开发实践-数据库_python flask web开发-CSDN博客</a></p>
-<h3 id="本教程采用跟步式进行记录，把大佬的走一遍，转化为自己的输出"><a href="#本教程采用跟步式进行记录，把大佬的走一遍，转化为自己的输出" class="headerlink" title="本教程采用跟步式进行记录，把大佬的走一遍，转化为自己的输出"></a>本教程采用跟步式进行记录，把大佬的走一遍，转化为自己的输出</h3><p>1.在index首页打印welcom</p>
+    <content><![CDATA[<p>参考文献：<a href="https://blog.csdn.net/plumlee/article/details/127945625?spm=1001.2014.3001.5506">python上手–flask框架web开发实践-数据库_python flask web开发-CSDN博客</a></p>
+<h3 id="本教程采用跟步式进行记录，把大佬的走一遍，转化为自己的输出">本教程采用跟步式进行记录，把大佬的走一遍，转化为自己的输出</h3>
+<p>1.在index首页打印welcom</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span>  Flask    <span class="comment">#导入Flask类</span></span><br><span class="line">app=Flask(__name__)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">index</span>():</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;&lt;h3&gt;welcome to my webpage!&lt;/h3&gt;&lt;hr&gt;&lt;p style=&quot;color:red&quot;&gt;输出语句测试&lt;/p&gt;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># @app.route(&#x27;/&#x27;)    #调用route路由方法，括号里给定参数，/符号默认为首页</span></span><br><span class="line"><span class="comment"># @app.route(&#x27;/home/user&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#实例化并命名为app实例</span></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    app.run(port=<span class="number">2020</span>,host=<span class="string">&quot;127.0.0.1&quot;</span>,debug=<span class="literal">True</span>)   <span class="comment">#调用run方法，设定端口号，启动服务</span></span><br></pre></td></tr></table></figure>
 <p>但是这种缺点很明显，就是要在return中写大量的html语句</p>
 <p>解决方法就是flask库里的<strong>Jinja2模板引擎</strong>，调用flask模块里的render_template方法，来调用已经写好的html文件。</p>
@@ -4415,24 +4622,28 @@
   <entry>
     <title>备案历程(这条路如履薄冰)</title>
     <url>/2023/12/12/19%E5%A4%87%E6%A1%88%E5%8E%86%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="历程"><a href="#历程" class="headerlink" title="历程"></a>历程</h1><p>当你想要把自己广播在网络中，能让别人检索到的话，相当于在地球村的一个地址，有了地址大家才能找到你家门来拜访</p>
+    <content><![CDATA[<h1>历程</h1>
+<p>当你想要把自己广播在网络中，能让别人检索到的话，相当于在地球村的一个地址，有了地址大家才能找到你家门来拜访</p>
 <p>此时一个域名就是必须品，当然你可以获取一些免费的域名（比如在github或者gitee上）但是想要长久有特色的话还是离不开一个真实的域名，购买域名可以参考自己的需求，（时间使用长短，作用是干什么），一个域名也像一个名字，一个简洁明了的域名能够让客户短时间记下你，而一个错综复杂、乱七八糟的域名会情不自禁给人一个烦恼</p>
-<h2 id="域名购买"><a href="#域名购买" class="headerlink" title="域名购买"></a>域名购买</h2><ul>
+<h2 id="域名购买">域名购买</h2>
+<ul>
 <li>腾讯云</li>
 <li>华为云</li>
 <li>阿里云</li>
 </ul>
 <p>以上是我了解到的国内普遍使用的域名购买网站</p>
 <p>可以直接注册进行购买，进行域名检索，选择后缀，可以结合自己的需求进行购买</p>
-<h2 id="域名的icp备案"><a href="#域名的icp备案" class="headerlink" title="域名的icp备案"></a>域名的icp备案</h2><p>但仅仅买了域名还不够，你的域名还不能正常使用</p>
+<h2 id="域名的icp备案">域名的icp备案</h2>
+<p>但仅仅买了域名还不够，你的域名还不能正常使用</p>
 <p>在国内为了便于互联网的管理，保护网络安全，净化网络环境，需要进行域名的icp备案(以下简称备案)</p>
 <p>备案的硬性条件是你要有一个三个月期限的服务器，且剩余时间大于1个月</p>
 <p>如果没有的话，海鲜市场，启动！</p>
 <p>去xian🐟说搜索以下xxx服务码/授权码，找别人买一个，或者找你有服务器的朋友申请一个用于备案的授权码（不保证一定能要来呦）</p>
 <p>然后接下来就是填写备案资料，不得不说这个历程的复杂的，各种事情的，且需要长期等待的，也需要看当地审核的效率，只能是自求多福了</p>
-<p><strong>官方发布的备案流程</strong>[<a href="https://www.isc.org.cn/article/11084110917136384.html">首次备案流程<em>常见问题</em>中国互联网协会 (isc.org.cn)</a>]</p>
+<p><strong>官方发布的备案流程</strong>[<a href="https://www.isc.org.cn/article/11084110917136384.html">首次备案流程_常见问题_中国互联网协会 (isc.org.cn)</a>]</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">首次备案流程如下：</span><br><span class="line"></span><br><span class="line">1.访问接入商备案系统</span><br><span class="line"></span><br><span class="line">2.注册用户名和密码，然后登录接入商备案系统</span><br><span class="line"></span><br><span class="line">3.填写备案相关信息并提交</span><br><span class="line"></span><br><span class="line">4.接入商审核</span><br><span class="line"></span><br><span class="line">5.接入商审核通过后，通信管理局审核</span><br><span class="line"></span><br><span class="line">6.通信管理局审核通过，下发备案号；审核不通过，返回接入商</span><br></pre></td></tr></table></figure>
-<h2 id="备案注意事项"><a href="#备案注意事项" class="headerlink" title="备案注意事项"></a>备案注意事项</h2><ul>
+<h2 id="备案注意事项">备案注意事项</h2>
+<ul>
 <li>身份证<strong>有效期必须大于三个月</strong></li>
 </ul>
 <p>我就是不知道这个，结果去备案，发现不足三个月需更换身份证后重新备案，结果身份证又等了一个月才到，此时授权码已经过期，必须又再买一个授权码😭</p>
@@ -4441,17 +4652,20 @@
 <p>然后你就要重新再走一遍😇</p>
 <p>怎么样，看到这，汗流浃背了吧😰</p>
 <p>截止12.12的历程：</p>
-<p><a href="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E5%A4%87%E6%A1%88%E5%8E%86%E7%A8%8B%2F%E5%A4%87%E6%A1%88%E8%AE%B0%E5%BD%95.jpg">https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E5%A4%87%E6%A1%88%E5%8E%86%E7%A8%8B%2F%E5%A4%87%E6%A1%88%E8%AE%B0%E5%BD%95.jpg</a></p>
+<p><a href="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E5%A4%87%E6%A1%88%E5%8E%86%E7%A8%8B%2F%E5%A4%87%E6%A1%88%E8%AE%B0%E5%BD%95.jpg">https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F文章插图%2F备案历程%2F备案记录.jpg</a></p>
 ]]></content>
   </entry>
   <entry>
     <title>南昌之旅(12.10)</title>
     <url>/2023/12/12/%E5%8D%97%E6%98%8C%E4%B9%8B%E6%97%8512.10/</url>
-    <content><![CDATA[<h1 id="南昌行"><a href="#南昌行" class="headerlink" title="南昌行"></a>南昌行</h1><h2 id="背景-起因"><a href="#背景-起因" class="headerlink" title="背景/起因"></a>背景/起因</h2><p>做为地信的学生，大一大二大三，课永远不少，从来没有一个没什么事儿的一周，上周虽然</p>
+    <content><![CDATA[<h1>南昌行</h1>
+<h2 id="背景-起因">背景/起因</h2>
+<p>做为地信的学生，大一大二大三，课永远不少，从来没有一个没什么事儿的一周，上周虽然</p>
 <p>课少，但是却事不少，数据库报告，科技文献的上机，等等的的确写了好久</p>
 <p>但感觉这一周不能白白过去呀，于是周六取回我的身份证后，准备开启我的“新生”</p>
 <p>看了看高德的足迹，感觉我去的地方确实少，但是又受时间所困，就想，去南昌还是长沙，后来决定了去南昌，我感觉我选择了一个合适的地方，也收获了不少的惊喜，当时就想起来高中的舍友就去的南昌大学，就立马联系，听说他周日有时间，那不正好，直接买票，周日上午10点发车，下午两点到，启程！</p>
-<h2 id="宏观流程"><a href="#宏观流程" class="headerlink" title="宏观流程"></a>宏观流程</h2><p>周日上午出发，带点武汉的周黑鸭</p>
+<h2 id="宏观流程">宏观流程</h2>
+<p>周日上午出发，带点武汉的周黑鸭</p>
 <p>上午在硬座火车上遇到些大爷，聊了一路，还遇上了在广东闯荡的老乡</p>
 <p>下午到南昌，在八一广场遇上了练习摄影的姐请她拍了几张照</p>
 <p>然后去八一纪念馆，在纪念馆转了一会，与好友碰面</p>
@@ -4463,9 +4677,11 @@
 <p>我便赶往南昌西站，在南昌西站附近青年旅舍过夜</p>
 <p>第二天由南昌西站赶往南昌舰主题公园</p>
 <p>南昌舰公园转完后赶往南昌站返程</p>
-<h2 id="第一天的旅程"><a href="#第一天的旅程" class="headerlink" title="第一天的旅程"></a>第一天的旅程</h2><p>在前面补完了数据库的课设报告，然后就第二天上午8点半就出发，去蔡甸广场，买了两盒周黑鸭</p>
+<h2 id="第一天的旅程">第一天的旅程</h2>
+<p>在前面补完了数据库的课设报告，然后就第二天上午8点半就出发，去蔡甸广场，买了两盒周黑鸭</p>
 <p>然后赶火车，到火车站直接就已经检票差不多了，直接检了就进去了</p>
-<h3 id="绿皮火车上的交谈"><a href="#绿皮火车上的交谈" class="headerlink" title="绿皮火车上的交谈"></a>绿皮火车上的交谈</h3><p>到了火车上，还好不是放假的高峰期，人还可以，三个人的座大概坐两个人，然后遇到了一个老家在四川，经常去广州，福建，从事建筑行业的老大爷，看年龄大概60岁往上了，是经常坐火车出行，聊了很多吧，基本上一路上都在聊，<strong>传授了些经验</strong>，说<strong>温州人、潮汕人</strong>，两个地方的人很聪明，做商业很牛，他们都会成立一些对应的商会，在一些情况下商会会出面帮着摆平一些事，原因有下</p>
+<h3 id="绿皮火车上的交谈">绿皮火车上的交谈</h3>
+<p>到了火车上，还好不是放假的高峰期，人还可以，三个人的座大概坐两个人，然后遇到了一个老家在四川，经常去广州，福建，从事建筑行业的老大爷，看年龄大概60岁往上了，是经常坐火车出行，聊了很多吧，基本上一路上都在聊，<strong>传授了些经验</strong>，说<strong>温州人、潮汕人</strong>，两个地方的人很聪明，做商业很牛，他们都会成立一些对应的商会，在一些情况下商会会出面帮着摆平一些事，原因有下</p>
 <ul>
 <li>商会成员之间会相互帮助，比如当创业时没有钱了，会有商会的大佬板给资助一些便于资金流转</li>
 <li>商会之间人脉广，做很多事都可以合作，可能原本感觉一般的企业，老板都是一个地方的就能见到面且心理上距离会近一些</li>
@@ -4474,13 +4690,14 @@
 <p>这也就是大爷说看一个地方富不富，看有没有温州人、潮汕人就能看出来</p>
 <p>第二个事是没想到遇到了老乡，老哥是菏泽的，离的不远，遇到时还以为是在看考公的资料，原来是公司的内部资料，属实牛</p>
 <p>还有老哥性格很好，<strong>多条朋友多条路</strong>，是大哥加我的，大哥已经在广州开公司了，看上去还挺年轻，已经全国基本都跑遍了，甚至还去过好几个国家，孩子现在是在山东师范上学，还是蛮牛的</p>
-<h2 id="到了南昌"><a href="#到了南昌" class="headerlink" title="到了南昌"></a>到了南昌</h2><p>出了车站便已经是阴天，然后从火车站赶往八一广场，出了八一广场，天气便已经下起雨来，然后正巧遇到了一个练习摄影的学姐，便厚起脸皮去找学姐帮我拍了几张照片，留下了一些回忆，与八一起义纪念塔，江西省美术馆</p>
+<h2 id="到了南昌">到了南昌</h2>
+<p>出了车站便已经是阴天，然后从火车站赶往八一广场，出了八一广场，天气便已经下起雨来，然后正巧遇到了一个练习摄影的学姐，便厚起脸皮去找学姐帮我拍了几张照片，留下了一些回忆，与八一起义纪念塔，江西省美术馆</p>
 <p>然后我就去了八一纪念馆，真是那张在历史书上见到的照片，这次真真的看到了，那种历史的屹立，仿佛看到了那段峥嵘的岁月，在起义门前振臂一呼，打响了历史的第一枪</p>
 <p>正巧在八一纪念馆里看到了参战老兵的活动，在此合影留念</p>
 <p>而后就是cy来到了八一纪念馆，一起去了万寿宫、滕王阁、还厚脸皮的蹭了一杯洪都大拇指，然后两个人在滕王阁前徘徊，要不要进去，都是搞理科的，他也忘记滕王阁怎么背了。时间也不早了，就在门口拍了张照，等下次功成名就之时再次登临江西名楼</p>
 <p>然后就跟着他一起回学校了，来领略江西著名双一流，南昌大学的校园风光</p>
 <p>南昌大学是真的大，转了还不到一半就累的不行，路上看到了几栋大楼和操场，没想到南大对于健康跑步打卡的要求是真高，限定时间，限定运动场，在那种大家都在操场挥汗如雨，那种氛围着实是一个美妙的风景线</p>
-<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%97%85%E8%A1%8C%E5%B0%8F%E8%AE%B0%2F%E5%8D%97%E6%98%8C%E4%B9%8B%E6%97%85(12.10" alt="修贤运动场">%2F%E4%BF%AE%E8%B4%A4%E8%BF%90%E5%8A%A8%E5%9C%BA.jpg)</p>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%97%85%E8%A1%8C%E5%B0%8F%E8%AE%B0%2F%E5%8D%97%E6%98%8C%E4%B9%8B%E6%97%85(12.10)%2F%E4%BF%AE%E8%B4%A4%E8%BF%90%E5%8A%A8%E5%9C%BA.jpg" alt="修贤运动场"></p>
 <p>逛了大概是一小半，去看了大学是正大门，出去又进来了，然后去看了两条金龙，正好还发现有个学姐在练唱歌，真的厉害，一点也不怯场，这才是真正牛的大学，双一流的大学生</p>
 <p>然后去南大的餐厅吃饭，拿周黑鸭下饭，cy在南昌已经比我能吃辣了，我觉得还有点辣，cy就觉得正好，一起聊天聊到高中，聊到以前，该说不说两年之间感觉大家都变化好大，双一流的确不是盖的，以前是我自己去转悠大学，这次是有人带着，能够清晰明了的了解到这个地方，这是以往一个人转大学，只能看到基本的最外在的东西，在有这里的同学带着的话，能够了解到很多自己了解不到的，能够亲自来这里上学，或者生活几天，那更是能彻底的了解很多。</p>
 <p>好久没有出去，好久没有走那么远的路，不仅是这次转江西，逛南大走的路多，还有的是不知是我和高一舍友之间的路远，这条路，我们从高考后分离，其实关系一直不错，但是聊天有时也是大家都忙时间不多，没啥事可能想不起来，但是感情确实在那，走到了南大，一步一步，看到了大学的大楼，三个操场，有24层楼高的图书馆，一步一步中能明确的感到双一流和双非的区别，我也回更加努力进取，为了研究生的高校不懈奋斗</p>
@@ -4490,7 +4707,7 @@
 <p>在晚上十点多找到住宿位置后，就住宿休息了</p>
 <p>第二天去南昌舰转了转，吃过早饭后就赶公交车，<strong>应该是吃的有点饱就立马坐公交车的原因</strong>，一路上晕车是真难受，大冷天开开了窗户，一直很不舒服，也没有找到很好的办法解决，只能一直忍着，忍了一个多小时</p>
 <p>那几天天气降温是真的冷，把我的悍匪头套都戴上了，带着悍匪头套在外面骑车。别人看到都得以为精神病跑出来了。后来总归公交+电车+徒步，到了南昌舰上，来看了光荣的163，第一次登上舰艇，感觉真是奇妙，舰上的修建配置真的是利用每一寸土地，十分的紧凑，楼梯与楼梯相连，似乎就已经看到了南昌舰曾经的光辉与海军战士的艰苦</p>
-<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%97%85%E8%A1%8C%E5%B0%8F%E8%AE%B0%2F%E5%8D%97%E6%98%8C%E4%B9%8B%E6%97%85(12.10" alt="">%2F%E6%A5%BC%E6%A2%AF.jpg)</p>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%97%85%E8%A1%8C%E5%B0%8F%E8%AE%B0%2F%E5%8D%97%E6%98%8C%E4%B9%8B%E6%97%85(12.10)%2F%E6%A5%BC%E6%A2%AF.jpg" alt=""></p>
 <p>而后经过南昌舰公园后便赶回了南昌站，后面还捐了5块钱的彩票。</p>
 <p>然后就回来用积分换了车票回到了武汉</p>
 <p>回武汉的路上遇到了一个武汉理工大学的研究生大哥，也是在南昌上的车，大哥一看做事就成熟稳重干练，是学交通和规划的。很有实力，大哥也让好好干，未来可期</p>
@@ -4499,7 +4716,8 @@
   <entry>
     <title>解决困难问题的能力</title>
     <url>/2023/12/08/%E8%A7%A3%E5%86%B3%E5%9B%B0%E9%9A%BE%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="随笔—解决困难问题的能力"><a href="#随笔—解决困难问题的能力" class="headerlink" title="随笔—解决困难问题的能力"></a>随笔—解决困难问题的能力</h1><p>我这个人能力不高，习惯拖延</p>
+    <content><![CDATA[<h1>随笔–解决困难问题的能力</h1>
+<p>我这个人能力不高，习惯拖延</p>
 <p>有时是习惯于把事情往后拖，然后半拉不拉的糊弄过去了就</p>
 <p>这次我发现我遇到的问题糊弄不过去了：</p>
 <p>这几天接连比赛、提交报告，以前可能并没有注重报告的撰写和任务的完成，到现在就是担子很重难以解决了；</p>
@@ -4521,7 +4739,8 @@
   <entry>
     <title>网站期许</title>
     <url>/2023/12/04/%E7%BD%91%E7%AB%99%E6%9C%9F%E8%AE%B8/</url>
-    <content><![CDATA[<h1 id="起因-背景"><a href="#起因-背景" class="headerlink" title="起因/背景"></a>起因/背景</h1><p>大三上学习，做为一名GISer，上了一门专业课—WebGIS</p>
+    <content><![CDATA[<h1>起因/背景</h1>
+<p>大三上学习，做为一名GISer，上了一门专业课—WebGIS</p>
 <p>我也和老师看法一致，为了web端是主流，诚然不同的客户端不会消除，桌面应用端也以其强大的处理功能位置不可替代，比如AecMap，ArcgisPro，但随着科技的发展，云服务器的简便高效快捷，开发者无需投入巨大的服务器成本，可以按需灵活的购买云服务产品，用户也省去了安装、配置的麻烦，只需一个url，一个浏览器，便可享受高品质的服务，比如B站等，减少了开发者的投入，便捷了用户的使用</p>
 <p><strong>可以说web是轻量化应用中“性价比”极高的一条道路</strong>            ——（以上均个人看法）</p>
 <p>GIS专业，将编程与地理相链接，但编程上的确与计算机科班出身有差距，但是也再走出一条具有GIS特色的编程之路</p>
@@ -4543,7 +4762,8 @@
 <li>还准备学习Echart，将自己每月的文章发布数量用可视化的方式展示出来</li>
 <li>等等等等</li>
 </ul>
-<h1 id="建站历程"><a href="#建站历程" class="headerlink" title="建站历程"></a>建站历程</h1><p>构建一个博客的历程，并不是一帆风顺的，相比于本地的index网页来说，发布到公网肯定会经历一个又一个的错误，有时不知道是什么错误，查半天才能找到，还有一次把CNAME文件写混了导致域名定向总是失败，甚至改回来了还是不行，结果是清楚cookie后一刷新就可以了</p>
+<h1>建站历程</h1>
+<p>构建一个博客的历程，并不是一帆风顺的，相比于本地的index网页来说，发布到公网肯定会经历一个又一个的错误，有时不知道是什么错误，查半天才能找到，还有一次把CNAME文件写混了导致域名定向总是失败，甚至改回来了还是不行，结果是清楚cookie后一刷新就可以了</p>
 <p>还有比如说部署再github上访问速度太慢，想分享给身边的人他们都打不开看不到</p>
 <p>于是就想部署到gitee上，不过这laji的gitee又要手举身份证拍照实名认证，又审核三四天才通过，真是服了，限制是的有些多了</p>
 <p>然后部署再gitee上后以为速度是可以了，结果网页是能比较快的打开，但是图片都是404加载不出来，后面发现了是图床的问题，图床在外面，里面访问速度也很慢，于是试试七牛云，结果不出所料，还是慢，没半点效果</p>
@@ -4551,7 +4771,8 @@
 <p>然后请教了他是用的腾讯云的cos储存，不贵，一年十几块钱，于是我也果不其然使用了，刚用上网站图片就能立刻显示了，<strong>这是属于我的博客网站第一次大事记</strong>——可以让大多数人无需工具即可正常访问，修改后就立刻分享给了老师，得到了老师的鼓励</p>
 <p>然后现在差不多属于是博客的页面完善阶段，现在图标还没有补齐，有些page的显示仍然有些问题</p>
 <p><strong>正在向一个完整的博客去构建…</strong></p>
-<h1 id="旅途收获"><a href="#旅途收获" class="headerlink" title="旅途收获"></a>旅途收获</h1><p>一个人建站，是一个快乐且痛苦的过程，痛苦在改不完的bug，快乐是解决bug后的舒适与成就</p>
+<h1>旅途收获</h1>
+<p>一个人建站，是一个快乐且痛苦的过程，痛苦在改不完的bug，快乐是解决bug后的舒适与成就</p>
 <p>所以这两个也正是相互依存，相互制约的，没有了痛苦，就不会对比出完成时的喜悦，没有快乐，也不会去做这件事</p>
 <p>而且，当我在hexo这条道路上前行时，Hexo有一个很有社交性的功能<strong>友情链接</strong>，通过一个个的友链跳转，发现了很多隐藏的大佬，了解了很多见到了很多记录生活的大佬。</p>
 <p>发现真是江山代有才人出呀，尤其让我震惊的是我跟着友链找到的大佬，进了粉丝群后发现群主才<strong>13岁</strong>，上初中，这是真真震惊到我了，这么小，就已经掌握了如此的编程实力，前途真是不可限量</p>
@@ -4567,12 +4788,14 @@
   <entry>
     <title>与love哥交谈</title>
     <url>/2023/12/02/%E4%B8%8Elove%E5%93%A5%E4%BA%A4%E8%B0%88/</url>
-    <content><![CDATA[<h1 id="背景-起因"><a href="#背景-起因" class="headerlink" title="背景/起因"></a>背景/起因</h1><p>在周二晚上那次面试后，对GIS开发所需要学习的东西技术有了一定的认识，但还是没有那么明确</p>
+    <content><![CDATA[<h1>背景/起因</h1>
+<p>在周二晚上那次面试后，对GIS开发所需要学习的东西技术有了一定的认识，但还是没有那么明确</p>
 <p>所以今天周六，晚上请教了一下love哥</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">哥，想请教您个问题嘞，就是我现在对Arcgis和GEE的操作挺感兴趣的</span><br><span class="line"></span><br><span class="line">但是不知道学这玩意有没有用</span><br><span class="line"></span><br><span class="line">我这周周二晚上参加了一个线上的中地数码的面试</span><br><span class="line"></span><br><span class="line">一问三不知</span><br><span class="line"></span><br><span class="line">问了点基础的VUE，HTML都答不上来</span><br><span class="line"></span><br><span class="line">然后那个人说目前找GIS开发的工作基本就是webgis前端的，后端就是学java</span><br><span class="line"></span><br><span class="line">前端就让好好学VUE2，VUE3，openlayers，说后面有往三维发展的趋势要学cesium</span><br><span class="line"></span><br><span class="line">然后我就发现这些学校里好像都不交呀，自己在学的东西，虽然说是个经常用的工具，但也只是个工具</span><br><span class="line"></span><br><span class="line">就有点疑惑</span><br><span class="line"></span><br><span class="line">2023年12月2日于武汉 大三</span><br></pre></td></tr></table></figure>
 <p>这是一个挺迷茫挺疑惑的问题，去请教了一个已经有数年开发工作经验的大哥，love哥在吃完饭后就开始聊了起来，不知不觉跟大哥廖了一个多小时</p>
 <p>万分感激大哥的慷慨相助，来帮涉事未深，啥都不懂的弟弟解答疑惑，发现在本科三年级这种阶段，还是挺正常的一种感觉</p>
-<h1 id="内容摘要思考"><a href="#内容摘要思考" class="headerlink" title="内容摘要思考"></a>内容摘要思考</h1><p>love哥也一猜就猜到了我的水平——一个初学者、还没有入门的小白，想学的东西挺多</p>
+<h1>内容摘要思考</h1>
+<p>love哥也一猜就猜到了我的水平——一个初学者、还没有入门的小白，想学的东西挺多</p>
 <p>love哥确实是有数年的工作经验，也结合他当时在学校的一些经历，一语中的的点出了我的普遍性问题，同时给了一个切实可行的解决方法</p>
 <p>对于GEE也好，ArcGIS Pro也好，Arcpy也好，抑或者VUE，OPenlayers，cesium等等</p>
 <p>都是属于工具</p>
@@ -4596,26 +4819,33 @@
 <ul>
 <li>C语言，C#，python java说都算接触过一些，但是啥基础的都不会，哪一门都不能说掌握了</li>
 </ul>
-<h3 id="不要被自己的专业受限"><a href="#不要被自己的专业受限" class="headerlink" title="不要被自己的专业受限"></a>不要被自己的专业受限</h3><p>不一定说自己的GIS专业就一个只能学GIS专业的东西，其实也是靠自己自学，还有你对这个真的感兴趣想去学就可以去学 本科本来学的东西就比较宽泛没有一个很具体的方向</p>
-<h3 id="对于工作-学习而言，要有自己能站的住脚的东西"><a href="#对于工作-学习而言，要有自己能站的住脚的东西" class="headerlink" title="对于工作/学习而言，要有自己能站的住脚的东西"></a>对于工作/学习而言，要有自己能站的住脚的东西</h3><p>要真正的熟悉了解一个GIS框架，还是以love哥的open layers举例，要学的时候就要逐渐的去了解，可能实现一个功能有多个实现方法，你可以选择多个但是初学时没必要太深究，你只要能实现出来就行，</p>
+<h3 id="不要被自己的专业受限">不要被自己的专业受限</h3>
+<p>不一定说自己的GIS专业就一个只能学GIS专业的东西，其实也是靠自己自学，还有你对这个真的感兴趣想去学就可以去学 本科本来学的东西就比较宽泛没有一个很具体的方向</p>
+<h3 id="对于工作-学习而言，要有自己能站的住脚的东西">对于工作/学习而言，要有自己能站的住脚的东西</h3>
+<p>要真正的熟悉了解一个GIS框架，还是以love哥的open layers举例，要学的时候就要逐渐的去了解，可能实现一个功能有多个实现方法，你可以选择多个但是初学时没必要太深究，你只要能实现出来就行，</p>
 <p>后面可能随着深入了解进行，慢慢发现这个方法大家都在用，或者说是实现一个功能时，你也就知道这个方法的好处与不足</p>
 <p>尤其是工作时，你至少不能太差，要能有两把刷子在公司能站稳脚跟。</p>
-<h3 id="对于一些比赛竞赛，能参与是极好的事"><a href="#对于一些比赛竞赛，能参与是极好的事" class="headerlink" title="对于一些比赛竞赛，能参与是极好的事"></a>对于一些比赛竞赛，能参与是极好的事</h3><p><strong>但是一定要承担一定的责任，负责一定的功能</strong>，到时人家问起来你在这个项目里负责啥干了啥你要能明确的回答出来</p>
+<h3 id="对于一些比赛竞赛，能参与是极好的事">对于一些比赛竞赛，能参与是极好的事</h3>
+<p><strong>但是一定要承担一定的责任，负责一定的功能</strong>，到时人家问起来你在这个项目里负责啥干了啥你要能明确的回答出来</p>
 <p>而且你要在这个项目中能锻炼到你的能力，不是摸鱼划水的</p>
 <p>可以就把自己平常用到的一些东西，发现觉得比较好玩的记录一些，写上去<strong>就像在给别人讲一样</strong></p>
 <p>而且到时学到的东西印象会更深刻，会想起我当时的xxxx功能用到了这个技术，比单纯的学js或者语言效果要好的多</p>
-<h3 id="稍微明确好自己将来的发展"><a href="#稍微明确好自己将来的发展" class="headerlink" title="稍微明确好自己将来的发展"></a>稍微明确好自己将来的发展</h3><p>比如GEE，如果你将来想去做遥感，你会这个优势就挺大，对于研究生要用三年的东西，你就可以想他们一样创建一个公众号写写教程也很不错</p>
+<h3 id="稍微明确好自己将来的发展">稍微明确好自己将来的发展</h3>
+<p>比如GEE，如果你将来想去做遥感，你会这个优势就挺大，对于研究生要用三年的东西，你就可以想他们一样创建一个公众号写写教程也很不错</p>
 <p>抑或者是GIS开发，你可能准备的是GIS开发，但是后来去了遥感，GEE的代码也是和JS代码很像，而且万一哪一天你和别人都干这个事，要用到GEE了，但是你会，你不就上去了</p>
-<h3 id="本科其实挺多地方就是试错"><a href="#本科其实挺多地方就是试错" class="headerlink" title="本科其实挺多地方就是试错"></a>本科其实挺多地方就是试错</h3><p>可能有说选哪个方向，甚至工作时的前几年也是试错，是公务员，还是企业还是事业编等等，只有说经历了才知道自己想要什么</p>
+<h3 id="本科其实挺多地方就是试错">本科其实挺多地方就是试错</h3>
+<p>可能有说选哪个方向，甚至工作时的前几年也是试错，是公务员，还是企业还是事业编等等，只有说经历了才知道自己想要什么</p>
 <p>当然，能在迷茫时问一问过来人，正如雷军所言，<strong>找个懂的人问一问</strong>，要比自己想是要强的多</p>
-<h2 id="最重要的事，在本人身上是屡试不爽——贪多了"><a href="#最重要的事，在本人身上是屡试不爽——贪多了" class="headerlink" title="最重要的事，在本人身上是屡试不爽——贪多了"></a>最重要的事，在本人身上是屡试不爽——贪多了</h2><p>love哥万分告诫，莫要贪多，我前期大一大二大三碌碌无为感觉很大的一部分就是因为贪多了</p>
+<h2 id="最重要的事，在本人身上是屡试不爽——贪多了">最重要的事，在本人身上是屡试不爽——贪多了</h2>
+<p>love哥万分告诫，莫要贪多，我前期大一大二大三碌碌无为感觉很大的一部分就是因为贪多了</p>
 <p>自己python想学，arcgis想学，python学一半去深度学习，webgis搞一般在css就看不完了</p>
 <p>没有一个至始至终的过程，</p>
 <p>也重来不坚持下去</p>
 <p>总是那三天打鱼两天晒网</p>
 <p>诚然，学习疲惫了可以去休息休息，出去爬爬山呀，跑跑步呀，不愿意跑步在外面溜达溜达也好</p>
 <p>也要注意锻炼锻炼身体</p>
-<h2 id="万幸遇到love哥，荣幸之至"><a href="#万幸遇到love哥，荣幸之至" class="headerlink" title="万幸遇到love哥，荣幸之至"></a>万幸遇到love哥，荣幸之至</h2><p>小弟感激之情，难以言表，祝好</p>
+<h2 id="万幸遇到love哥，荣幸之至">万幸遇到love哥，荣幸之至</h2>
+<p>小弟感激之情，难以言表，祝好</p>
 ]]></content>
       <tags>
         <tag>发展规划</tag>
@@ -4624,7 +4854,8 @@
   <entry>
     <title>GIS工具箱【持续更新...】</title>
     <url>/2023/12/02/GIS%E5%B7%A5%E5%85%B7%E7%AE%B1/</url>
-    <content><![CDATA[<h1 id="GIS工具箱"><a href="#GIS工具箱" class="headerlink" title="GIS工具箱"></a>GIS工具箱</h1><p>写本篇文章是想记录一下目前逐渐遇到的经历的启发的对于GIS来说是十分有用的工具箱</p>
+    <content><![CDATA[<h1>GIS工具箱</h1>
+<p>写本篇文章是想记录一下目前逐渐遇到的经历的启发的对于GIS来说是十分有用的工具箱</p>
 <ul>
 <li>遥感而言</li>
 </ul>
@@ -4637,7 +4868,9 @@
 <p>ArcMap  经典GIS入门软件</p>
 <p>ArcPy（批处理各种东西，无需反复点击操作，靠代码即可跑出来）</p>
 <p>大幅度提高效率</p>
-<h2 id="再加一句话-能用会用就行，也不要求从头开始学"><a href="#再加一句话-能用会用就行，也不要求从头开始学" class="headerlink" title="再加一句话 能用会用就行，也不要求从头开始学"></a>再加一句话 能用会用就行，也不要求从头开始学</h2><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2>]]></content>
+<h2 id="再加一句话-能用会用就行，也不要求从头开始学">再加一句话 能用会用就行，也不要求从头开始学</h2>
+<h2 id=""></h2>
+]]></content>
       <tags>
         <tag>GIS工具</tag>
       </tags>
@@ -4645,17 +4878,22 @@
   <entry>
     <title>建站遇到的问题及解决方法【更新中】</title>
     <url>/2023/12/02/20%E5%BB%BA%E7%AB%99%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="问题集锦"><a href="#问题集锦" class="headerlink" title="问题集锦"></a>问题集锦</h1><h2 id="1-当腾讯云储存桶图片清空重新上传后导致图片加载不出"><a href="#1-当腾讯云储存桶图片清空重新上传后导致图片加载不出" class="headerlink" title="1.当腾讯云储存桶图片清空重新上传后导致图片加载不出"></a>1.当腾讯云储存桶图片清空重新上传后导致图片加载不出</h2><h3 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h3><p>发现并不是链接的问题，而是要修改授权</p>
+    <content><![CDATA[<h1>问题集锦</h1>
+<h2 id="1-当腾讯云储存桶图片清空重新上传后导致图片加载不出">1.当腾讯云储存桶图片清空重新上传后导致图片加载不出</h2>
+<h3 id="解决：">解决：</h3>
+<p>发现并不是链接的问题，而是要修改授权</p>
 <p>储存桶列表—授权管理—改为“公有读，私有写”—保存即可</p>
 <p>是权限问题导致的无法访问图片</p>
 <p>ps：建立储存桶时请设定好防盗链，防治图片被恶意盗刷造成损失。\</p>
-<h2 id="2-域名备案"><a href="#2-域名备案" class="headerlink" title="2.域名备案"></a>2.域名备案</h2><p>没钱买服务器，只能用授权码，购买授权码后发现身份证有效期不足3个月不能备案，于是更换身份证，经过了一个月拿到了新身份证，结果发现授权码过期了</p>
+<h2 id="2-域名备案">2.域名备案</h2>
+<p>没钱买服务器，只能用授权码，购买授权码后发现身份证有效期不足3个月不能备案，于是更换身份证，经过了一个月拿到了新身份证，结果发现授权码过期了</p>
 <p>只能要么在买一个tx的授权码，或者直接转网，去al或者其他地方了</p>
-<h2 id="3-hexo-s可以推上本地，但是hexo-d不能推上github仓库"><a href="#3-hexo-s可以推上本地，但是hexo-d不能推上github仓库" class="headerlink" title="3.hexo s可以推上本地，但是hexo d不能推上github仓库"></a>3.hexo s可以推上本地，但是hexo d不能推上github仓库</h2><p>报错如下：</p>
+<h2 id="3-hexo-s可以推上本地，但是hexo-d不能推上github仓库">3.hexo s可以推上本地，但是hexo d不能推上github仓库</h2>
+<p>报错如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line"></span><br><span class="line">Error: Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (F:\大三上课程\WebGIS\hexo\hexo_code\hexoblog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br></pre></td></tr></table></figure>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E5%BB%BA%E7%AB%99%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%2F3%E6%8E%A8%E4%B8%8D%E4%B8%8Agithub%E4%BB%93%E5%BA%93%2F%E6%8A%A5%E9%94%99.jpg" alt=""></p>
 <p>解决方法：应该是ssh链接的问题，经过在C站上层层的查，查到了解决问题</p>
-<p>解决链接：<a href="https://blog.csdn.net/weixin_48927364/article/details/123405585?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexo博客不能推到github中&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-123405585.142^v96^pc_search_result_base1&amp;spm=1018.2226.3001.4187">【Hexo】部署博客到Github失败的解决方案_hexo部署不到github-CSDN博客</a></p>
+<p>解决链接：<a href="https://blog.csdn.net/weixin_48927364/article/details/123405585?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E8%83%BD%E6%8E%A8%E5%88%B0github%E4%B8%AD&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-123405585.142%5Ev96%5Epc_search_result_base1&amp;spm=1018.2226.3001.4187">【Hexo】部署博客到Github失败的解决方案_hexo部署不到github-CSDN博客</a></p>
 <p>万分感谢大佬。</p>
 ]]></content>
       <categories>
@@ -4665,11 +4903,14 @@
   <entry>
     <title>Pycharm配置arcpy(超简单)【ArcPy教程】</title>
     <url>/2023/12/01/Pycharm%E9%85%8D%E7%BD%AEArcpy/</url>
-    <content><![CDATA[<p>电脑上安装了python2.7版本的ArcGIS，也另安装了python3.10.<br>想使用PyCharm平台进行结合ArcGIS和python的编程，arcpy必不可少。但是直接新建工程使用时会出现以下报错：</p>
+    <content><![CDATA[<p>电脑上安装了python2.7版本的ArcGIS，也另安装了python3.10.<br>
+想使用PyCharm平台进行结合ArcGIS和python的编程，arcpy必不可少。但是直接新建工程使用时会出现以下报错：</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">ImportError: No module named arcpy</span><br></pre></td></tr></table></figure>
 <p>通过查找网上的方法，找到了解决途径（只需一步操作）：</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2FARCGIS%E6%95%99%E7%A8%8B%2FArcPy%2FPycharm%E9%85%8D%E7%BD%AEarcpy%2F%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.jpg" alt="新建项目"></p>
-<p>Location：替换为自己目标的工程文件路径<br>Base Interpreter：把图中路径的10.8替换为自己的ArcGIS版本<br>勾选“Inherit global site-packages”</p>
+<p>Location：替换为自己目标的工程文件路径<br>
+Base Interpreter：把图中路径的10.8替换为自己的ArcGIS版本<br>
+勾选“Inherit global site-packages”</p>
 <p><strong>以上问题其实就是解释器的问题，选到自己的arcgis对应版本的解释器一般就能解决</strong></p>
 <p>有可能还要安装一个打包器，按提示安装即可</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2FARCGIS%E6%95%99%E7%A8%8B%2FArcPy%2FPycharm%E9%85%8D%E7%BD%AEarcpy%2F%E5%8F%AF%E8%83%BD%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85%E6%89%93%E5%8C%85%E5%99%A8.jpg" alt="打包器"></p>
@@ -4686,12 +4927,16 @@
   <entry>
     <title>由NDVI计算FVC【ArcPy教程】</title>
     <url>/2023/12/01/py%E8%AE%A1%E7%AE%97FVC/</url>
-    <content><![CDATA[<h2 id="植被覆盖度（Fraction-Vegetation-Cover，FVC）"><a href="#植被覆盖度（Fraction-Vegetation-Cover，FVC）" class="headerlink" title="植被覆盖度（Fraction Vegetation Cover，FVC）"></a>植被覆盖度（Fraction Vegetation Cover，FVC）</h2><p><strong>植被覆盖度( FractionalVegetation Cover，FVC)</strong> 通常定义为植被( 包括叶、茎、枝) 在地面的垂直投影面积占统计区总面积的百分比，它量化了植被的茂密程度，反应了植被的生长态势，是刻画地表植被覆盖的重要参数，也是指示生态环境变化的基本指标。植被覆盖度的测量方法从以前的地面测量（目估法、采样法等）操作复杂，成本高，效率低逐渐被遥感估算方法取代（回归指数、植被指数等）。</p>
-<script type="math/tex; mode=display">
-VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点是几个公式。</p>
+    <content><![CDATA[<h2 id="植被覆盖度（Fraction-Vegetation-Cover，FVC）">植被覆盖度（Fraction Vegetation Cover，FVC）</h2>
+<p><strong>植被覆盖度( FractionalVegetation Cover，FVC)</strong> 通常定义为植被( 包括叶、茎、枝) 在地面的垂直投影面积占统计区总面积的百分比，它量化了植被的茂密程度，反应了植被的生长态势，是刻画地表植被覆盖的重要参数，也是指示生态环境变化的基本指标。植被覆盖度的测量方法从以前的地面测量（目估法、采样法等）操作复杂，成本高，效率低逐渐被遥感估算方法取代（回归指数、植被指数等）。<br>
+$$<br>
+VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)<br>
+$$<br>
+以下太长不看了，重点是几个公式。</p>
 <p><strong>VFC即植被覆盖度：</strong></p>
 <blockquote>
-<p>NDVIsoil为完全是裸土或无植被覆盖区域的NDVI值<br>NDVIveg则代表完全被植被所覆盖的像元的NDVI值，即纯植被像元的NDVI值。</p>
+<p>NDVIsoil为完全是裸土或无植被覆盖区域的NDVI值<br>
+NDVIveg则代表完全被植被所覆盖的像元的NDVI值，即纯植被像元的NDVI值。</p>
 <p>比如以5%的置信度计算某时期NDVIsoil、NDVIveg, 其中累计百分比为5%时的NDVI值为NDVIsoil,累计百分比为95%时的NDVI值为NDVIveg</p>
 </blockquote>
 <p>两个值的计算公式为：</p>
@@ -4699,21 +4944,30 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
 <p>（2）<strong>NDVIveg=((1-VFCmin)*NDVImax-(1-VFCmax)*NDVImin)/(VFCmax- VFCmin)</strong></p>
 <p><strong>置信度计算方法为：</strong></p>
 <blockquote>
-<p>ENVI公式:<br><strong>(b1 gt 0.7)* 1+(b1 It 0.05)0+(b1 ge 0.05 and b1 le 0.7)(b1-0.05)(0.7-0.05))</strong><br>Arcgis中calcuator公式:<br><strong>Con( inRaster<0. 05 ,0. Con( (inRaster>=005 )&amp;( inRaster&lt;=0.7). (inRaster-005)/(0.7-0 .05),1))</strong></p>
+<p>ENVI公式:<br>
+<strong>(b1 gt 0.7)* 1+(b1 It 0.05)0+(b1 ge 0.05 and b1 le 0.7)(b1-0.05)(0.7-0.05))</strong><br>
+Arcgis中calcuator公式:<br>
+<strong>Con( inRaster&lt;0. 05 ,0. Con( (inRaster&gt;=005 )&amp;( inRaster&lt;=0.7). (inRaster-005)/(0.7-0 .05),1))</strong></p>
 </blockquote>
 <hr>
-<h2 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h2><ul>
-<li>数据来源：ModisNDVI数据下载  </li>
+<h2 id="数据处理">数据处理</h2>
+<ul>
+<li>数据来源：ModisNDVI数据下载</li>
 <li>空间位置：陕西省榆林市</li>
 <li>时间：2000-2022年</li>
 </ul>
-<h2 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h2><h3 id="1-创建Python文件"><a href="#1-创建Python文件" class="headerlink" title="1.创建Python文件"></a>1.创建Python文件</h3><p>首先打开PyCharm，新建一个目录，用来存放工程文件，在目录下面就可以创建Python程序文件了，你只需要点击<strong>【新建】</strong>→<strong>【Python文件】</strong></p>
+<h2 id="具体操作">具体操作</h2>
+<h3 id="1-创建Python文件">1.创建Python文件</h3>
+<p>首先打开PyCharm，新建一个目录，用来存放工程文件，在目录下面就可以创建Python程序文件了，你只需要点击**【新建】<strong>→</strong>【Python文件】**</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2FARCGIS%E6%95%99%E7%A8%8B%2FArcPy%2FNDVI%E8%AE%A1%E7%AE%97FVC%2F%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.jpg" alt="新建工程"></p>
-<h3 id="2-写入代码"><a href="#2-写入代码" class="headerlink" title="2.写入代码"></a>2.写入代码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># coding=utf-8</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 导入必要的模块</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="comment"># reload(sys)</span></span><br><span class="line"><span class="comment"># sys.setdefaultencoding(&quot;utf-8&quot;)</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> arcpy</span><br><span class="line"><span class="keyword">from</span> arcpy <span class="keyword">import</span> env</span><br><span class="line"><span class="keyword">from</span> arcpy.sa <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置输入文件夹路径</span></span><br><span class="line">inputfilepath = <span class="string">r&quot;C:\NDVIout\Result&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置ArcGIS的工作环境为输入文件夹路径</span></span><br><span class="line">arcpy.env.workspace = inputfilepath</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取输入文件夹中所有的.tif格式的栅格数据集</span></span><br><span class="line">rasterlist = arcpy.ListRasters(<span class="string">&quot;*&quot;</span>, <span class="string">&quot;tif&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置输出文件夹路径</span></span><br><span class="line">outputpath = <span class="string">r&quot;C:\FVCout&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置中间数据存储文件夹路径</span></span><br><span class="line">intermediateDataPath = outputpath + <span class="string">&quot;\\&quot;</span> + <span class="string">&quot;IntermediateData&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查输出文件夹是否已存在，如果不存在则创建</span></span><br><span class="line"><span class="keyword">if</span> os.path.exists(outputpath):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Outputfile floder exists!&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    os.makedirs(outputpath)  <span class="comment"># 创建多层目录</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查中间数据存储文件夹是否已存在，如果不存在则创建</span></span><br><span class="line"><span class="keyword">if</span> os.path.exists(intermediateDataPath):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;IntermediateData floder exists&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    arcpy.CreateFolder_management(outputpath, <span class="string">&quot;IntermediateData&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 遍历每一个栅格数据集</span></span><br><span class="line"><span class="keyword">for</span> raster <span class="keyword">in</span> rasterlist:</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">str</span>(raster))</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 设置工作环境为中间数据存储文件夹</span></span><br><span class="line">    arcpy.env.workspace = intermediateDataPath</span><br><span class="line">    arcpy.env.overwriteOutput = <span class="literal">True</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 检出ArcGIS 3D Analyst和Spatial扩展许可</span></span><br><span class="line">    arcpy.CheckOutExtension(<span class="string">&quot;3D&quot;</span>)</span><br><span class="line">    arcpy.CheckOutExtension(<span class="string">&quot;Spatial&quot;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 构建输入栅格数据集的完整路径</span></span><br><span class="line">    inputRaster = inputfilepath + <span class="string">&#x27;\\&#x27;</span> + raster</span><br><span class="line">    <span class="built_in">print</span>(inputRaster)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 构建输出VFC（Vegetation Fraction Cover）栅格数据集的完整路径</span></span><br><span class="line">    vfcoutPath = outputpath + <span class="string">&#x27;\\&#x27;</span> + raster[:-<span class="number">4</span>] + <span class="string">&quot;_VFC.tif&quot;</span></span><br><span class="line">    <span class="built_in">print</span>(vfcoutPath)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 将输入栅格数据集转换为浮点型</span></span><br><span class="line">    arcpy.Float_3d(inputRaster, <span class="string">&quot;floatNDVIBand.tif&quot;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 将浮点型栅格数据集乘以10000</span></span><br><span class="line">    arcpy.Times_3d(<span class="string">&quot;floatNDVIBand.tif&quot;</span>, <span class="number">10000</span>, <span class="string">&quot;outTimesndvi.tif&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 读取输出的浮点型栅格数据集</span></span><br><span class="line">    inRaster = <span class="string">&quot;outTimesndvi.tif&quot;</span></span><br><span class="line">    inRaster = arcpy.Raster(inRaster)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 根据条件进行逻辑运算，生成VFC栅格数据集</span></span><br><span class="line">    outCon = Con(inRaster &lt; <span class="number">0.05</span>, <span class="number">0</span>, Con((inRaster &gt;= <span class="number">0.05</span>) &amp; (inRaster &lt;= <span class="number">0.7</span>), (inRaster - <span class="number">0.05</span>)/(<span class="number">0.7</span> - <span class="number">0.05</span>), <span class="number">1</span>))</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 保存生成的VFC栅格数据集</span></span><br><span class="line">    outCon.save(vfcoutPath)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 打印提示信息</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;OK!&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="2-写入代码">2.写入代码</h3>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># coding=utf-8</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 导入必要的模块</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="comment"># reload(sys)</span></span><br><span class="line"><span class="comment"># sys.setdefaultencoding(&quot;utf-8&quot;)</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> arcpy</span><br><span class="line"><span class="keyword">from</span> arcpy <span class="keyword">import</span> env</span><br><span class="line"><span class="keyword">from</span> arcpy.sa <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置输入文件夹路径</span></span><br><span class="line">inputfilepath = <span class="string">r&quot;C:\NDVIout\Result&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置ArcGIS的工作环境为输入文件夹路径</span></span><br><span class="line">arcpy.env.workspace = inputfilepath</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取输入文件夹中所有的.tif格式的栅格数据集</span></span><br><span class="line">rasterlist = arcpy.ListRasters(<span class="string">&quot;*&quot;</span>, <span class="string">&quot;tif&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置输出文件夹路径</span></span><br><span class="line">outputpath = <span class="string">r&quot;C:\FVCout&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置中间数据存储文件夹路径</span></span><br><span class="line">intermediateDataPath = outputpath + <span class="string">&quot;\\&quot;</span> + <span class="string">&quot;IntermediateData&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查输出文件夹是否已存在，如果不存在则创建</span></span><br><span class="line"><span class="keyword">if</span> os.path.exists(outputpath):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Outputfile floder exists!&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    os.makedirs(outputpath)  <span class="comment"># 创建多层目录</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查中间数据存储文件夹是否已存在，如果不存在则创建</span></span><br><span class="line"><span class="keyword">if</span> os.path.exists(intermediateDataPath):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;IntermediateData floder exists&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    arcpy.CreateFolder_management(outputpath, <span class="string">&quot;IntermediateData&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 遍历每一个栅格数据集</span></span><br><span class="line"><span class="keyword">for</span> raster <span class="keyword">in</span> rasterlist:</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">str</span>(raster))</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 设置工作环境为中间数据存储文件夹</span></span><br><span class="line">    arcpy.env.workspace = intermediateDataPath</span><br><span class="line">    arcpy.env.overwriteOutput = <span class="literal">True</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 检出ArcGIS 3D Analyst和Spatial扩展许可</span></span><br><span class="line">    arcpy.CheckOutExtension(<span class="string">&quot;3D&quot;</span>)</span><br><span class="line">    arcpy.CheckOutExtension(<span class="string">&quot;Spatial&quot;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 构建输入栅格数据集的完整路径</span></span><br><span class="line">    inputRaster = inputfilepath + <span class="string">&#x27;\\&#x27;</span> + raster</span><br><span class="line">    <span class="built_in">print</span>(inputRaster)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 构建输出VFC（Vegetation Fraction Cover）栅格数据集的完整路径</span></span><br><span class="line">    vfcoutPath = outputpath + <span class="string">&#x27;\\&#x27;</span> + raster[:-<span class="number">4</span>] + <span class="string">&quot;_VFC.tif&quot;</span></span><br><span class="line">    <span class="built_in">print</span>(vfcoutPath)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 将输入栅格数据集转换为浮点型</span></span><br><span class="line">    arcpy.Float_3d(inputRaster, <span class="string">&quot;floatNDVIBand.tif&quot;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 将浮点型栅格数据集乘以10000</span></span><br><span class="line">    arcpy.Times_3d(<span class="string">&quot;floatNDVIBand.tif&quot;</span>, <span class="number">10000</span>, <span class="string">&quot;outTimesndvi.tif&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 读取输出的浮点型栅格数据集</span></span><br><span class="line">    inRaster = <span class="string">&quot;outTimesndvi.tif&quot;</span></span><br><span class="line">    inRaster = arcpy.Raster(inRaster)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 根据条件进行逻辑运算，生成VFC栅格数据集</span></span><br><span class="line">    outCon = Con(inRaster &lt; <span class="number">0.05</span>, <span class="number">0</span>, Con((inRaster &gt;= <span class="number">0.05</span>) &amp; (inRaster &lt;= <span class="number">0.7</span>), (inRaster - <span class="number">0.05</span>)/(<span class="number">0.7</span> - <span class="number">0.05</span>), <span class="number">1</span>))</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 保存生成的VFC栅格数据集</span></span><br><span class="line">    outCon.save(vfcoutPath)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 打印提示信息</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;OK!&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <ul>
 <li>提示，网络代码可能需要进行修改到符合自身需求和数据需求的情况，有疑惑可以关注微信公众号xbgis联系作者进行解答。</li>
 </ul>
-<h3 id="3-运行成功"><a href="#3-运行成功" class="headerlink" title="3.运行成功"></a>3.运行成功</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">china_2021_NDVI1km.tif</span><br><span class="line">F:\沙漠绿色奇迹\modis_ndvi\榆林市\china_2021_NDVI1km.tif</span><br><span class="line">F:\沙漠绿色奇迹\modis_ndvi\FVC\yulin\china_2021_NDVI1km_VFC.tif</span><br><span class="line">OK!</span><br><span class="line">china_2022_NDVI1km.tif</span><br><span class="line">F:\沙漠绿色奇迹\modis_ndvi\榆林市\china_2022_NDVI1km.tif</span><br><span class="line">F:\沙漠绿色奇迹\modis_ndvi\FVC\yulin\china_2022_NDVI1km_VFC.tif</span><br><span class="line">OK!</span><br><span class="line"></span><br><span class="line">进程已结束,退出代码<span class="number">0</span></span><br></pre></td></tr></table></figure>
+<p></p>
+<h3 id="3-运行成功">3.运行成功</h3>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">china_2021_NDVI1km.tif</span><br><span class="line">F:\沙漠绿色奇迹\modis_ndvi\榆林市\china_2021_NDVI1km.tif</span><br><span class="line">F:\沙漠绿色奇迹\modis_ndvi\FVC\yulin\china_2021_NDVI1km_VFC.tif</span><br><span class="line">OK!</span><br><span class="line">china_2022_NDVI1km.tif</span><br><span class="line">F:\沙漠绿色奇迹\modis_ndvi\榆林市\china_2022_NDVI1km.tif</span><br><span class="line">F:\沙漠绿色奇迹\modis_ndvi\FVC\yulin\china_2022_NDVI1km_VFC.tif</span><br><span class="line">OK!</span><br><span class="line"></span><br><span class="line">进程已结束,退出代码<span class="number">0</span></span><br></pre></td></tr></table></figure>
 <p>打开文件夹，查看批量处理后的结果</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2FARCGIS%E6%95%99%E7%A8%8B%2FArcPy%2FNDVI%E8%AE%A1%E7%AE%97FVC%2F%E6%89%B9%E9%87%8F%E7%94%9F%E6%88%90%E8%BF%90%E7%AE%97%E5%A5%BD%E7%9A%84FVC.jpg" alt="批量生成好的FVC"></p>
 <p>在ArcGIS中附上色带查看 NICE！</p>
@@ -4728,22 +4982,29 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
   <entry>
     <title>11.28新中地面试培训心得</title>
     <url>/2023/11/28/11-28%E6%96%B0%E4%B8%AD%E5%9C%B0%E9%9D%A2%E8%AF%95%E5%9F%B9%E8%AE%AD%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<h1 id="11-28新中地面试培训心得"><a href="#11-28新中地面试培训心得" class="headerlink" title="11.28新中地面试培训心得"></a>11.28新中地面试培训心得</h1><p>特别感谢武汉新中地教育的余老师进行讲解，讲解看校园招聘的重要性，还有一些常见的HR问的黑话，还有我们如何破解的白话，又实际考察了不同地域对于GIS开发上的需求，收获良多</p>
-<h2 id="1-校招"><a href="#1-校招" class="headerlink" title="1.校招"></a>1.校招</h2><h3 id="1-1为什么要参加校招"><a href="#1-1为什么要参加校招" class="headerlink" title="1.1为什么要参加校招"></a>1.1为什么要参加校招</h3><ul>
+    <content><![CDATA[<h1>11.28新中地面试培训心得</h1>
+<p>特别感谢武汉新中地教育的余老师进行讲解，讲解看校园招聘的重要性，还有一些常见的HR问的黑话，还有我们如何破解的白话，又实际考察了不同地域对于GIS开发上的需求，收获良多</p>
+<h2 id="1-校招">1.校招</h2>
+<h3 id="1-1为什么要参加校招">1.1为什么要参加校招</h3>
+<ul>
 <li>校招的企业优质（相比于社招是最能接近好企业的途径）</li>
 <li>比社招跟容易进大厂</li>
 </ul>
-<h3 id="1-2利用好应届生的身份"><a href="#1-2利用好应届生的身份" class="headerlink" title="1.2利用好应届生的身份"></a>1.2利用好应届生的身份</h3><h4 id="招聘角度讲："><a href="#招聘角度讲：" class="headerlink" title="招聘角度讲："></a>招聘角度讲：</h4><p>对于大厂简单，只限制一些学校、专业、绩点、专业课成绩即可</p>
+<h3 id="1-2利用好应届生的身份">1.2利用好应届生的身份</h3>
+<h4 id="招聘角度讲：">招聘角度讲：</h4>
+<p>对于大厂简单，只限制一些学校、专业、绩点、专业课成绩即可</p>
 <p>相同条件下 <strong>有独自承担项目开发的经验</strong> 妥妥的加分项</p>
 <p>刚毕业就进入本企业后，可塑性强，对企业文化的认可度高，对企业更忠诚</p>
-<h3 id="1-3校招注意事项"><a href="#1-3校招注意事项" class="headerlink" title="1.3校招注意事项"></a>1.3校招注意事项</h3><p>时间：分春招和秋招 </p>
+<h3 id="1-3校招注意事项">1.3校招注意事项</h3>
+<p>时间：分春招和秋招</p>
 <ul>
 <li>春招 ：宜早不宜迟</li>
 <li>秋招：整体一般9-11月份，地信一般9月中下旬最好</li>
 <li>去实习要问有没有机会转正 问请条件</li>
 <li>去大厂要问有没有机会考编 类似于事业编</li>
 </ul>
-<h3 id="1-4实习期-试用期-正式期-试岗期-观察期辨析"><a href="#1-4实习期-试用期-正式期-试岗期-观察期辨析" class="headerlink" title="1.4实习期 试用期 正式期 试岗期 观察期辨析"></a>1.4实习期 试用期 正式期 试岗期 观察期辨析</h3><ul>
+<h3 id="1-4实习期-试用期-正式期-试岗期-观察期辨析">1.4实习期 试用期 正式期 试岗期 观察期辨析</h3>
+<ul>
 <li>实习期：实习期只能是学生身份，只能签实习合同（毕业生签实习合同就是骗人）</li>
 <li>去实习要问清楚实习后能不能转正入职，问清楚转正条件不踩坑</li>
 <li>试用期：有正式的劳动合同才有试用期，试用期不同企业时间不同，<strong>但不能超过6跟月</strong>（超过6个月是违法的）</li>
@@ -4752,7 +5013,9 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
 <li>观察期：说观察期不给工资，<strong>同样不合法</strong></li>
 <li>建议以上这两种就不要去了  <strong>不正规！！去了就有坑</strong></li>
 </ul>
-<h2 id="2-招聘信息"><a href="#2-招聘信息" class="headerlink" title="2.招聘信息"></a>2.招聘信息</h2><h3 id="2-1招聘信息哪里找"><a href="#2-1招聘信息哪里找" class="headerlink" title="2.1招聘信息哪里找"></a>2.1招聘信息哪里找</h3><ul>
+<h2 id="2-招聘信息">2.招聘信息</h2>
+<h3 id="2-1招聘信息哪里找">2.1招聘信息哪里找</h3>
+<ul>
 <li>官网</li>
 </ul>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%96%B0%E4%B8%AD%E5%9C%B0%E9%9D%A2%E8%AF%9511.28%2F%E6%8B%9B%E8%81%98%E4%BF%A1%E6%81%AF%E5%93%AA%E9%87%8C%E6%89%BE.jpg" alt="官网"></p>
@@ -4772,7 +5035,9 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
 <li>内推（有认识的朋友、亲戚、同学等）</li>
 <li>关注自己的学习，和周边同类型的学校</li>
 </ul>
-<h2 id="3-面试的坑"><a href="#3-面试的坑" class="headerlink" title="3.面试的坑"></a>3.面试的坑</h2><h3 id="HR常用方法"><a href="#HR常用方法" class="headerlink" title="HR常用方法"></a>HR常用方法</h3><p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%96%B0%E4%B8%AD%E5%9C%B0%E9%9D%A2%E8%AF%9511.28%2F%E9%9D%A2%E8%AF%95%E8%8A%B1%E6%A0%B71.jpg" alt=""></p>
+<h2 id="3-面试的坑">3.面试的坑</h2>
+<h3 id="HR常用方法">HR常用方法</h3>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%96%B0%E4%B8%AD%E5%9C%B0%E9%9D%A2%E8%AF%9511.28%2F%E9%9D%A2%E8%AF%95%E8%8A%B1%E6%A0%B71.jpg" alt=""></p>
 <ul>
 <li>压力测试 自我介绍完后HR就盯着你啥也不说，就给上压力，情景就达到了</li>
 </ul>
@@ -4781,26 +5046,33 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
 <li>谈薪黑白话 HR问你的期望薪资是多少时，你就问他这个薪资区间是多少，自己不要说，然后他回答完以后你就说嗯，这个区间在我预想的范围内</li>
 <li>还要了解就业当地的一般的做这个工作的人的薪资水平，大差不差，技术好就多一些</li>
 </ul>
-<h2 id="4-企业避坑指南"><a href="#4-企业避坑指南" class="headerlink" title="4.企业避坑指南"></a>4.企业避坑指南</h2><h3 id="衡量企业值不值得去-—-项目"><a href="#衡量企业值不值得去-—-项目" class="headerlink" title="衡量企业值不值得去 —- 项目"></a>衡量企业值不值得去 —- 项目</h3><p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%96%B0%E4%B8%AD%E5%9C%B0%E9%9D%A2%E8%AF%9511.28%2F%E9%81%BF%E5%9D%911%E9%A1%B9%E7%9B%AE.jpg" alt=""></p>
+<h2 id="4-企业避坑指南">4.企业避坑指南</h2>
+<h3 id="衡量企业值不值得去-—-项目">衡量企业值不值得去 — 项目</h3>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%96%B0%E4%B8%AD%E5%9C%B0%E9%9D%A2%E8%AF%9511.28%2F%E9%81%BF%E5%9D%911%E9%A1%B9%E7%9B%AE.jpg" alt=""></p>
 <ul>
-<li>项目多，企业就好，项目少且不好，企业就白搭，也可以请教GIS内部人员余老师来帮忙查一下要入职公司的项目怎么样</li>
-</ul>
-<ul>
-<li>常见大坑</li>
+<li>
+<p>项目多，企业就好，项目少且不好，企业就白搭，也可以请教GIS内部人员余老师来帮忙查一下要入职公司的项目怎么样</p>
+</li>
+<li>
+<p>常见大坑</p>
+</li>
 </ul>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%96%B0%E4%B8%AD%E5%9C%B0%E9%9D%A2%E8%AF%9511.28%2F%E5%B8%B8%E8%A7%81%E5%9D%919.jpg" alt=""></p>
 <ul>
 <li>绩效坑 培训坑</li>
 </ul>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%96%B0%E4%B8%AD%E5%9C%B0%E9%9D%A2%E8%AF%9511.28%2F%E7%BB%A9%E6%95%88%E5%9D%91.jpg" alt=""></p>
-<h2 id="5-未来的发展"><a href="#5-未来的发展" class="headerlink" title="5.未来的发展"></a>5.未来的发展</h2><h3 id="WebGIS上的发展的话"><a href="#WebGIS上的发展的话" class="headerlink" title="WebGIS上的发展的话"></a>WebGIS上的发展的话</h3><p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%96%B0%E4%B8%AD%E5%9C%B0%E9%9D%A2%E8%AF%9511.28%2FWebgis%E5%BC%80%E5%8F%916.jpg" alt=""></p>
+<h2 id="5-未来的发展">5.未来的发展</h2>
+<h3 id="WebGIS上的发展的话">WebGIS上的发展的话</h3>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E6%96%B0%E4%B8%AD%E5%9C%B0%E9%9D%A2%E8%AF%9511.28%2FWebgis%E5%BC%80%E5%8F%916.jpg" alt=""></p>
 <ul>
 <li>这些都是必备的</li>
 <li>VUE2，VUE3都要会，因为好多项目是VUE2写的</li>
 <li>三维是大趋势，Cesium是占比很大的</li>
 <li>武汉这边Openlayers也很注重</li>
 </ul>
-<h3 id="后端的话"><a href="#后端的话" class="headerlink" title="后端的话"></a>后端的话</h3><p><strong>要学好JAVA</strong></p>
+<h3 id="后端的话">后端的话</h3>
+<p><strong>要学好JAVA</strong></p>
 ]]></content>
       <tags>
         <tag>面试心得</tag>
@@ -4810,17 +5082,20 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
     <title>步履不停，反思不止</title>
     <url>/2023/11/26/%E5%8F%8D%E6%80%9D11-26/</url>
     <content><![CDATA[<p><strong>11.26</strong></p>
-<h1 id="步履不停，反思不止"><a href="#步履不停，反思不止" class="headerlink" title="步履不停，反思不止"></a>步履不停，反思不止</h1><p>我是一个愚笨的人，脑子不灵光，记忆力不好，贪玩，习惯性的拿起手机就刷半天的短视频，等看完后疲惫的躺在床上睡大觉，第二天起来时赖床不愿意起，睁眼看手机，闭眼看手机。</p>
+<h1>步履不停，反思不止</h1>
+<p>我是一个愚笨的人，脑子不灵光，记忆力不好，贪玩，习惯性的拿起手机就刷半天的短视频，等看完后疲惫的躺在床上睡大觉，第二天起来时赖床不愿意起，睁眼看手机，闭眼看手机。</p>
 <p>我并不是一个主动的人，因为被动的接受和等待，错过了很多，失去了很多</p>
 <p>我也并不是一个自律的人，甚至是一个抵抗力很弱的人，看到手机就忍不住玩，这点在高中尤为明显</p>
 <p>我是得必须让人用鞭子打着才知道往前赶，在高中时，大一升大二的暑假跟大伙一起集训，也正是那时我认识了一些很牛的同学，包括年级第一呀，各科都很靠前的牛人。</p>
-<h2 id="竞赛时光"><a href="#竞赛时光" class="headerlink" title="竞赛时光"></a>竞赛时光</h2><p>不过也正常，那毕竟是竞赛班，至今也很怀念那段努力但快乐的岁月，那是我高中三年算是一段华彩的岁月</p>
+<h2 id="竞赛时光">竞赛时光</h2>
+<p>不过也正常，那毕竟是竞赛班，至今也很怀念那段努力但快乐的岁月，那是我高中三年算是一段华彩的岁月</p>
 <p>当时竞赛班的选拔是要至少两次都在年级前300，而我很垃圾，每次作业都完不成，自然而然成绩也说不上好，当时高一最好也就是年级500多名，班里十八九名的样子，我的水平是不够参加这的</p>
 <p>但是当时是十分的好奇，也觉得是一个能够改变的机遇，于是后来我是我们11班的qt，一起去找物理老师，也忘记当时是咱们说服物理老师让我们加入竞赛班的了，当时我们的物理成绩在班里还可以但不是最好，于是就开始了那段竞赛岁月</p>
 <p>竞赛的时候平常好像没啥时间，每周周天下午下了第一节课能休息休息，大概休息两个多小时，当时一些离家近的同学家长就会来学校给带点饭吃，见见面聊聊天，但是我知道我爸妈一般是不会过来，我也不大像让他们过来，一来是距离较远，家里也比较忙，二来是我也想在这个时间自己也休息休息，在学校溜达溜达，在班里打扫打扫卫生，收拾收拾自己的桌面（我的桌面大概是从初中就开始一直很乱，高中书更多，也是乱，现在直到大学了桌面也很乱，总是存着一些用不到但感觉有用的东西不舍的仍）</p>
 <p>后来参加竞赛后每周唯一的休息时间要去自习室也就是走班教室去练习，然后对于大概每个月放假的一次，一般的周五下午5点四十放学（后来好像高二高三了就改成了早上6点放学，起了床就可以离校了），然后周天晚上六点之前要收拾完回到教室，当时搞竞赛就要下午两点前到教室，进行一下午的竞赛学习。</p>
 <p>当时仍然记得我的竞赛物理老师说过，说你们现在是物理还可以，算比较靠前，但要真正每次都拿班里的物理第一，你得比其他人多做一本真题才能稳固你的优势。像我这种练平常的作业都写不完的根本就抽不出时间做，后来果真就泯然众人矣。</p>
-<h2 id="疫情岁月"><a href="#疫情岁月" class="headerlink" title="疫情岁月"></a>疫情岁月</h2><p>说到我的不自律，又要讲起这几年来我们刚刚度过的一件大事，当时是举国齐心，医护人员、军人、政府、各行各业都齐心协力，当时也发生了很多感人的事，也有很多人付出了汗水、泪水，乃至生命，我们不会忘记，感恩有人在如此艰难的时光为我们负重前行。</p>
+<h2 id="疫情岁月">疫情岁月</h2>
+<p>说到我的不自律，又要讲起这几年来我们刚刚度过的一件大事，当时是举国齐心，医护人员、军人、政府、各行各业都齐心协力，当时也发生了很多感人的事，也有很多人付出了汗水、泪水，乃至生命，我们不会忘记，感恩有人在如此艰难的时光为我们负重前行。</p>
 <p>在19年的12月左右，当时正值寒假，我也是在寒假比较松垮，作业仍然还差好多，然后就传来了疫情的消息，说这场疫情传染性很大，得了就很危险。过年前就开始了喊话，大家不要在去串门了，各个村里都组建了志愿者队，严防村口可疑人员入内，当时村村都拉起来横幅，武汉不久也开启了封城，当时如果村里有人说是武汉回来的都要十分害怕恐惧。</p>
 <p>然后经历了半个多月快要开学，但疫情形式仍然十分严峻没有转好，于是在开学前我们便得到了线上上课的通知，一时不知是好是坏，寒假作业虽然不用再补了，但是线上上课对于所有人来说都是一场未知数，大家谁都没有经历过这样，当时我们家也没有电脑，上网课时只能用手机来看和听，然后课后还要完成作业，当时的有线上早自习，线上晚自习，线上上课，上一上午或者一下午课手机都没电了，早晚自行是用腾讯会议开摄像头，上课是用钉钉进行上课，当时有语文好像在讲史记的高祖本纪和项羽列传，当时好像还在b站上让观看了霸王别姬，数学老师想用直播的方法但过于卡顿，后来换了方式，英语老师好像有时还会让我们进行播放ppt来展示，也会检查我们，物理老师硬件条件比较好用了数位板，能够给我们讲时写公式比较好看，化学好像也是多个老师轮流讲提前录课的，地理是记不清了，（当时好像没有好好学开学后地理考试从放假时的90多一下变成了开学的60多）</p>
 <p>就跟我说的一样，我本来就是没那么自律的人，当时的环境下好像是上完课后老师就会留下作业，可能开始时我还能跟上，到后面作业就根本做不完了，当时每一科都建了一个课程群，晚上就把自己的作业上传上去老师进行批改，当时能得一个A+的作业就感觉很不错</p>
@@ -4840,13 +5115,16 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
 <p>等开学后的现实考试才给了我一沉重打击，<strong>这便是我第二次的失利落后</strong></p>
 <p>最终不久考试结果就出来了，2.7，就没这么低过，不过确实是自己什么都没干好，</p>
 <ul>
-<li><p>不自律</p>
+<li>
+<p>不自律</p>
 </li>
-<li><p>刷手机</p>
+<li>
+<p>刷手机</p>
 </li>
 </ul>
 <p>等等等等的缺点吧，综合了我这几次一次次的失利</p>
-<h2 id="展望"><a href="#展望" class="headerlink" title="展望"></a>展望</h2><p>接下来，请积极改正习惯，去努力吧</p>
+<h2 id="展望">展望</h2>
+<p>接下来，请积极改正习惯，去努力吧</p>
 <p>色字头上一把刀，别一整天的光知道看美女</p>
 <p>一j十x，百日sm</p>
 <p>看p日历，供监督</p>
@@ -4855,7 +5133,7 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
 <p>早起、跑步、太极拳、太极剑，有很多美好的东西都可以尝试</p>
 <p>做一个高尚的人</p>
 <p>[罗翔老师讲解]</p>
-<p> <a href="https://www.bilibili.com/video/BV1uo4y1c7w8/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc">https://www.bilibili.com/video/BV1uo4y1c7w8/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc</a></p>
+<p><a href="https://www.bilibili.com/video/BV1uo4y1c7w8/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc">https://www.bilibili.com/video/BV1uo4y1c7w8/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc</a></p>
 <hr>
 <p><strong>12.03 周日</strong></p>
 <p>我觉得我需要深度的去刨析自己，近期的状态又有点不对</p>
@@ -4891,6 +5169,20 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
 <p>正如自己去南昌的这次，去了其实挺松散的，就是玩，没啥压力，就容易说放纵</p>
 <p>容易变成并不怎么好的方向</p>
 <p>诚然旅途之中的各种各样的事都会对我们带来历练，经历的多了，见的多了，即读万卷书，又行万里路</p>
+<h1>2024.3.16</h1>
+<p>我这个人也是不积极，做事喜欢往后拖延，好多的作业、课设、报告等都是一直拖着拖着拖着，开始时要是说紧这做还好，只要是中间一停就不愿意再做了，</p>
+<p>比如有好多的事儿:</p>
+<p>在2022年的寒假，数据结构的课设报告，本应该是开学后立马就交上的，开学后有两个星期的是考试，然后自己是考完试后好久才补上交给刘老师的（因为自己实在做不出来，接别人的添加修改的）</p>
+<p>还有地图学的第三次作业，那次自己没有交上，都拖到了暑假，幸好自己是在高老师办公室干活，然后补上的（当时也是临时借鉴别人的乱补上的）</p>
+<p>还有当时数据库的课设，按理也是应该上完机不久就交了，但自己还是拖了一两天后来自己送过去的</p>
+<p>那次遥感的课设到做的挺快，质量挺高的完成了</p>
+<p>java的课设，当时的一个登录和查询，jdbc链接数据库，也是两三周都没有任何进展，自己是真垃圾，P图修改才算弄了个报告</p>
+<p>还有webgis的作业，自己的网页确实制作的还是不错，但是却没怎么写报告，导致好多想表达的东西也并没有展示出来，后来拖了一两天交上去的</p>
+<p>还有遥感地学分析的论文，最后的大论文和最后一个课设，拖了一段时间，效果很差劲</p>
+<p>科技文献写作，也是一般般，当时还去南昌溜达了一圈，回来后搞的论文将就的弄下去了，也是一塌糊涂</p>
+<p>这次又是语言深入编程，nnd，也是一样的情况，两个星期，代码没写完，写个P的报告呀，而且老师还拖了一周收报告，还整这个d样，属实是美酒了</p>
+<p>nnd，tnnd；</p>
+<p>这么多次了，，还没学到点经验，我说呀，我这个大学，真是百度了！！</p>
 ]]></content>
       <categories>
         <category>反思</category>
@@ -4902,10 +5194,15 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
   <entry>
     <title>JSP基础编程01</title>
     <url>/2023/11/13/Jsp%E5%9F%BA%E7%A1%80%E7%BC%96%E7%A8%8B01/</url>
-    <content><![CDATA[<h1 id="上机题目"><a href="#上机题目" class="headerlink" title="上机题目"></a>上机题目</h1><h2 id="1-P77-6"><a href="#1-P77-6" class="headerlink" title="1. P77-6."></a>1. P77-6.</h2><p><strong>制作一个表单，输入账号和密码，如果账号和密码相等，显示登录成果，否者登录失败</strong></p>
+    <content><![CDATA[<h1>上机题目</h1>
+<h2 id="1-P77-6">1. P77-6.</h2>
+<p><strong>制作一个表单，输入账号和密码，如果账号和密码相等，显示登录成果，否者登录失败</strong></p>
 <p>考察JSP的传值</p>
-<h3 id="1-新建文档"><a href="#1-新建文档" class="headerlink" title="1.新建文档"></a>1.新建文档</h3><p><img src="/image-20231113191722945.png" alt="image-20231113191722945"></p>
-<h3 id="2-写出表单页面"><a href="#2-写出表单页面" class="headerlink" title="2.写出表单页面"></a>2.写出表单页面</h3><h3 id="3-进行读值"><a href="#3-进行读值" class="headerlink" title="3.进行读值"></a>3.进行读值</h3><p>不行了，需要回顾JSP编程基础</p>
+<h3 id="1-新建文档">1.新建文档</h3>
+<p><img src="/image-20231113191722945.png" alt="image-20231113191722945"></p>
+<h3 id="2-写出表单页面">2.写出表单页面</h3>
+<h3 id="3-进行读值">3.进行读值</h3>
+<p>不行了，需要回顾JSP编程基础</p>
 <p><strong>JSP表达式</strong></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&lt;%=变量/返回值/表达式%&gt;</span><br></pre></td></tr></table></figure>
 <p>用上面这种方式来进行读值</p>
@@ -4919,27 +5216,36 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;% %&gt;里面写JAVA代码</span><br></pre></td></tr></table></figure>
 <p><strong>JSP声明</strong></p>
 <ul>
-<li><p>声明后可以在全局使用</p>
+<li>
+<p>声明后可以在全局使用</p>
 </li>
-<li><p>但声明的代码段只能用于声明不能执行</p>
+<li>
+<p>但声明的代码段只能用于声明不能执行</p>
 </li>
 </ul>
-<p><strong>用JSP获取输入字段的方法  —request.getParameter</strong></p>
+<p><strong>用JSP获取输入字段的方法  --request.getParameter</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">String username = request.getParameter(&quot;username&quot;);</span><br><span class="line">String password = request.getParameter(&quot;password&quot;);</span><br></pre></td></tr></table></figure>
 <p><strong>将收到的字符串转为int的方法  Integer.parsInt</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name = Integer.parseInt(username);</span><br><span class="line">pwd = Integer.parseInt(password);</span><br></pre></td></tr></table></figure>
-<h2 id="2-P77-8-计算找零"><a href="#2-P77-8-计算找零" class="headerlink" title="2.P77-8 计算找零"></a>2.P77-8 计算找零</h2>]]></content>
+<h2 id="2-P77-8-计算找零">2.P77-8 计算找零</h2>
+]]></content>
   </entry>
   <entry>
     <title>Markdown语法手册</title>
     <url>/2023/11/11/Maerdown%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/</url>
-    <content><![CDATA[<h1 id="1-前提设置"><a href="#1-前提设置" class="headerlink" title="1. 前提设置"></a>1. 前提设置</h1><p>1.设置图片根目录   格式—图像—设置图片根目录</p>
+    <content><![CDATA[<h1>1. 前提设置</h1>
+<p>1.设置图片根目录   格式—图像—设置图片根目录</p>
 <p>2.格式—图像—插入本地图片时—复制图片到文件夹</p>
-<p>参考链接：<a href="https://mofan212.github.io/posts/How-to-use-Typora/index.html#%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86">https://mofan212.github.io/posts/How-to-use-Typora/index.html#%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86</a></p>
-<h1 id="2-Markdown语法"><a href="#2-Markdown语法" class="headerlink" title="2. Markdown语法"></a>2. Markdown语法</h1><h2 id="2-1-标题"><a href="#2-1-标题" class="headerlink" title="2.1 标题"></a>2.1 标题</h2><p>可以使用 # 表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应 ## 号，依次类推。</p>
-<h2 id="2-2-段落格式"><a href="#2-2-段落格式" class="headerlink" title="2.2 段落格式"></a>2.2 段落格式</h2><h3 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h3><p>段落的换行是使用两个以上空格加上回车  </p>
+<p>参考链接：<a href="https://mofan212.github.io/posts/How-to-use-Typora/index.html#%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86">https://mofan212.github.io/posts/How-to-use-Typora/index.html#图片处理</a></p>
+<h1>2. Markdown语法</h1>
+<h2 id="2-1-标题">2.1 标题</h2>
+<p>可以使用 # 表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应 ## 号，依次类推。</p>
+<h2 id="2-2-段落格式">2.2 段落格式</h2>
+<h3 id="段落">段落</h3>
+<p>段落的换行是使用两个以上空格加上回车</p>
 <p>或者输入完内容后直接回车即可</p>
-<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*斜体文本*</span></span><br><span class="line"><span class="emphasis">_斜体文本_</span></span><br><span class="line"><span class="strong">**粗体文本**</span></span><br><span class="line"><span class="strong">__粗体文本__</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*粗斜体文本*</span>**</span></span><br><span class="line"><span class="strong">__<span class="emphasis">_粗斜体文本_</span>__</span></span><br></pre></td></tr></table></figure>
+<h3 id="字体">字体</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*斜体文本*</span></span><br><span class="line"><span class="emphasis">_斜体文本_</span></span><br><span class="line"><span class="strong">**粗体文本**</span></span><br><span class="line"><span class="strong">__粗体文本__</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*粗斜体文本*</span>**</span></span><br><span class="line"><span class="strong">__<span class="emphasis">_粗斜体文本_</span>__</span></span><br></pre></td></tr></table></figure>
 <p>示例：</p>
 <p><em>斜体</em></p>
 <p><em>斜体文本</em></p>
@@ -4947,18 +5253,22 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
 <p>粗体是斜体的两倍</p>
 <p><strong>粗体文本</strong></p>
 <p>三个是粗斜体</p>
-<p><strong><em>粗斜体文本</em></strong></p>
-<p><strong><em>粗斜体文本</em></strong></p>
-<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br></pre></td></tr></table></figure>
+<p><em><strong>粗斜体文本</strong></em></p>
+<p><em><strong>粗斜体文本</strong></em></p>
+<h3 id="分割线">分割线</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br></pre></td></tr></table></figure>
 <hr>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br></pre></td></tr></table></figure>
 <hr>
-<h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">两边加波浪线</span><br><span class="line"></span><br><span class="line">~~文字~~</span><br></pre></td></tr></table></figure>
-<p><del>文字</del></p>
-<h3 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">下划线可以在两边加上U标签：<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>下划线可以表示强调<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="删除线">删除线</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">两边加波浪线</span><br><span class="line"></span><br><span class="line">~~文字~~</span><br></pre></td></tr></table></figure>
+<p><s>文字</s></p>
+<h3 id="下划线">下划线</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">下划线可以在两边加上U标签：<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>下划线可以表示强调<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <p><u>下划线可以表示强调</u></p>
-<h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a><del>脚注</del></h3><p>脚注，类似与上标，与参考文献的形式类似</p>
-<p><sup><a href="#fn_要注明的文本" id="reffn_要注明的文本">要注明的文本</a></sup></p>
+<h3 id="脚注"><s>脚注</s></h3>
+<p>脚注，类似与上标，与参考文献的形式类似</p>
+<p>[^要注明的文本]</p>
 <p>不过好像不能使用了</p>
 <p>参考链接：</p>
 <p><a href="https://mofan212.github.io/posts/How-to-use-Typora/index.html#fnref1">https://mofan212.github.io/posts/How-to-use-Typora/index.html#fnref1</a></p>
@@ -4971,9 +5281,14 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
   <entry>
     <title>DEM三维显示  利用arcscence</title>
     <url>/2023/11/11/DEM%E4%B8%89%E7%BB%B4%E6%98%BE%E7%A4%BA/</url>
-    <content><![CDATA[<h1 id="DEM三维显示-利用arcscence"><a href="#DEM三维显示-利用arcscence" class="headerlink" title="DEM三维显示  利用arcscence"></a>DEM三维显示  利用arcscence</h1><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="1-第一步就是数据获取，现在将全国的12-5m精度进行数据免费分享，"><a href="#1-第一步就是数据获取，现在将全国的12-5m精度进行数据免费分享，" class="headerlink" title="1.第一步就是数据获取，现在将全国的12.5m精度进行数据免费分享，"></a>1.第一步就是数据获取，现在将全国的12.5m精度进行数据免费分享，</h3><p>关注微信订阅号“xbgis”，扫描关注，关注后发送dem_12.5即可获得</p>
-<h3 id="2-将DEM数据加载进来"><a href="#2-将DEM数据加载进来" class="headerlink" title="2.将DEM数据加载进来"></a>2.将DEM数据加载进来</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20231111161312503.png" alt="image-20231111161312503"></p>
-<h3 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h3>]]></content>
+    <content><![CDATA[<h1>DEM三维显示  利用arcscence</h1>
+<h2 id="步骤">步骤</h2>
+<h3 id="1-第一步就是数据获取，现在将全国的12-5m精度进行数据免费分享，">1.第一步就是数据获取，现在将全国的12.5m精度进行数据免费分享，</h3>
+<p>关注微信订阅号“xbgis”，扫描关注，关注后发送dem_12.5即可获得</p>
+<h3 id="2-将DEM数据加载进来">2.将DEM数据加载进来</h3>
+<p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20231111161312503.png" alt="image-20231111161312503"></p>
+<h3 id="3">3.</h3>
+]]></content>
       <tags>
         <tag>GIS</tag>
         <tag>DEM</tag>
@@ -4982,7 +5297,8 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
   <entry>
     <title>向网页中加入了云游长大页面</title>
     <url>/2023/11/11/%E5%90%91%E7%BD%91%E9%A1%B5%E4%B8%AD%E6%B7%BB%E5%8A%A0%E4%BA%86%E4%BA%91%E6%B8%B8%E9%95%BF%E5%A4%A7/</url>
-    <content><![CDATA[<h1 id="向网页中加入了云游长大页面"><a href="#向网页中加入了云游长大页面" class="headerlink" title="向网页中加入了云游长大页面"></a>向网页中加入了云游长大页面</h1><p>无意中找云游一中时在想能不能找到长大的全景图，就顺藤摸瓜，进入了云游一中的发布平台——720yun</p>
+    <content><![CDATA[<h1>向网页中加入了云游长大页面</h1>
+<p>无意中找云游一中时在想能不能找到长大的全景图，就顺藤摸瓜，进入了云游一中的发布平台——720yun</p>
 <p>尝试着搜索了一下长江大学，发现还真有</p>
 <p>但是目前难以解决的问题就是网站存在广告，很影响观感</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F%E4%BA%91%E6%B8%B8%E9%95%BF%E5%A4%A7%2F%E5%B9%BF%E5%91%8A.jpg" alt=""></p>
@@ -5003,21 +5319,31 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
   <entry>
     <title>地形切线制作  利用渔网</title>
     <url>/2023/11/11/%E5%9C%B0%E5%BD%A2%E5%88%87%E7%BA%BF%E5%88%B6%E4%BD%9C-%E6%B8%94%E7%BD%91/</url>
-    <content><![CDATA[<h1 id="地形切线制作-利用渔网"><a href="#地形切线制作-利用渔网" class="headerlink" title="地形切线制作  利用渔网"></a>地形切线制作  利用渔网</h1><p>发现一个好玩的，用线条将地形显现出来，与以往等高线方向不同，快捷且高效</p>
-<h2 id="1-打开ArcScene，将DEM数据导入"><a href="#1-打开ArcScene，将DEM数据导入" class="headerlink" title="1.打开ArcScene，将DEM数据导入"></a>1.打开ArcScene，将DEM数据导入</h2><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20231111170441475.png" alt="image-20231111170441475"></p>
-<h2 id="2-想要好看一点可以选择色带"><a href="#2-想要好看一点可以选择色带" class="headerlink" title="2.想要好看一点可以选择色带"></a>2.想要好看一点可以选择色带</h2><h2 id="3-利用创建渔网工具进行创建"><a href="#3-利用创建渔网工具进行创建" class="headerlink" title="3.利用创建渔网工具进行创建"></a>3.利用创建渔网工具进行创建</h2><p>数据管理工具-&gt; 要素类-&gt;创建渔网</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20231111171149178.png" alt="image-20231111171149178"></p>
-<h3 id="4-生成了按列的渔网"><a href="#4-生成了按列的渔网" class="headerlink" title="4.生成了按列的渔网"></a>4.生成了按列的渔网</h3><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20231111171409904.png" alt="image-20231111171409904"></p>
-<h3 id="5-立体化展示"><a href="#5-立体化展示" class="headerlink" title="5.立体化展示"></a>5.立体化展示</h3><p>重要的一步来了</p>
+    <content><![CDATA[<h1>地形切线制作  利用渔网</h1>
+<p>发现一个好玩的，用线条将地形显现出来，与以往等高线方向不同，快捷且高效</p>
+<h2 id="1-打开ArcScene，将DEM数据导入">1.打开ArcScene，将DEM数据导入</h2>
+<p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20231111170441475.png" alt="image-20231111170441475"></p>
+<h2 id="2-想要好看一点可以选择色带">2.想要好看一点可以选择色带</h2>
+<h2 id="3-利用创建渔网工具进行创建">3.利用创建渔网工具进行创建</h2>
+<p>数据管理工具-&gt; 要素类-&gt;创建渔网</p>
+<p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20231111171149178.png" alt="image-20231111171149178"></p>
+<h3 id="4-生成了按列的渔网">4.生成了按列的渔网</h3>
+<p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20231111171409904.png" alt="image-20231111171409904"></p>
+<h3 id="5-立体化展示">5.立体化展示</h3>
+<p>重要的一步来了</p>
 <p>右键选择生成渔网的属性，基本高度-&gt;从表面获取高程改为在自定义表面上浮动-&gt;确定</p>
-<p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20231111171846278.png" alt="image-20231111171846278"></p>
-<h2 id="6-确定后可以看到比较立体的展示出来了"><a href="#6-确定后可以看到比较立体的展示出来了" class="headerlink" title="6.确定后可以看到比较立体的展示出来了"></a>6.确定后可以看到比较立体的展示出来了</h2><p><img src="C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20231111172053347.png" alt="image-20231111172053347"></p>
-<h2 id="7-可以对行列均生成渔网，重复以上操作"><a href="#7-可以对行列均生成渔网，重复以上操作" class="headerlink" title="7.可以对行列均生成渔网，重复以上操作"></a>7.可以对行列均生成渔网，重复以上操作</h2><p><img src="F:\大三上课程\WebGIS\hexo\hexo_code\hexoblog\public\img\top-img\创建渔网.png" alt="image-20231111172347214"></p>
-<h2 id="本次收获"><a href="#本次收获" class="headerlink" title="本次收获"></a>本次收获</h2><p>1.学会了使用创建渔网工具，可以快速生成地形切线展示地貌</p>
+<p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20231111171846278.png" alt="image-20231111171846278"></p>
+<h2 id="6-确定后可以看到比较立体的展示出来了">6.确定后可以看到比较立体的展示出来了</h2>
+<p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20231111172053347.png" alt="image-20231111172053347"></p>
+<h2 id="7-可以对行列均生成渔网，重复以上操作">7.可以对行列均生成渔网，重复以上操作</h2>
+<p><img src="F:%5C%E5%A4%A7%E4%B8%89%E4%B8%8A%E8%AF%BE%E7%A8%8B%5CWebGIS%5Chexo%5Chexo_code%5Chexoblog%5Cpublic%5Cimg%5Ctop-img%5C%E5%88%9B%E5%BB%BA%E6%B8%94%E7%BD%91.png" alt="image-20231111172347214"></p>
+<h2 id="本次收获">本次收获</h2>
+<p>1.学会了使用创建渔网工具，可以快速生成地形切线展示地貌</p>
 <p>2.知道了创建渔网时选择的行列相当于采样间隔，行为100，列为1，就只会对行生成切线，且数字越小越精细</p>
 <p>全国12.5m精度DEM数据，请关注微信公众号，xbgis，关注后回复DEM12.5即可获得链接</p>
-<p><img src="..\..\source\TY_img\xbgis.jpg" alt="xbgis"></p>
-<h3 id="参考资料-致谢"><a href="#参考资料-致谢" class="headerlink" title="参考资料/致谢"></a>参考资料/致谢</h3><p>【地形切线技法解析】 <a href="https://www.bilibili.com/video/BV19M411f7BX/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc">https://www.bilibili.com/video/BV19M411f7BX/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc</a></p>
+<p><img src="....%5Csource%5CTY_img%5Cxbgis.jpg" alt="xbgis"></p>
+<h3 id="参考资料-致谢">参考资料/致谢</h3>
+<p>【地形切线技法解析】 <a href="https://www.bilibili.com/video/BV19M411f7BX/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc">https://www.bilibili.com/video/BV19M411f7BX/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc</a></p>
 ]]></content>
       <tags>
         <tag>GIS</tag>
@@ -5028,12 +5354,16 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
   <entry>
     <title>hexo博客主题魔改自查</title>
     <url>/2023/11/07/%E6%88%91%E6%9B%B4%E6%8D%A2%E4%BA%86butterfly%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>更换为了Butterfly主题</p>
+    <content><![CDATA[<h2 id="第一章">第一章</h2>
+<p>更换为了Butterfly主题</p>
 <p>目前可以实现开屏动画，后续仍需要魔改</p>
 <hr>
-<h1 id="hexo个人魔改教程自查"><a href="#hexo个人魔改教程自查" class="headerlink" title="hexo个人魔改教程自查"></a>hexo个人魔改教程自查</h1><h2 id="hexo修改个性签名-公告："><a href="#hexo修改个性签名-公告：" class="headerlink" title="hexo修改个性签名/公告："></a>hexo修改个性签名/公告：</h2><p>在_confog.butterfly.yml文件中进行查询，查找公告、签名内容，就可以立即定位，方便快捷</p>
+<h1>hexo个人魔改教程自查</h1>
+<h2 id="hexo修改个性签名-公告：">hexo修改个性签名/公告：</h2>
+<p>在_confog.butterfly.yml文件中进行查询，查找公告、签名内容，就可以立即定位，方便快捷</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F02hexo%E8%87%AA%E6%9F%A5%E6%95%99%E7%A8%8B%2F%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E4%BF%AE%E6%94%B9.png" alt="image-20240316113650253"></p>
-<h2 id="hexo添加字数统计和阅读时间"><a href="#hexo添加字数统计和阅读时间" class="headerlink" title="hexo添加字数统计和阅读时间"></a>hexo添加字数统计和阅读时间</h2><blockquote>
+<h2 id="hexo添加字数统计和阅读时间">hexo添加字数统计和阅读时间</h2>
+<blockquote>
 <p>参考链接：<a href="https://cloud.tencent.com/developer/article/2023058">hexo-butterfly-数据统计相关引入-腾讯云开发者社区-腾讯云 (tencent.com)</a></p>
 </blockquote>
 <p>1.安装wordcount插件</p>
@@ -5043,7 +5373,8 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="attr">wordcount</span>:</span><br><span class="line">  <span class="attr">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_wordcount</span>: <span class="literal">true</span></span><br><span class="line">  <span class="attr">min2read</span>: <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_wordcount</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <p>3.测试结果：</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F02hexo%E8%87%AA%E6%9F%A5%E6%95%99%E7%A8%8B%2F%E5%AD%97%E6%95%B0%E5%92%8C%E6%97%B6%E9%97%B4%E7%BB%9F%E8%AE%A1%E6%88%90%E5%8A%9F.png" alt="成功开启字数统计"></p>
-<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><p><a href="https://www.bilibili.com/read/cv12633102/">https://www.bilibili.com/read/cv12633102/</a></p>
+<h3 id="致谢">致谢</h3>
+<p><a href="https://www.bilibili.com/read/cv12633102/">https://www.bilibili.com/read/cv12633102/</a></p>
 ]]></content>
       <tags>
         <tag>hexo美化</tag>
@@ -5052,10 +5383,13 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
   <entry>
     <title>我的第一篇博客文章</title>
     <url>/2023/11/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容1</p>
+    <content><![CDATA[<h2 id="第一章">第一章</h2>
+<p>内容1</p>
 <hr>
-<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://localhost:5000/">http://localhost:5000/</a></p>
+<h1>第二章</h1>
+<hr>
+<h2 id="参考文献">参考文献</h2>
+<p><a href="http://localhost:5000/">http://localhost:5000/</a></p>
 ]]></content>
       <tags>
         <tag>创站历程</tag>
@@ -5065,13 +5399,18 @@ VFC=(NDVI-NDVIsoil)/(NDVIveg-NDVIsoil)</script><p>以下太长不看了，重点
     <title>Hello World</title>
     <url>/2023/11/03/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
