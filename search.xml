@@ -5184,6 +5184,17 @@ Arcgis中calcuator公式:<br>
 <h2 id="hexo修改个性签名-公告：">hexo修改个性签名/公告：</h2>
 <p>在_confog.butterfly.yml文件中进行查询，查找公告、签名内容，就可以立即定位，方便快捷</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F02hexo%E8%87%AA%E6%9F%A5%E6%95%99%E7%A8%8B%2F%E4%B8%AA%E6%80%A7%E7%AD%BE%E5%90%8D%E4%BF%AE%E6%94%B9.png" alt="image-20240316113650253"></p>
+<h2 id="hexo添加字数统计和阅读时间">hexo添加字数统计和阅读时间</h2>
+<blockquote>
+<p>参考链接：<a href="https://cloud.tencent.com/developer/article/2023058">hexo-butterfly-数据统计相关引入-腾讯云开发者社区-腾讯云 (tencent.com)</a></p>
+</blockquote>
+<p>1.安装wordcount插件</p>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 方式1：</span></span><br><span class="line"><span class="attribute">npm</span> install hexo-wordcount --save </span><br><span class="line"><span class="comment"># 方式2 </span></span><br><span class="line">yarn add hexo-wordcount</span><br></pre></td></tr></table></figure>
+<p>2.配置文件中开启 字数统计</p>
+<p>修改主题配置文件<code>_config.butterfly.yml</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="attr">wordcount</span>:</span><br><span class="line">  <span class="attr">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="attr">post_wordcount</span>: <span class="literal">true</span></span><br><span class="line">  <span class="attr">min2read</span>: <span class="literal">true</span></span><br><span class="line">  <span class="attr">total_wordcount</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>3.测试结果：</p>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F02hexo%E8%87%AA%E6%9F%A5%E6%95%99%E7%A8%8B%2F%E5%AD%97%E6%95%B0%E5%92%8C%E6%97%B6%E9%97%B4%E7%BB%9F%E8%AE%A1%E6%88%90%E5%8A%9F.png" alt="成功开启字数统计"></p>
 <h3 id="致谢">致谢</h3>
 <p><a href="https://www.bilibili.com/read/cv12633102/">https://www.bilibili.com/read/cv12633102/</a></p>
 ]]></content>
