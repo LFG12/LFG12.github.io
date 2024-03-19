@@ -4075,6 +4075,90 @@
       </categories>
   </entry>
   <entry>
+    <title></title>
+    <url>/2024/03/19/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1>AE二次开发课</h1>
+<h2 id="许可准备">许可准备</h2>
+<img src="C:/Users/Lenovo/AppData/Roaming/Typora/typora-user-images/image-20240319160951831.png" alt="image-20240319160951831" style="zoom:50%;" />
+<p>2.验证许可</p>
+<img src="C:/Users/Lenovo/AppData/Roaming/Typora/typora-user-images/image-20240319161129264.png" alt="image-20240319161129264" style="zoom:50%;" />
+<p><img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/%E8%AE%B8%E5%8F%AF%E9%AA%8C%E8%AF%811.png" alt="image-20240319163417319"></p>
+<p>3.在VS中新建一个ArcGIS的内容（看编辑器能否正常用）</p>
+<p>4.打开老师的程序：</p>
+<p><img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/%E6%B6%88%E5%8F%B9%E5%8F%B7.png" alt="image-20240319161721173"></p>
+<h1>今天的任务：</h1>
+<ul>
+<li>1.将代码调试好；  尽量使用教机</li>
+<li>2.自己研发一个鹰眼组件</li>
+</ul>
+<p><img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/%E9%B9%B0%E7%9C%BC.png" alt="image-20240319164132765"></p>
+<p>app应用程序和lib的控件库</p>
+<p>需要自己有lib设计库进行验证</p>
+<p>基于AE自定义一个鹰眼空间；</p>
+<p>一个小地图，能够同步去看</p>
+<p>与外部链接的方法越简单越好；</p>
+<p>封装一个控件：把老师做好的看懂；</p>
+<p>如果可能，自己去写；</p>
+<p>调研一个怎样在.net平台封装成com组件；</p>
+<ul>
+<li>3.做完了可以试试怎么将.net的封装成组件</li>
+</ul>
+<p>先确认是否有AE的许可，再用编码平台</p>
+<p>目前遇到的问题：组件中没有ESRI的东西；</p>
+<img src="C:/Users/Lenovo/AppData/Roaming/Typora/typora-user-images/image-20240319165454031.png" alt="image-20240319165454031" style="zoom:67%;" />
+<p>解决方法：去查看修改注册表使VS2022适应于</p>
+<ul>
+<li>
+<p>尝试使用老师提供的方法进行修改（VS2022+ArcGISengine）</p>
+<p><a href="https://blog.csdn.net/m0_46491761/article/details/105399616">https://blog.csdn.net/m0_46491761/article/details/105399616</a></p>
+</li>
+</ul>
+<ol>
+<li>
+<p>因为以及有了VS2022和Arcgis10.2,所以按照教程进行Engine10.2的安装：<a href="https://mp.weixin.qq.com/s/IIEh_flG0iVnkEUe7heVng">https://mp.weixin.qq.com/s/IIEh_flG0iVnkEUe7heVng</a>   <img src="C:/Users/Lenovo/AppData/Roaming/Typora/typora-user-images/image-20240319172143325.png" alt="image-20240319172143325" style="zoom: 67%;" /></p>
+</li>
+<li>
+<p>期间遇到一个问题：<img src="C:/Users/Lenovo/AppData/Roaming/Typora/typora-user-images/image-20240319172524046.png" alt="image-20240319172524046" style="zoom:67%;" /></p>
+</li>
+<li>
+<p>启动lince<img src="C:/Users/Lenovo/AppData/Roaming/Typora/typora-user-images/image-20240319172646014.png" alt="image-20240319172646014" style="zoom:67%;" /></p>
+</li>
+<li>
+<p>问题得到解决：<img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/local%E8%A7%A3%E5%86%B3.png" alt="image-20240319173103979"></p>
+</li>
+<li>
+<p>又遇到一个问题：<img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/image-20240319174548410-17108415521411.png" alt="点击安装需要注册表"></p>
+</li>
+<li>
+<p>此时参考这篇文章修改注册表：[vs2019+ArcEngine10.2安装教程-CSDN博客](<a href="https://blog.csdn.net/qq_48035027/article/details/129482187?ops_request_misc=%7B%22request%5Fid%22%3A%22171083985916800184175318%22%2C%22scm%22%3A%2220140713.130102334.pc%5Fall.%22%7D&amp;request_id=171083985916800184175318&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-1-129482187-null-null.142%5Ev99%5Epc_search_result_base1&amp;utm_term=vs2019%2B">https://blog.csdn.net/qq_48035027/article/details/129482187?ops_request_misc={&quot;request_id&quot;%3A&quot;171083985916800184175318&quot;%2C&quot;scm&quot;%3A&quot;20140713.130102334.pc_all.&quot;}&amp;request_id=171083985916800184175318&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-1-129482187-null-null.142^v99^pc_search_result_base1&amp;utm_term=vs2019%2B</a> ArcEngine10.2安装教程&amp;spm=1018.2226.3001.4187)</p>
+<blockquote>
+<p>在注册表HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\10.0</p>
+<p>新建数值名称为InstallDir与ShellFolder的字符串值,数值数据设置为如下图 :</p>
+<p><img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/image-20240319175311036-17108419924583.png" alt="image-20240319175311036"></p>
+</blockquote>
+</li>
+<li>
+<p><img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/image-20240319175409047-17108420517924.png" alt="image-20240319175409047"></p>
+</li>
+<li></li>
+<li>
+<p>打开这个位置，发现里面只要默认，需要自己添加两个：编辑-添加<img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/image-20240319175049901-17108418511882.png" alt="自己添加两个"></p>
+</li>
+</ol>
+<p>选择查看-刷新，然后继续安装SDK</p>
+<p>但是这个又遇到了问题；</p>
+<p><img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/image-20240319181216041-17108431380875.png" alt="image-20240319181216041"></p>
+<p>在工具箱中添加esri的组件：</p>
+<p><img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/image-20240319182142820-17108437041546.png" alt="image-20240319182142820"></p>
+<p>将.net和com组件添加到ESRI中：</p>
+<p><img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/image-20240319182238529-17108437599617.png" alt="image-20240319182238529"></p>
+<p>添加COM组件时遇到些问题：</p>
+<p><img src="../../../../image/%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE/32AE%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B%E8%AE%B0%E5%BD%95/image-20240319182314714-17108437961338.png" alt="image-20240319182314714"></p>
+<p>无法在com组件中找到esri的组件；失败</p>
+<p>建议降低VS版本-2017</p>
+]]></content>
+  </entry>
+  <entry>
     <title>运动是良药</title>
     <url>/2024/03/18/32%E8%BF%90%E5%8A%A8%E6%98%AF%E8%89%AF%E8%8D%AF/</url>
     <content><![CDATA[<h1>运动是良药</h1>
@@ -4281,6 +4365,7 @@
 从没有见过的色彩。在他看来，观察能量场与识别色彩是同一回事，唤醒某些潜在的感知功<br>
 能，而从理论上说，这是每个人都能做到的。”</p>
 </blockquote>
+<h2 id="第三个觉悟">第三个觉悟</h2>
 ]]></content>
       <categories>
         <category>阅读分享</category>
