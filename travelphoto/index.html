@@ -23,7 +23,7 @@
 		window.onload = function () {
 			// 初始化天地图
 			var map = new T.Map("map");
-
+			console.log("地图初始化成功！")
 			// 设置地图中心和缩放级别（以中华人民共和国为例）
 			//var chinaCenter = new T.LngLat(104.195397, 35.861660); // 中国中心的经纬度坐标
 			//map.centerAndZoom(chinaCenter, 5);
@@ -41,6 +41,7 @@
 			var photoCoordinates = [];
 
 			photoData.forEach(function (photo) {
+				console.log("图片加载成功！")
 				var img = new Image();
 				img.onload = function () {
 					//console.log('Image loaded:', photo.filename);
