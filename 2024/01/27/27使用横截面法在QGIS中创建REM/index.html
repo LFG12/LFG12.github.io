@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>获取1m精度的DEM数据 | LFG^S Blog</title><meta name="author" content="知识雪豹"><meta name="copyright" content="知识雪豹"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="声明：本教程转载于https:&#x2F;&#x2F;dancoecarto.com&#x2F;downloading-and-preparing-lidar-dems-for-rem-processing，非本人制作，仅供学习交流使用。  在本教程中，您将使用横截面方法将沿所选河流的数字高程模型 （DEM） 转换为 QGIS 中的相对高程模型 （REM）。如果您还没有尝试过使用IDW方法在QGIS中创建REM教程，我建议您">
+<meta property="og:type" content="article">
+<meta property="og:title" content="获取1m精度的DEM数据">
+<meta property="og:url" content="http://xbgis.gitee.io/2024/01/27/27%E4%BD%BF%E7%94%A8%E6%A8%AA%E6%88%AA%E9%9D%A2%E6%B3%95%E5%9C%A8QGIS%E4%B8%AD%E5%88%9B%E5%BB%BAREM/index.html">
+<meta property="og:site_name" content="LFG^S Blog">
+<meta property="og:description" content="声明：本教程转载于https:&#x2F;&#x2F;dancoecarto.com&#x2F;downloading-and-preparing-lidar-dems-for-rem-processing，非本人制作，仅供学习交流使用。  在本教程中，您将使用横截面方法将沿所选河流的数字高程模型 （DEM） 转换为 QGIS 中的相对高程模型 （REM）。如果您还没有尝试过使用IDW方法在QGIS中创建REM教程，我建议您">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image/%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/27%E4%B8%8B%E8%BD%BD1mden.jpg">
+<meta property="article:published_time" content="2024-01-27T07:13:03.000Z">
+<meta property="article:modified_time" content="2024-01-15T15:07:09.000Z">
+<meta property="article:author" content="知识雪豹">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image/%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/27%E4%B8%8B%E8%BD%BD1mden.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://xbgis.gitee.io/2024/01/27/27%E4%BD%BF%E7%94%A8%E6%A8%AA%E6%88%AA%E9%9D%A2%E6%B3%95%E5%9C%A8QGIS%E4%B8%AD%E5%88%9B%E5%BB%BAREM/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '获取1m精度的DEM数据',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-01-15 23:07:09'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="source/css/background.css"><link rel="stylesheet" href="/css/background.css"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2Fimg%2Flogo.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> GIS</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/map"><span> 世界地图</span></a></li><li><a class="site-page child" href="/travelphoto/index.html"><span> 足迹地图</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 实验室</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/running_page"><span> Running</span></a></li><li><a class="site-page child" href="/run_excel"><span> 跑步里程记录表</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/xcm"><span> 熊出没的记忆</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 校园印象</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/yzu"><span> 长大官网</span></a></li><li><a class="site-page child" href="/yycd"><span> 云游长大</span></a></li><li><a class="site-page child" href="/lcyz"><span> 聊城一中</span></a></li><li><a class="site-page child" href="/yyly"><span> 云游一中</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 网页链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image/%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/27%E4%B8%8B%E8%BD%BD1mden.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="LFG^S Blog"><span class="site-name">LFG^S Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> GIS</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/map"><span> 世界地图</span></a></li><li><a class="site-page child" href="/travelphoto/index.html"><span> 足迹地图</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 实验室</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/running_page"><span> Running</span></a></li><li><a class="site-page child" href="/run_excel"><span> 跑步里程记录表</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/xcm"><span> 熊出没的记忆</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 校园印象</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/yzu"><span> 长大官网</span></a></li><li><a class="site-page child" href="/yycd"><span> 云游长大</span></a></li><li><a class="site-page child" href="/lcyz"><span> 聊城一中</span></a></li><li><a class="site-page child" href="/yyly"><span> 云游一中</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 网页链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">获取1m精度的DEM数据</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-01-27T07:13:03.000Z" title="发表于 2024-01-27 15:13:03">2024-01-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-01-15T15:07:09.000Z" title="更新于 2024-01-15 23:07:09">2024-01-15</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/GIS%E5%88%B6%E5%9B%BE/">GIS制图</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="获取1m精度的DEM数据"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p><strong>声明</strong>：本教程转载于<a target="_blank" rel="noopener" href="https://dancoecarto.com/downloading-and-preparing-lidar-dems-for-rem-processing%EF%BC%8C%E9%9D%9E%E6%9C%AC%E4%BA%BA%E5%88%B6%E4%BD%9C%EF%BC%8C%E4%BB%85%E4%BE%9B%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81%E4%BD%BF%E7%94%A8%E3%80%82">https://dancoecarto.com/downloading-and-preparing-lidar-dems-for-rem-processing，非本人制作，仅供学习交流使用。</a></p>
+</blockquote>
+<p>在本教程中，您将使用横截面方法将沿所选河流的数字高程模型 （DEM） 转换为 QGIS 中的相对高程模型 （REM）。如果您还没有尝试<a target="_blank" rel="noopener" href="https://dancoecarto.com/creating-rems-in-qgis-the-idw-method">过使用IDW方法在QGIS中创建REM</a>教程，我建议您首先从这些方法开始，因为它们通常更快，更容易复制。</p>
+<p>示例数据集是内华达州西部卡森河沿岸的裸露土地雷达 DEM（又名数字地形模型或 DTM）。</p>
+<p>本教程面向具有一定 GIS 使用经验并在其计算机上安装了 <a target="_blank" rel="noopener" href="https://qgis.org/en/site/">QGIS</a> 的用户。用户还需要沿着他们选择的河流使用 DEM 才能开始使用（<a target="_blank" rel="noopener" href="https://dancoecarto.com/downloading-and-preparing-lidar-dems-for-rem-processing">如果您需要 DEM，请转到此处</a>）。本教程可能需要大约 3 小时才能完成，但时间可能会有所不同，具体取决于河流的长度和处理时间。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/8dc60b0a-fdc2-4c3d-bcfe-9a24baf8a642_rw_1920.jpg?h=d50bbb6930e83caa517eb15c3dead5dd" alt=""></p>
+<p>REMs，简介</p>
+<p>在洪泛区，激光雷达数字高程模型 （DEM） 可以转换为相对高程模型 （REM），以便更好地可视化使用航空照片或标准 DEM 难以辨别的河流要素。 REM 也称为河流以上高度 （HAR） 栅格，是通过对基线高程进行去趋势以跟随河流的水面而生成的。在 DEM 中，基线高程（0 英尺或米）位于海平面，河流下游部分的高程低于上游部分。在 REM 中，基线高程（0 英尺或米）会随着河流的水面而去趋势化 - 当人们远离河流时，高程呈上升趋势，显示河流上方的“相对”高度。</p>
+<p>REM 通过生动地显示蜿蜒的疤痕、梯田和牛轭湖等河流特征，在辨别过去河道迁移的位置方面非常有用。此类信息在河道迁移和洪水研究以及许多其他工程、栖息地和文化评估中非常有用。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/fc51cea7-be63-423e-9c01-d8001c62d406_rw_1920.jpg?h=c6ba787d847baac54454f886f292608f" alt=""></p>
+<p>左图：卡森河的数字高程模型，基线高程 （0） 位于海平面。右图：河流水面基线高程 （0） 相同区域的相对高程模型 （REM）。</p>
+<p>然而，我个人制作河流REM的另一个原因是它们本质上是美丽的。许多 REM 转化为美妙流畅的艺术图像，是河流自然历史的视觉时间胶囊。它们是一门既能满足科学又能满足对世界的审美好奇心的主题。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/174a3b3e-ec64-4419-aed7-ba6f325c9ea7_rw_1920.jpg?h=ba27f731ec7b936859b6087eb41d16ff" alt=""></p>
+<p>可以使用多种不同的方法创建 REM。我为两种技术编写了QGIS方法，<a target="_blank" rel="noopener" href="https://dancoecarto.com/creating-rems-in-qgis-the-idw-method">即IDW方法</a>（上一个教程）和Cross-Section方法（本教程）。这些方法改编自 <a target="_blank" rel="noopener" href="https://apps.ecology.wa.gov/publications/documents/1406025.pdf">Olson 等人 （2014）</a> 描述的 ArcGIS Desktop 步骤。这些技术使用点 （IDW） 和线（横截面）GIS 数据，这些数据具有与河流表面相对应的高程。对这些数据进行插值以创建新的栅格表面，然后从原始 DEM 栅格中减去这些数据以创建 REM。</p>
+<p>有时，需要对模型进行多次迭代才能准确表示高程为 0 的水面。降低模型精度的一些常见因素和特征包括：高程梯度陡峭的河流、蜿蜒度高的河流、水坝、陡峭的瀑布、潮汐区、辫状河道和不同时间段的镶嵌数据集。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/fcc584c7-8ec6-420a-a40e-447b1511a60b_rw_1920.jpg?h=97bb8f8c856d1acd134b457261db7093" alt=""></p>
+<p>使用高分辨率激光雷达 DEM 表示的大型、缓慢移动、蜿蜒的河流最适合这些技术，但如果您的河流和数据集不符合这些标准，请不要因此而停下脚步。我从一系列河流类型和栅格分辨率中看到了非常有趣的结果。</p>
+<p>这些是我编写的第一批教程，因此我欢迎任何可以使它们更好的反馈。与所有 GIS 一样，有多种方法可以做事，因此，如果有更有效的步骤可以改进此处描述的方法，<a target="_blank" rel="noopener" href="https://dancoecarto.com/contact-1">请告诉我</a>！ 我希望将来添加本教程（以及其他教程）的视频版本，反馈将使这些工作更容易。</p>
+<p>有关REM的更多信息，请单击下面的海报。</p>
+<p>[</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/b3f0522e-385d-449f-8df3-667559089023_rw_1920.jpg?h=151bba31447cfec9f4ac67ab1da6be88" alt=""></p>
+<p>](<a target="_blank" rel="noopener" href="https://www.dnr.wa.gov/publications/ger_presentations_dmt_2016_coe.pdf">https://www.dnr.wa.gov/publications/ger_presentations_dmt_2016_coe.pdf</a>)</p>
+<p>创建 REM</p>
+<p>一个。 创建一个工程文件夹，并将河流 DEM 放在该文件夹中。</p>
+<p>打开QGIS，然后将<a target="_blank" rel="noopener" href="https://qgis.org/en/site/">QGIS</a>工程保存到您的工程文件夹中。</p>
+<p>在本教程中，我使用了QGIS 3.16汉诺威长期版本，但对于所有最新版本，步骤应该是相同的。</p>
+<p>请记住在本教程中定期保存您的项目，这样您就不会丢失您的工作！</p>
+<p>QGIS打开后，将DEM（在本例中为carson_river.tif）拖到“图层”窗口中，或使用数据源管理器加载它。</p>
+<p>如果在添加数据时看到“选择转换”窗口，请选择“确定”。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/4bd67d10-3cc4-4347-9f92-d3237c38c73e_rw_1920.jpg?h=47337fc9c39dd26ddd3d6634ed136510" alt=""></p>
+<p>湾。 选择识别要素工具（见下文）。</p>
+<p>选择工具后，单击河流上游和下游端附近的栅格，以获取沿河流的一般高程范围（结果窗口中的波段 1）。</p>
+<p>您可能需要单击并探索一下才能获得范围。</p>
+<p>在脑海中记下您在研究区域上游和下游两端发现的高海拔和低海拔（或将其写下来）。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/6efabb2b-4748-49da-8407-9554b3d54c1f_rw_1920.jpg?h=9a56ba12924f381e7837f9c4bf8ccf55" alt=""></p>
+<p>三. 右键单击“图层”窗口中的 DEM，然后选择“属性”。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/243d0d9f-e0bc-4ae8-a124-a6b7aac25873_rw_1200.jpg?h=814d7e99cd98ff1919cabade2cf4fffb" alt=""></p>
+<p>D. 在图层属性窗口中，选择左侧面板中的符号系统。</p>
+<p>选择“渲染类型”下拉列表，然后选择“单波段伪彩色”。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/e00e9b01-b0f3-4245-aa1b-912c89deab9e_rw_1200.jpg?h=624b932515b5993960e2371c06898df0" alt=""></p>
+<p>E. 在“最小值”和“最大值”框中输入采样高程范围的低值和高值。</p>
+<p>选择“色带”下拉列表，然后选择从浅色到深色的色带，最好是没有太多不和谐颜色变化的色带。</p>
+<p>选择“确定”或“应用”，将标高和颜色更改应用于 DEM。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/1817dad2-600e-43ab-9b3c-08e3637701b4_rw_1200.jpg?h=99155369371514f5760b4038b22a59d5" alt=""></p>
+<p>六. 查看栅格，以确保您可以看到您感兴趣的河流部分。</p>
+<p>根据需要调整图层属性窗口中的最小/最大高程，直到沿河有良好的颜色范围（如下图所示）。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/6e776739-bfc5-40f8-81f7-e6c5fecd6cbb_rw_1920.jpg?h=584db9786d5385790a7563baf03362b6" alt=""></p>
+<p>G. 制作 DEM 的副本。右键单击“图层”窗口中的 DEM，然后选择“复制图层”。</p>
+<p>然后在“图层”窗口中单击鼠标右键，然后选择“粘贴图层/组”以粘贴复制的图层。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/42d34a45-e9f7-47a4-8fa5-9c3d57551161_rw_1200.jpg?h=02438a4112490eb98f0100cd991f0e93" alt=""></p>
+<p>H. 右键单击图层窗口中的顶部 DEM 图层，然后选择属性。</p>
+<p>在图层属性窗口中，选择渲染类型下拉列表，然后选择山体阴影。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/0a171277-8e14-44c0-998e-42a0a4863d00_rw_600.jpg?h=937a5125e024edfef0d47379ace2282f" alt=""></p>
+<p>我。 在图层属性窗口中，在 Z 因子框中输入 5 以夸大山体阴影的高程（如果需要，稍后可根据您的偏好进行调整）。</p>
+<p>在“显色性&gt;混合模式”下，选择“柔光”。</p>
+<p>然后选择右下角的“确定”。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/16513745-b275-41b9-998a-01dce67af922_rw_1920.jpg?h=0a79db952b4807c5de952f7aa724caf9" alt=""></p>
+<p>J. 夸张的柔和浅色山体阴影应该为您的 DEM 增加一点清晰度，这将使主要河道在即将到来的步骤中更容易看到。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/c0acc02e-ee27-48a9-8fd5-763ec21e5565_rw_1920.jpg?h=7386374ea208a276300cf19113de9751" alt=""></p>
+<p>K. Create cross section file.</p>
+<p>Add a line file type of your choice.</p>
+<p>In this case I added a shapefile (shown below).</p>
+<p>Select the file location and name (I usually name it something like river_name_xs).</p>
+<p>For Geometry type select Line.</p>
+<p>Check that the CRS is the same as your input file.</p>
+<p>Under New field type zval for Name, Select Decimal Number for Type, then click on the Add to Fields List.</p>
+<p>Select Ok.</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/81999e6d-954d-4600-8702-5d35c53e53eb_rw_1920.jpg?h=e8ac1e1ec9d18d68a2bc84399be7a8e9" alt=""></p>
+<p>L.转至图层属性&gt;符号系统以获取新线文件。</p>
+<p>单击顶部附近的简单线，然后选择一种明亮的颜色，您将能够在 DEM 的背景下看到。</p>
+<p>在描边宽度框中输入“1”。选择“确定”。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/859d1b41-3c60-456b-962f-42afcd659c98_rw_1920.jpg?h=62a7bb284934853d481d6b3fd588f538" alt=""></p>
+<p>米。 在“图层”窗口中选择横截面线文件后，单击“切换编辑”按钮以启用编辑</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/7224f91a-3c4f-48d4-a0f9-e08efd1b768b_rw_1200.jpg?h=bdf7210bd8b14966f5ffca25061d0286" alt=""></p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/0b5c91cc-2ce1-4925-ac0d-1dec473a0f0d_rw_1200.jpg?h=744d7404283f1f46f90481f0e857066c" alt=""></p>
+<p>O. 创建垂直于河流的横截面线。</p>
+<p>使线足够长以覆盖洪泛区（或要包含在 REM 中的区域）。</p>
+<p>单击一次以启动行，依此类推以创建更多行节点。</p>
+<p>绘制最后一个节点后，右键单击以结束该行。</p>
+<p>将 ID 号添加到完成该行时出现的属性框中。</p>
+<p>您可能需要调整线段的角度才能以 90 度角过河（请参阅下面的横截面示例）。</p>
+<p>沿河以相等（或接近相等）间隔创建线。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/05f6ae3e-18ef-4a8b-aa08-d4997051741c_rw_1920.jpg?h=46de7a604b96d98244325e1c5da69b74" alt=""></p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/42a32a0e-78b6-4faa-b378-aefb22cd6170_rw_1920.jpg?h=b5b9f22ebdc744e7d8c83c21e6425a19" alt=""></p>
+<p>问。 如果在创建线后需要编辑任何线，请使用顶点工具（如下所示）。</p>
+<p>激活工具后，将光标悬停在节点或线段上，直到它变为红色，然后单击一次进行选择。</p>
+<p>After that you can move the node or segment to the desired location.</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/d64431ac-f380-4e5b-9ce5-218c002d0f2b_rw_1920.jpg?h=cc5b39953025e93437f3ce2a38bde233" alt=""></p>
+<p>R. 完成所有横截面线后，右键单击横截面线图层，然后选择打开属性表。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/c57d5405-503f-41b6-9304-62bab4a2f8cb_rw_1200.jpg?h=f72da316c0079670b9b59fa96558f356" alt=""></p>
+<p>在属性表中，选择第一行，该行将在屏幕上以黄色突出显示所选线。</p>
+<p>放大屏幕上所选线与河流相交的区域（见下文）。</p>
+<p>使用识别要素工具，右键单击线与其相交的河流，在出现该框时选择 DEM 图层。</p>
+<p>在识别结果窗口中，找到高程值（在本例中为波段 1 的值），然后将该值输入到属性表中所选线的 zval 属性中。</p>
+<p>使用河流中心线文件和一些额外的步骤，可以自动提取此高程。但是，在大多数情况下，使用上述步骤手动执行此操作会更快。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/12deb790-0fec-4dc0-a537-b13c94dfe677_rw_1920.jpg?h=a8c97b34df2d66413df5f5c4838c448a" alt=""></p>
+<p>T. 输入每条横截面线的高程值。</p>
+<p>全部完成后，单击“切换编辑”按钮停止编辑。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/c3d9cfa3-a637-465e-a17c-bce10134163c_rw_1200.jpg?h=f7e2fc8aecb76e7fa21dab15e5e42d01" alt=""></p>
+<p>你。 请务必在“停止编辑”窗口中选择“保存”（见下文）。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/db6b61f4-f7df-45b1-80b4-27daf06f05c8_rw_1920.jpg?h=7d1337ed84e1c2f9763ccf1997a8327d" alt=""></p>
+<p>五. 转到“处理&gt;工具箱”，然后在屏幕右侧显示的“处理工具箱”中选择“插值”。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/c1e12119-aa8f-4569-835b-3fa0047366f0_rw_1920.jpg?h=74df480032cd083838c67c42b8055a52" alt=""></p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/1f5db461-cf3a-4ae4-8183-07580ad91ac6_rw_1920.jpg?h=d2c2e4811a469991615db7620b76f94e" alt=""></p>
+<p>十. 在 TIN 插值工具窗口中，选择矢量图层的横截面图层。</p>
+<p>对于插值属性，选择 zval 属性。</p>
+<p>单击绿色加号按钮，然后在“类型”下拉菜单下，选择“断线”。</p>
+<p>在右侧的范围下拉菜单中，选择从图层计算，然后选择横截面图层。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/5bb35990-f82a-44fa-b2f9-5ca9f55ead5d_rw_1920.jpg?h=bdc922d738dad591ea65d174647c1392" alt=""></p>
+<p>Y. 对于像素大小，输入原始 DEM 的像素大小（在下面的示例中，对于我们的 1 米 DEM，像素大小为 1）。</p>
+<p>如果您不知道 DEM 的分辨率，可以在图层属性&gt;信息&gt;像素大小中找到它。</p>
+<p>在“插值”下，单击右侧的下拉菜单（在下面圈出），然后选择“保存到文件”。</p>
+<p>然后选择文件的位置和名称。</p>
+<p>然后单击“运行”。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/b5c04ede-05c2-44c2-82f6-e8b14c90cfc6_rw_1920.jpg?h=a219e795e338b4ba248756da269fbc1c" alt=""></p>
+<p>Z. 当锡插值工具完成并将新文件添加到图层窗口时，选择栅格&gt;栅格计算器。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/53c7d446-805c-40a4-ae2a-e6398f0528c4_rw_1200.jpg?h=7eb2b894b3eadb9baeda370a00ef85ce" alt=""></p>
+<p>在栅格计算器窗口中，选择输出图层旁边的文件名和位置（这将是您的 REM）。</p>
+<p>对于输出格式，选择 GeoTIFF。</p>
+<p>双击栅格波段窗口中的 DEM 图层，将其添加到下面的栅格计算器表达式框中。</p>
+<p>然后单击减号以在表达式中添加减号。</p>
+<p>最后，双击新的 TIN 图层将其添加到表达式中，然后单击“确定”。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/94537f82-1433-4c7e-996c-a9aa6bf439c9_rw_1920.jpg?h=2ca29a055f39b3b667072cffeac5f45c" alt=""></p>
+<p>BB型。 该过程完成后，新的 REM 文件将添加到“图层”窗口中，其外观类似于下面的文件。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/16a3ed63-b988-4068-823c-3c03cccbd1fc_rw_1920.jpg?h=537beef48605ef3ab908a7d073bb9a3d" alt=""></p>
+<p>抄送。在新 REM 文件的“图层属性”窗口中，为“渲染类型”选择“单波段伪彩色”。</p>
+<p>输入 0 作为最小值，输入 10 作为最大值。</p>
+<p>然后选择与原始 DEM 相同的色带，选择“确定”。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/6055192f-3a5c-4bb3-bcef-2062f9236cc6_rw_1200.jpg?h=6632f0bc7b9a2f69e5a1eea04b09cc35" alt=""></p>
+<p>DD的。 您的 REM 希望看起来像以下示例。</p>
+<p>您可以调整这些值（尤其是最大值）以获得所需的视觉效果。</p>
+<p>如果河面上存在颜色不均匀的部分（色带的 0 值结束），则可能需要返回并编辑一些横截面高程值，然后重新运行工具/流程，直到获得更平滑的效果。</p>
+<p>请记住，来自不同时间段的水坝、陡峭瀑布、潮汐区、辫状通道和镶嵌数据集等要素也可能在 REM 的视觉外观中引入错误/异常。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/db3bb189-b871-4bad-9d2c-0b748ab3aa4e_rw_1920.jpg?h=175e44b929939d314e91882056aa333e" alt=""></p>
+<p>EE的。 这是下面的相同 REM（放大一点），值范围为 0 分钟/5 最大值。</p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/2267d19b-c625-4472-ad2d-036bb2a19db0_rw_1920.jpg?h=fb7dc79978d31342a5b0d0c2f0926073" alt=""></p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/aa2a4cdd-b98e-439f-b612-0fbac7cdbe1f_rw_1920.jpg?h=70d79cfcfab677063b5c69d7c93723b6" alt=""></p>
+<p><img src="https://cdn.myportfolio.com/44b8374c-5758-4aa0-b67e-1a860c4711e6/59e4daf6-4a87-425e-8017-7f782d19c6e3_rw_1920.jpg?h=e5b846fa4e7a4b12155dd209c8c60edf" alt=""></p>
+<p>恭喜您完成本教程！希望你觉得这有用。如果您有任何问题、意见或建议来改进它，请使用<a target="_blank" rel="noopener" href="https://dancoecarto.com/contact-1">联系页面</a>向我发送消息。这是我的第一个教程之一，所以我期待着纠正我犯的任何错误！我计划在未来添加此教程和其他教程的视频版本。</p>
+<blockquote>
+<p>附：使用ArcGIS绘制rem：【【ArcGIS制图】相对高程模型REM制作】 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1hY411g7JE/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc">https://www.bilibili.com/video/BV1hY411g7JE/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc</a></p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://xbgis.gitee.io">知识雪豹</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://xbgis.gitee.io/2024/01/27/27%E4%BD%BF%E7%94%A8%E6%A8%AA%E6%88%AA%E9%9D%A2%E6%B3%95%E5%9C%A8QGIS%E4%B8%AD%E5%88%9B%E5%BB%BAREM/">http://xbgis.gitee.io/2024/01/27/27%E4%BD%BF%E7%94%A8%E6%A8%AA%E6%88%AA%E9%9D%A2%E6%B3%95%E5%9C%A8QGIS%E4%B8%AD%E5%88%9B%E5%BB%BAREM/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://xbgis.gitee.io" target="_blank">LFG^S Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image/%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/27%E4%B8%8B%E8%BD%BD1mden.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/01/29/28%E5%9F%8E%E5%B8%82%E8%82%8C%E7%90%86%E5%88%B6%E4%BD%9C/" title="城市肌理制图"><img class="cover" src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F28%E5%9F%8E%E5%B8%82%E8%82%8C%E7%90%86.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">城市肌理制图</div></div></a></div><div class="next-post pull-right"><a href="/2024/01/16/25-2%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%9C%A8ECS%E5%AE%89%E8%A3%85winserver%E8%BF%9B%E8%A1%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" title="从0开始在阿里云ECS安装winserver"><img class="cover" src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F00.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">从0开始在阿里云ECS安装winserver</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2Fimg%2Flogo.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">知识雪豹</div><div class="author-info__description">韶光易逝，劝君惜取少年时</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://lfg12.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:1753638163@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">在时间不多的大学生活里去努力的提高自己，技术能力，思维能力，自控能力，执行能力。</div></div><div class="card-widget" id="w-chat"><div class="item-headline"><i class="fab fa-weixin"></i><span>关注公众号，资源找的到</span></div><div class="item-content"><img class="aside-img" style="width: 100%;height: 100%;max-width: 100%;border-radius: 7px;padding: 0" src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E5%85%AC%E4%BC%97%E5%8F%B7%E5%9B%BE%E7%89%87%2F%E5%BE%AE%E4%BF%A1%E6%90%9C%E4%B8%80%E6%90%9C.png"></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/05/20/41%E9%95%BF%E5%A4%A7%E4%BC%98%E7%A7%80%E6%A0%A1%E5%8F%8B%E5%86%AF%E7%82%BC%E6%95%99%E6%8E%88%E8%AE%B2%E5%BA%A7/" title="长江大学优秀校友冯炼教授讲座分享"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F00.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="长江大学优秀校友冯炼教授讲座分享"/></a><div class="content"><a class="title" href="/2024/05/20/41%E9%95%BF%E5%A4%A7%E4%BC%98%E7%A7%80%E6%A0%A1%E5%8F%8B%E5%86%AF%E7%82%BC%E6%95%99%E6%8E%88%E8%AE%B2%E5%BA%A7/" title="长江大学优秀校友冯炼教授讲座分享">长江大学优秀校友冯炼教授讲座分享</a><time datetime="2024-05-20T13:20:45.000Z" title="发表于 2024-05-20 21:20:45">2024-05-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/10/39%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" title="个人简历"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F00.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="个人简历"/></a><div class="content"><a class="title" href="/2024/04/10/39%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" title="个人简历">个人简历</a><time datetime="2024-04-10T02:56:00.586Z" title="发表于 2024-04-10 10:56:00">2024-04-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/07/38%E8%80%95%E5%9C%B0%E5%9C%B0%E5%9D%97%E6%A3%80%E6%9F%A5%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4/" title="耕地地块检查操作方法"><div style="background: arcgis"></div></a><div class="content"><a class="title" href="/2024/04/07/38%E8%80%95%E5%9C%B0%E5%9C%B0%E5%9D%97%E6%A3%80%E6%9F%A5%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4/" title="耕地地块检查操作方法">耕地地块检查操作方法</a><time datetime="2024-04-07T11:51:37.089Z" title="发表于 2024-04-07 19:51:37">2024-04-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/06/37Running_page%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" title="Running_page部署"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F00.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Running_page部署"/></a><div class="content"><a class="title" href="/2024/04/06/37Running_page%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" title="Running_page部署">Running_page部署</a><time datetime="2024-04-06T10:46:35.047Z" title="发表于 2024-04-06 18:46:35">2024-04-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/05/36%E6%AD%A6%E6%B1%89%E6%97%85%E6%B8%B8%E6%8E%A8%E8%8D%90/" title="武汉旅游推荐"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F00.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="武汉旅游推荐"/></a><div class="content"><a class="title" href="/2024/04/05/36%E6%AD%A6%E6%B1%89%E6%97%85%E6%B8%B8%E6%8E%A8%E8%8D%90/" title="武汉旅游推荐">武汉旅游推荐</a><time datetime="2024-04-05T01:30:43.652Z" title="发表于 2024-04-05 09:30:43">2024-04-05</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image/%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/27%E4%B8%8B%E8%BD%BD1mden.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By 知识雪豹</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><img src="https://static.dy208.cn/o_1dfilp8ruo521thr1hvf18ji17soa.png"><a href="https://beian.miit.gov.cn/#/Integrated/index"  style="color:white" target="_blank">鲁ICP备2023050019号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><div class="js-pjax"></div><div><canvas id="snow" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:99999;pointer-events:none"></canvas></div><script>const notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));</script><script async type="text/javascript" src="https://cdn.jsdelivr.net/gh/Candinya/Kratos-Rebirth@latest/source/js/snow.min.js"></script><script src="/js/snow.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>多线程下载usgsDEM数据 | LFG^S Blog</title><meta name="author" content="知识雪豹"><meta name="copyright" content="知识雪豹"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="参考链接：多线程下载USGS Lidar Explorer Map点云数据 - 行走的蓑衣客 - 博客园 ： https:&#x2F;&#x2F;www.cnblogs.com&#x2F;suoyike1001&#x2F;p&#x2F;16998574.html  数据获取 1.进入数据下载网站： USGS Lidar Explorer Map ：https:&#x2F;&#x2F;apps.nationalmap.gov&#x2F;lidar-explorer&#x2F;#&#x2F; （实">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多线程下载usgsDEM数据">
+<meta property="og:url" content="http://xbgis.gitee.io/2024/02/02/30%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BDdem%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/index.html">
+<meta property="og:site_name" content="LFG^S Blog">
+<meta property="og:description" content="参考链接：多线程下载USGS Lidar Explorer Map点云数据 - 行走的蓑衣客 - 博客园 ： https:&#x2F;&#x2F;www.cnblogs.com&#x2F;suoyike1001&#x2F;p&#x2F;16998574.html  数据获取 1.进入数据下载网站： USGS Lidar Explorer Map ：https:&#x2F;&#x2F;apps.nationalmap.gov&#x2F;lidar-explorer&#x2F;#&#x2F; （实">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F30usgs%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD.jpg">
+<meta property="article:published_time" content="2024-02-02T09:08:07.598Z">
+<meta property="article:modified_time" content="2024-03-12T14:03:33.106Z">
+<meta property="article:author" content="知识雪豹">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F30usgs%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://xbgis.gitee.io/2024/02/02/30%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BDdem%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '多线程下载usgsDEM数据',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-12 22:03:33'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="source/css/background.css"><link rel="stylesheet" href="/css/background.css"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2Fimg%2Flogo.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> GIS</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/map"><span> 世界地图</span></a></li><li><a class="site-page child" href="/travelphoto/index.html"><span> 足迹地图</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 实验室</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/running_page"><span> Running</span></a></li><li><a class="site-page child" href="/run_excel"><span> 跑步里程记录表</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/xcm"><span> 熊出没的记忆</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 校园印象</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/yzu"><span> 长大官网</span></a></li><li><a class="site-page child" href="/yycd"><span> 云游长大</span></a></li><li><a class="site-page child" href="/lcyz"><span> 聊城一中</span></a></li><li><a class="site-page child" href="/yyly"><span> 云游一中</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 网页链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F30usgs%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="LFG^S Blog"><span class="site-name">LFG^S Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> GIS</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/map"><span> 世界地图</span></a></li><li><a class="site-page child" href="/travelphoto/index.html"><span> 足迹地图</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 实验室</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/running_page"><span> Running</span></a></li><li><a class="site-page child" href="/run_excel"><span> 跑步里程记录表</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/xcm"><span> 熊出没的记忆</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 校园印象</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/yzu"><span> 长大官网</span></a></li><li><a class="site-page child" href="/yycd"><span> 云游长大</span></a></li><li><a class="site-page child" href="/lcyz"><span> 聊城一中</span></a></li><li><a class="site-page child" href="/yyly"><span> 云游一中</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 网页链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">多线程下载usgsDEM数据</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-02T09:08:07.598Z" title="发表于 2024-02-02 17:08:07">2024-02-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-12T14:03:33.106Z" title="更新于 2024-03-12 22:03:33">2024-03-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="多线程下载usgsDEM数据"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>参考链接：多线程下载USGS Lidar Explorer Map点云数据 - 行走的蓑衣客 - 博客园 ：</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/suoyike1001/p/16998574.html">https://www.cnblogs.com/suoyike1001/p/16998574.html</a></p>
+</blockquote>
+<h2 id="数据获取">数据获取</h2>
+<p><strong>1.进入数据下载网站：</strong></p>
+<p>USGS Lidar Explorer Map ：<a target="_blank" rel="noopener" href="https://apps.nationalmap.gov/lidar-explorer/#/">https://apps.nationalmap.gov/lidar-explorer/#/</a></p>
+<p>（实测在国内不科学上网可以正常进行检索，但加载上可能会有点卡顿）</p>
+<p><strong>2.选择DEM数据</strong></p>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F30-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BDusgs%2F%E9%80%89%E6%8B%A9dem%E9%80%89%E9%A1%B9.jpg" alt="选择dem选项"></p>
+<p><strong>3.进行DEM数据检索</strong></p>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F30-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BDusgs%2F%E6%A3%80%E7%B4%A2%E5%BD%B1%E5%83%8F.jpg" alt="检索影像"></p>
+<p><strong>4.观察检索结果，下载txt下载集合</strong></p>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F30-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BDusgs%2F%E4%B8%8B%E8%BD%BD.jpg" alt="下载"></p>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F30-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BDusgs%2F%E4%BF%9D%E5%AD%98.jpg" alt="保存"></p>
+<p><strong>5.处理观察结果集合，选择可以完成覆盖的且尽量一致的数据</strong>，比如2018就都是2018年的，</p>
+<p>新建一个excel表格来存放链接数据：</p>
+<p>第一行为表头，数据从第二行开始</p>
+<table>
+<thead>
+<tr>
+<th>fid</th>
+<th>name</th>
+<th>url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>usgs001</td>
+<td><a target="_blank" rel="noopener" href="https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NE_Northeast_2020_D20/TIFF/USGS_1M_14_x60y465_NE_Northeast_2020_D20.tif">https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NE_Northeast_2020_D20/TIFF/USGS_1M_14_x60y465_NE_Northeast_2020_D20.tif</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>usgs002</td>
+<td><a target="_blank" rel="noopener" href="https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NE_Northeast_2020_D20/TIFF/USGS_1M_14_x60y466_NE_Northeast_2020_D20.tif">https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/NE_Northeast_2020_D20/TIFF/USGS_1M_14_x60y466_NE_Northeast_2020_D20.tif</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>usgs003</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<p>将需要下载的数据填写完整</p>
+<p>名称那里可以选择最后字段（利用ctrl+E快捷键）</p>
+<h2 id="下载数据">下载数据</h2>
+<p><strong>1.copy代码，安装import对应的xlrd等库</strong>（<code>pip install xlrd</code>或<code>pip install xlrd -i  https://pypi.tuna.tsinghua.edu.cn/simple/</code>）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> xlrd</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"><span class="keyword">import</span> threading</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"> <span class="comment"># [yk1]</span></span><br><span class="line">a = xlrd.open_workbook(<span class="string">&#x27;20240202.xls&#x27;</span>, <span class="string">&#x27;r&#x27;</span>)  <span class="comment"># 打开.xlsx文件,在这之前要把所有的下载链接都填到excel表中</span></span><br><span class="line">sht = a.sheets()[<span class="number">0</span>]  <span class="comment"># 打开表格中第一个sheet</span></span><br><span class="line"><span class="comment"># row1 = sht.row_values(0)</span></span><br><span class="line"><span class="comment"># 设置要下载的数据的范围，对应于 Excel 中的行数</span></span><br><span class="line">start = <span class="number">1</span></span><br><span class="line"><span class="comment"># 获取excel表的所有行数</span></span><br><span class="line">nrows = sht.nrows;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fetch</span>(<span class="params">url, filename</span>):</span><br><span class="line">    r = requests.get(url)</span><br><span class="line">    url2 = url[-<span class="number">3</span>:]  <span class="comment"># 根据链接地址获取文件后缀</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">dir</span> = <span class="string">r&quot;F:\MAP\jihe0202\\&quot;</span> + filename + <span class="string">&quot;.&quot;</span> + url2  <span class="comment"># 保存文件夹路径</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="built_in">dir</span>, <span class="string">&quot;wb&quot;</span>) <span class="keyword">as</span> code:</span><br><span class="line">        code.write(r.content)  <span class="comment"># 保存文件</span></span><br><span class="line">    <span class="built_in">print</span>(url)  <span class="comment"># 打印当前的 URL</span></span><br><span class="line">    jindu = (i - start) / (nrows - start) * <span class="number">100</span>  <span class="comment"># 计算下载进度</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;下载进度：&quot;</span>, jindu, <span class="string">&quot;%&quot;</span>)  <span class="comment"># 显示下载进度</span></span><br><span class="line"></span><br><span class="line"><span class="comment">######单进程下载#########</span></span><br><span class="line"><span class="comment"># for i in range(start, nrows):</span></span><br><span class="line"><span class="comment">#     url = sht.cell(i, 3).value  # 依次读取每行第3列的数据，也就是 URL</span></span><br><span class="line"><span class="comment">#     if url:</span></span><br><span class="line"><span class="comment">#         logging.info(url)</span></span><br><span class="line"><span class="comment">#         f = requests.get(url)</span></span><br><span class="line"><span class="comment">#         roadName=sht.cell(i,2).value</span></span><br><span class="line"><span class="comment">#         markNo=sht.cell(i, 1).value</span></span><br><span class="line"><span class="comment">#         ii = str(roadName)+&quot;_&quot;+markNo  # 按照下载顺序（行号）构造文件名,filename</span></span><br><span class="line"><span class="comment">#         url2 = url[-3:]  # 根据链接地址获取文件后缀</span></span><br><span class="line"><span class="comment">#         dir = r&quot;G:\Mississippi\ALS Region\ALS Data\\&quot;+ii + &quot;.&quot; + url2  # 构造完整文件名称</span></span><br><span class="line"><span class="comment">#         with open(dir, &quot;wb&quot;) as code:</span></span><br><span class="line"><span class="comment">#             code.write(f.content)  # 保存文件</span></span><br><span class="line"><span class="comment">#         print(url)  # 打印当前的 URL</span></span><br><span class="line"><span class="comment">#         jindu = (i - start) / (nrows - start) * 100  # 计算下载进度</span></span><br><span class="line"><span class="comment">#         print(&quot;下载进度：&quot;, jindu, &quot;%&quot;)  # 显示下载进度</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#######多进程下载#######</span></span><br><span class="line">t1 = time.time()</span><br><span class="line">t_list = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(start, nrows):</span><br><span class="line">    user_agent_list = [</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) Gecko/20100101 Firefox/61.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.5; en-US; rv:1.9.2.15) Gecko/20110303 Firefox/3.6.15&quot;</span>,</span><br><span class="line">    ]</span><br><span class="line">    headers = &#123;<span class="string">&#x27;User-Agent&#x27;</span>: random.choice(user_agent_list)&#125;  <span class="comment"># 分配随机user agent，避免认为是恶意攻击</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    url = sht.cell(i, <span class="number">2</span>).value  <span class="comment"># 依次读取每行第3列的数据，也就是 URL</span></span><br><span class="line">    <span class="keyword">if</span> url:</span><br><span class="line">        logging.info(url)</span><br><span class="line">        roadName = sht.cell(i, <span class="number">1</span>).value</span><br><span class="line">        <span class="comment"># markNo=sht.cell(i, 1).value</span></span><br><span class="line">        <span class="comment"># filename = str(roadName)+&quot;_&quot;+markNo  # 按照下载顺序（行号）构造文件名</span></span><br><span class="line">        filename = sht.cell(i, <span class="number">1</span>).value</span><br><span class="line">        <span class="comment"># filename = url.split(&#x27;.&#x27;)[2].split(&#x27;_&#x27;)[-3]</span></span><br><span class="line">        t = threading.Thread(target=fetch, args=(url, filename))</span><br><span class="line">        t_list.append(t)</span><br><span class="line">        t.start()</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> t_list:</span><br><span class="line">    t.join()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;多线程版爬虫耗时：&quot;</span>, time.time() - t1)</span><br></pre></td></tr></table></figure>
+<p><strong>2.修改excel文件路径</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = xlrd.open_workbook(<span class="string">&#x27;20240202.xls&#x27;</span>, <span class="string">&#x27;r&#x27;</span>) </span><br></pre></td></tr></table></figure>
+<p><strong>3.选择下载到的位置：</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">dir</span> = <span class="string">r&quot;F:\MAP\jihe0202\\&quot;</span> + filename + <span class="string">&quot;.&quot;</span> + url2  <span class="comment"># 修改保存文件的文件名</span></span><br></pre></td></tr></table></figure>
+<p><strong>4.设定好后即可运行</strong></p>
+<p>只有没报错一般就是开始运行了，等一段时间，弹出耗时：xx时即表示下载完成；</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://xbgis.gitee.io">知识雪豹</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://xbgis.gitee.io/2024/02/02/30%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BDdem%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/">http://xbgis.gitee.io/2024/02/02/30%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BDdem%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://xbgis.gitee.io" target="_blank">LFG^S Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F30usgs%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/03/12/29ArcGIS%E5%AE%9E%E7%8E%B0REM%E5%88%B6%E4%BD%9C/" title="ArcGIS实现REM制作"><img class="cover" src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F00.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">ArcGIS实现REM制作</div></div></a></div><div class="next-post pull-right"><a href="/2024/01/29/28%E5%9F%8E%E5%B8%82%E8%82%8C%E7%90%86%E5%88%B6%E4%BD%9C/" title="城市肌理制图"><img class="cover" src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F28%E5%9F%8E%E5%B8%82%E8%82%8C%E7%90%86.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">城市肌理制图</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2Fimg%2Flogo.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">知识雪豹</div><div class="author-info__description">韶光易逝，劝君惜取少年时</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">40</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://lfg12.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:1753638163@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">在时间不多的大学生活里去努力的提高自己，技术能力，思维能力，自控能力，执行能力。</div></div><div class="card-widget" id="w-chat"><div class="item-headline"><i class="fab fa-weixin"></i><span>关注公众号，资源找的到</span></div><div class="item-content"><img class="aside-img" style="width: 100%;height: 100%;max-width: 100%;border-radius: 7px;padding: 0" src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E5%85%AC%E4%BC%97%E5%8F%B7%E5%9B%BE%E7%89%87%2F%E5%BE%AE%E4%BF%A1%E6%90%9C%E4%B8%80%E6%90%9C.png"></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96"><span class="toc-number">1.</span> <span class="toc-text">数据获取</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%95%B0%E6%8D%AE"><span class="toc-number">2.</span> <span class="toc-text">下载数据</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/05/20/41%E9%95%BF%E5%A4%A7%E4%BC%98%E7%A7%80%E6%A0%A1%E5%8F%8B%E5%86%AF%E7%82%BC%E6%95%99%E6%8E%88%E8%AE%B2%E5%BA%A7/" title="长江大学优秀校友冯炼教授讲座分享"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F00.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="长江大学优秀校友冯炼教授讲座分享"/></a><div class="content"><a class="title" href="/2024/05/20/41%E9%95%BF%E5%A4%A7%E4%BC%98%E7%A7%80%E6%A0%A1%E5%8F%8B%E5%86%AF%E7%82%BC%E6%95%99%E6%8E%88%E8%AE%B2%E5%BA%A7/" title="长江大学优秀校友冯炼教授讲座分享">长江大学优秀校友冯炼教授讲座分享</a><time datetime="2024-05-20T13:20:45.000Z" title="发表于 2024-05-20 21:20:45">2024-05-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/10/39%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" title="个人简历"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F00.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="个人简历"/></a><div class="content"><a class="title" href="/2024/04/10/39%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" title="个人简历">个人简历</a><time datetime="2024-04-10T02:56:00.586Z" title="发表于 2024-04-10 10:56:00">2024-04-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/07/38%E8%80%95%E5%9C%B0%E5%9C%B0%E5%9D%97%E6%A3%80%E6%9F%A5%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4/" title="耕地地块检查操作方法"><div style="background: arcgis"></div></a><div class="content"><a class="title" href="/2024/04/07/38%E8%80%95%E5%9C%B0%E5%9C%B0%E5%9D%97%E6%A3%80%E6%9F%A5%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4/" title="耕地地块检查操作方法">耕地地块检查操作方法</a><time datetime="2024-04-07T11:51:37.089Z" title="发表于 2024-04-07 19:51:37">2024-04-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/06/37Running_page%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" title="Running_page部署"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F00.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Running_page部署"/></a><div class="content"><a class="title" href="/2024/04/06/37Running_page%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95/" title="Running_page部署">Running_page部署</a><time datetime="2024-04-06T10:46:35.047Z" title="发表于 2024-04-06 18:46:35">2024-04-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/05/36%E6%AD%A6%E6%B1%89%E6%97%85%E6%B8%B8%E6%8E%A8%E8%8D%90/" title="武汉旅游推荐"><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F00.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="武汉旅游推荐"/></a><div class="content"><a class="title" href="/2024/04/05/36%E6%AD%A6%E6%B1%89%E6%97%85%E6%B8%B8%E6%8E%A8%E8%8D%90/" title="武汉旅游推荐">武汉旅游推荐</a><time datetime="2024-04-05T01:30:43.652Z" title="发表于 2024-04-05 09:30:43">2024-04-05</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%2F30usgs%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8B%E8%BD%BD.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By 知识雪豹</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><img src="https://static.dy208.cn/o_1dfilp8ruo521thr1hvf18ji17soa.png"><a href="https://beian.miit.gov.cn/#/Integrated/index"  style="color:white" target="_blank">鲁ICP备2023050019号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><div class="js-pjax"></div><div><canvas id="snow" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:99999;pointer-events:none"></canvas></div><script>const notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));</script><script async type="text/javascript" src="https://cdn.jsdelivr.net/gh/Candinya/Kratos-Rebirth@latest/source/js/snow.min.js"></script><script src="/js/snow.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
