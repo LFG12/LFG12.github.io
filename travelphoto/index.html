@@ -1,73 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>足迹地图</title>
-	<!-- 引入天地图API -->
-	<script type="text/javascript" src="https://api.tianditu.gov.cn/api?v=4.0&tk=a5c42978292b960f4c9f1bbac5ed984c">
-	</script>
-	<style>
-		#map {
-			height: 1080px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食地图</title>
+    <!-- 引入天地图API -->
+    <script type="text/javascript"
+        src="https://api.tianditu.gov.cn/api?v=4.0&tk=a5c42978292b960f4c9f1bbac5ed984c"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+
+        .info-window {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .info-window img {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .info-window img:hover {
+            transform: scale(1.1);
+        }
+
+        .info-window .title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #doll {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 100px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #dialog {
+            display: none;
+            position: absolute;
+            bottom: 150px;
+            left: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        #spinWheel {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        #spinButton {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .chat-iframe {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            z-index: 9999;
+            display: none;
+        }
+
+        #chatIcon {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #3C5EFD;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 1001;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+        }
+
+        #backButton {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #3C5EFD;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 1001;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
 
-	<div id="map"></div>
+    <div id="map"></div>
+    <img id="doll" src="photo/xiaocilong.png" alt="玩偶">
+    <div id="dialog">
+        <button id="whatToEat">今天吃什么</button>
+    </div>
+    <div id="spinWheel">
+        <div>转动转盘决定今天吃什么!</div>
+        <button id="spinButton">点击转动</button>
+    </div>
+    <button id="chatIcon">💬</button>
+    <iframe id="chatIframe" src="https://ai.darenkeji.top/chat/js-1c100d0c586ae054610c62f163ec3706wdh7B"
+        class="chat-iframe" frameborder="0"></iframe>
+    <button id="backButton">←</button>
 
-	<script>
-		window.onload = function () {
-			// 初始化天地图
-			var map = new T.Map("map");
+    <script>
+        window.onload = function () {
+            // 初始化天地图
+            var map = new T.Map("map");
 
-			// 设置地图中心和缩放级别（以中华人民共和国为例）
-			//var chinaCenter = new T.LngLat(104.195397, 35.861660); // 中国中心的经纬度坐标
-			//map.centerAndZoom(chinaCenter, 5);
+            // 设置地图中心和缩放级别
+            map.centerAndZoom(new T.LngLat(113.97939921156106, 22.540746033109635), 15);
 
-			// 添加地图控件
-			map.addControl(new T.Control.Scale());
-			map.addControl(new T.Control.Zoom());
+            // 添加地图控件
+            map.addControl(new T.Control.Scale());
+            map.addControl(new T.Control.Zoom());
 
-			// 使用相对路径表示当前目录
-			var currentPath = '../images/';
-			var json_data = '[{"filename": "IMG_20220626_100950.jpg", "latitude": 30.031180555555554, "longitude": 111.45725277777778}, {"filename": "IMG_20220626_101209.jpg", "latitude": 30.031680555555553, "longitude": 111.45684444444444}, {"filename": "IMG_20220629_080505.jpg", "latitude": 30.001986111111112, "longitude": 111.44044166666667}, {"filename": "IMG_20220629_190747.jpg", "latitude": 30.058711111111112, "longitude": 111.48795833333334}, {"filename": "IMG_20220629_194756.jpg", "latitude": 30.060644444444446, "longitude": 111.48646388888889}, {"filename": "IMG_20220704_102512.jpg", "latitude": 36.45740833333333, "longitude": 115.93880555555556}, {"filename": "IMG_20220816_165214.jpg", "latitude": 36.462700000000005, "longitude": 116.01571111111112}, {"filename": "IMG_20220827_112825.jpg", "latitude": 30.619580555555554, "longitude": 114.25048055555555}, {"filename": "IMG_20220828_185049.jpg", "latitude": 30.523644444444443, "longitude": 114.1421638888889}, {"filename": "IMG_20230115_100103.jpg", "latitude": 36.35273333333333, "longitude": 115.99499166666666}, {"filename": "IMG_20230116_081911.jpg", "latitude": 36.354102777777776, "longitude": 115.92832777777778}, {"filename": "IMG_20230204_162703.jpg", "latitude": 36.44383611111111, "longitude": 115.96416111111111}, {"filename": "IMG_20230422_094039.jpg", "latitude": 30.519044444444443, "longitude": 114.39670277777779}, {"filename": "IMG_20230422_094453.jpg", "latitude": 30.52093888888889, "longitude": 114.39596666666667}, {"filename": "IMG_20230422_094555.jpg", "latitude": 30.52102222222222, "longitude": 114.3956}, {"filename": "IMG_20230422_094745.jpg", "latitude": 30.51988888888889, "longitude": 114.39522777777779}, {"filename": "IMG_20230422_094904.jpg", "latitude": 30.519813888888887, "longitude": 114.39475833333334}, {"filename": "IMG_20230429_063520.jpg", "latitude": 30.76407777777778, "longitude": 120.7619888888889}, {"filename": "IMG_20230429_073638.jpg", "latitude": 30.771605555555556, "longitude": 120.74787222222223}, {"filename": "IMG_20230429_073715.jpg", "latitude": 30.771124999999998, "longitude": 120.74802222222222}, {"filename": "IMG_20230429_101242.jpg", "latitude": 30.74967777777778, "longitude": 120.75695833333333}, {"filename": "IMG_20230429_112840.jpg", "latitude": 30.74988888888889, "longitude": 120.75704166666667}, {"filename": "IMG_20230429_164055(1).jpg", "latitude": 31.24406666666667, "longitude": 121.48655277777777}, {"filename": "IMG_20230429_164055.jpg", "latitude": 31.24406666666667, "longitude": 121.48655277777777}, {"filename": "IMG_20230429_184252.jpg", "latitude": 31.239741666666667, "longitude": 121.48584166666667}, {"filename": "IMG_20230429_190836.jpg", "latitude": 31.23836111111111, "longitude": 121.48651944444444}, {"filename": "IMG_20230429_191053.jpg", "latitude": 31.238369444444444, "longitude": 121.48651666666667}, {"filename": "IMG_20230429_191452.jpg", "latitude": 31.237572222222223, "longitude": 121.48676388888889}, {"filename": "IMG_20230429_191535.jpg", "latitude": 31.237402777777778, "longitude": 121.48679444444444}, {"filename": "IMG_20230429_191544.jpg", "latitude": 31.237397222222224, "longitude": 121.48676944444445}, {"filename": "IMG_20230429_202023.jpg", "latitude": 31.236630555555557, "longitude": 121.500875}, {"filename": "IMG_20230429_203742.jpg", "latitude": 31.23862777777778, "longitude": 121.49983888888889}, {"filename": "IMG_20230430_080352.jpg", "latitude": 31.02439722222222, "longitude": 121.4409}, {"filename": "IMG_20230430_090857.jpg", "latitude": 31.026325, "longitude": 121.42082777777779}, {"filename": "IMG_20230430_092842.jpg", "latitude": 31.02891111111111, "longitude": 121.42436388888889}, {"filename": "IMG_20230430_103600.jpg", "latitude": 31.02355, "longitude": 121.42430277777778}, {"filename": "IMG_20230430_134100.jpg", "latitude": 31.029788888888888, "longitude": 121.43036944444445}, {"filename": "IMG_20230430_143723.jpg", "latitude": 31.028688888888887, "longitude": 121.43721388888889}, {"filename": "IMG_20230503_083111.jpg", "latitude": 31.238675, "longitude": 121.4864861111111}, {"filename": "IMG_20230512_234022.jpg", "latitude": 30.75725277777778, "longitude": 120.75634722222222}, {"filename": "IMG_20230709_111252.jpg", "latitude": 30.538008333333334, "longitude": 114.353675}, {"filename": "IMG_20230709_113119.jpg", "latitude": 30.538605555555556, "longitude": 114.35827222222221}, {"filename": "IMG_20230709_114203.jpg", "latitude": 30.538844444444447, "longitude": 114.36146111111111}, {"filename": "IMG_20230709_114325.jpg", "latitude": 30.538536111111114, "longitude": 114.36167499999999}, {"filename": "IMG_20230709_115544.jpg", "latitude": 30.536936111111114, "longitude": 114.36103055555554}, {"filename": "IMG_20230709_132103.jpg", "latitude": 30.52938611111111, "longitude": 114.35502222222222}, {"filename": "IMG_20230709_133448.jpg", "latitude": 30.52745277777778, "longitude": 114.3562}, {"filename": "IMG_20230709_133743.jpg", "latitude": 30.52766388888889, "longitude": 114.35569722222222}, {"filename": "IMG_20230709_142734.jpg", "latitude": 30.566308333333335, "longitude": 114.35997499999999}, {"filename": "IMG_20230722_144126.jpg", "latitude": 34.37496111111111, "longitude": 108.93501388888889}, {"filename": "IMG_20230722_153444.jpg", "latitude": 34.224580555555555, "longitude": 108.94126111111112}, {"filename": "IMG_20230722_204505.jpg", "latitude": 34.219833333333334, "longitude": 108.95813055555556}, {"filename": "IMG_20230722_211643.jpg", "latitude": 34.21270833333334, "longitude": 108.95931944444445}, {"filename": "IMG_20230723_161446.jpg", "latitude": 34.18758888888888, "longitude": 108.85875555555555}, {"filename": "IMG_20230723_174852.jpg", "latitude": 34.18703333333333, "longitude": 108.85853888888889}, {"filename": "IMG_20230805_145930.jpg", "latitude": 30.67108888888889, "longitude": 114.27586388888889}, {"filename": "IMG_20230826_112318.jpg", "latitude": 30.552641666666666, "longitude": 114.2819}, {"filename": "IMG_20230826_113135.jpg", "latitude": 30.549508333333335, "longitude": 114.28746111111111}, {"filename": "IMG_20230826_160626.jpg", "latitude": 30.54731388888889, "longitude": 114.29486944444444}, {"filename": "IMG_20230826_162742.jpg", "latitude": 30.549694444444444, "longitude": 114.28971944444444}, {"filename": "IMG_20230826_163243.jpg", "latitude": 30.54996666666667, "longitude": 114.28849444444444}, {"filename": "IMG_20230826_164042.jpg", "latitude": 30.549961111111113, "longitude": 114.28780277777777}, {"filename": "IMG_20231002_111554.jpg", "latitude": 30.559105555555558, "longitude": 113.93906666666668}, {"filename": "IMG_20231210_141045.jpg", "latitude": 28.67683888888889, "longitude": 115.89914444444445}, {"filename": "IMG_20231210_142933_1.jpg", "latitude": 28.677197222222222, "longitude": 115.89893888888889}, {"filename": "IMG_20231210_150543.jpg", "latitude": 28.678605555555556, "longitude": 115.88449166666668}, {"filename": "IMG_20231210_165559.jpg", "latitude": 28.683552777777777, "longitude": 115.87787777777777}, {"filename": "IMG_20231210_204054.jpg", "latitude": 28.667483333333333, "longitude": 115.80473055555555}, {"filename": "IMG_20231211_100758.jpg", "latitude": 28.72182222222222, "longitude": 115.88608888888889}, {"filename": "IMG_20231211_110144.jpg", "latitude": 28.72148888888889, "longitude": 115.88594166666667}, {"filename": "IMG_20231211_110946.jpg", "latitude": 28.721938888888886, "longitude": 115.88603333333334}, {"filename": "IMG_20231211_111038.jpg", "latitude": 28.721969444444444, "longitude": 115.88614166666667}, {"filename": "IMG_20231211_183154.jpg", "latitude": 30.537844444444445, "longitude": 114.02310833333333}, {"filename": "IMG_20231217_133423.jpg", "latitude": 30.510130555555556, "longitude": 114.4077388888889}, {"filename": "IMG_20231217_134810.jpg", "latitude": 30.511702777777778, "longitude": 114.4078638888889}, {"filename": "IMG_20231217_191509.jpg", "latitude": 30.50438611111111, "longitude": 114.40201388888889}, {"filename": "IMG_20231217_191901.jpg", "latitude": 30.505058333333334, "longitude": 114.40043055555556}, {"filename": "IMG_20240118_204630.jpg", "latitude": 34.18738055555555, "longitude": 108.85822499999999}, {"filename": "IMG_20240118_222419.jpg", "latitude": 31.148725, "longitude": 114.95890833333334}, {"filename": "IMG_20240225_105736.jpg", "latitude": 30.572658333333333, "longitude": 114.22685}, {"filename": "IMG_20240301_145141.jpg", "latitude": 31.23975, "longitude": 121.48583333333333}, {"filename": "IMG_20240302_144555.jpg", "latitude": 30.49384722222222, "longitude": 113.97416666666666}, {"filename": "IMG_20240302_151124(1).jpg", "latitude": 30.491933333333336, "longitude": 113.926225}, {"filename": "IMG_20240302_151124.jpg", "latitude": 30.491933333333336, "longitude": 113.926225}, {"filename": "IMG_20240302_151425.jpg", "latitude": 30.491186111111112, "longitude": 113.92325000000001}, {"filename": "IMG_20240302_152737.jpg", "latitude": 30.49139166666667, "longitude": 113.922025}, {"filename": "IMG_20240302_152833.jpg", "latitude": 30.49139166666667, "longitude": 113.92203055555557}, {"filename": "IMG_20240302_154121.jpg", "latitude": 30.49103888888889, "longitude": 113.92251666666667}, {"filename": "IMG_20240302_161522.jpg", "latitude": 30.49106666666667, "longitude": 113.92266111111111}, {"filename": "IMG_20240302_164558.jpg", "latitude": 30.479858333333333, "longitude": 113.92665833333334}, {"filename": "IMG_20240302_164823.jpg", "latitude": 30.480844444444443, "longitude": 113.92633333333333}, {"filename": "IMG_20240302_165421.jpg", "latitude": 30.482244444444444, "longitude": 113.92599444444446}, {"filename": "IMG_20240302_172858.jpg", "latitude": 30.474283333333332, "longitude": 113.9490388888889}, {"filename": "IMG_20240302_180932.jpg", "latitude": 30.517244444444444, "longitude": 114.00921666666666}, {"filename": "IMG_20240302_225340.jpg", "latitude": 30.498394444444447, "longitude": 113.94415277777779}, {"filename": "IMG_20240302_225727.jpg", "latitude": 30.49132777777778, "longitude": 113.922375}, {"filename": "IMG_20240319_133018.jpg", "latitude": 30.47768333333333, "longitude": 114.33567777777778}]';
+            // 定义json_data
+            // var json_data = '...'; // 省略的具体内容
+            var json_data = '[{"filename": "深圳威尼斯英迪格酒店西餐厅.jpg", "latitude": 22.540746033109635, "longitude": 113.97939921156106}, {"filename": "粉不二.江西炒粉瓦罐汤(华侨城大厦店).jpg", "latitude": 22.5407706509938, "longitude": 113.988957721167}, {"filename": "Tims天好咖啡(华侨城步行街店).jpg", "latitude": 22.5446729050211, "longitude": 113.986155906283}, {"filename": "黄金海岸美食水会.jpg", "latitude": 22.5417187282338, "longitude": 113.989644924882}, {"filename": "四叶寿司(深圳华侨城店).jpg", "latitude": 22.53713467, "longitude": 113.9935855}, {"filename": "KFC甜品站(深圳国际园林花卉博览园店).jpg", "latitude": 22.54405505, "longitude": 114.0099139}, {"filename": "六合记牛肉火锅.jpg", "latitude": 22.54062668, "longitude": 114.0141688}, {"filename": "百果园(紫竹四路店).jpg", "latitude": 22.54126434, "longitude": 114.0153594}, {"filename": "煌上煌酱鸭(竹子林店).jpg", "latitude": 22.55793191, "longitude": 114.11072}, {"filename": "原上盈家草原火锅.jpg", "latitude": 22.54193745, "longitude": 114.0184234}, {"filename": "大巴扎手抓饭(车公庙店).jpg", "latitude": 22.54177272, "longitude": 114.0319919}, {"filename": "台湾花甲王(白石洲店).jpg", "latitude": 22.54646644, "longitude": 113.9731122}, {"filename": "林鲜记鸡煲(白石洲店).jpg", "latitude": 22.54457944, "longitude": 113.9739115}, {"filename": "Hi Burger.jpg", "latitude": 22.53909602, "longitude": 113.9825802}, {"filename": "佳泰砂锅粥(白石洲店).jpg", "latitude": 22.53882065, "longitude": 113.9740813}, {"filename": "宽米砂锅粥(白石洲店)原米芝莲砂锅粥.jpg", "latitude": 22.53907351, "longitude": 113.9733238}]';
 
-			var photoData = JSON.parse(json_data);
+            var photoData = JSON.parse(json_data);
 
-			var photoCoordinates = [];
+            var icon = new T.Icon({
+                iconUrl: 'photo/coffee.png', // 自定义图标路径
+                iconSize: new T.Point(50, 50), // 图标尺寸
+                iconAnchor: new T.Point(25, 50) // 图标的锚点
+            });
 
-			photoData.forEach(function (photo) {
-				var img = new Image();
-				img.onload = function () {
-					//console.log('Image loaded:', photo.filename);
-					// 在天地图上添加标记
-					var marker = new T.Marker(new T.LngLat(photo.longitude, photo.latitude));
-					map.addOverLay(marker);
+            photoData.forEach(function (photo) {
+                var marker = new T.Marker(new T.LngLat(photo.longitude, photo.latitude), { icon: icon });
+                map.addOverLay(marker);
 
-					// 添加信息窗口
-					var infoWindow = new T.InfoWindow('<img src="' + currentPath +
-						photo.filename + '" width="200" height="150">');
-					marker.addEventListener("click", function () {
-						this.openInfoWindow(infoWindow);
-					});
-				};
-				img.onerror = function () {
-					console.error('Error loading image');
-				};
-				// 设置图片的 src 属性，触发图片加载
-				img.src = currentPath + photo.filename;
+                var infoWindowContent = `
+                    <div class="info-window">
+                        <div class="title">${photo.filename.split('.')[0]}</div>
+                        <img src="photo/${photo.filename}" alt="${photo.filename}">
+                    </div>
+                `;
 
-				// 更新图片的范围
-				photoCoordinates.push(new T.LngLat(photo.longitude, photo.latitude));
-			});
-			// 更新地图显示的范围
-			map.setViewport(photoCoordinates);
-		}
-	</script>
+                var infoWindow = new T.InfoWindow(infoWindowContent);
+                marker.addEventListener("click", function () {
+                    this.openInfoWindow(infoWindow);
+                });
+            });
+
+            // 玩偶点击事件
+            document.getElementById('doll').addEventListener('click', function () {
+                var chatIcon = document.getElementById('chatIcon');
+                chatIcon.style.display = chatIcon.style.display === 'none' ? 'block' : 'none';
+
+                var dialog = document.getElementById('dialog');
+                dialog.style.display = 'block';
+            });
+
+            // "今天吃什么"按钮点击事件
+            document.getElementById('whatToEat').addEventListener('click', function () {
+                var spinWheel = document.getElementById('spinWheel');
+                spinWheel.style.display = 'block';
+            });
+
+            // 关闭转盘
+            document.addEventListener('click', function (event) {
+                var spinWheel = document.getElementById('spinWheel');
+                if (!spinWheel.contains(event.target) && event.target.id !== 'whatToEat' && event.target.id !== 'spinButton') {
+                    spinWheel.style.display = 'none';
+                }
+            });
+
+            // 转盘点击事件
+            document.getElementById('spinButton').addEventListener('click', function () {
+                var randomIndex = Math.floor(Math.random() * photoData.length);
+                var selectedPlace = photoData[randomIndex];
+                var lngLat = new T.LngLat(selectedPlace.longitude, selectedPlace.latitude);
+
+                // 变速平移
+                map.panTo(lngLat);
+                setTimeout(function () {
+                    map.centerAndZoom(lngLat, 18);
+                    var marker = new T.Marker(lngLat, { icon: icon });
+                    map.addOverLay(marker);
+                    var infoWindow = new T.InfoWindow(`
+                        <div class="info-window">
+                            <div class="title">${selectedPlace.filename.split('.')[0]}</div>
+                            <img src="photo/${selectedPlace.filename}" alt="${selectedPlace.filename}">
+                        </div>
+                    `);
+                    marker.openInfoWindow(infoWindow);
+                }, 1000);
+            });
+
+            // 显示和隐藏聊天框
+            document.getElementById('chatIcon').addEventListener('click', function () {
+                var chatIframe = document.getElementById('chatIframe');
+                chatIframe.style.display = 'block';
+
+                var backButton = document.getElementById('backButton');
+                backButton.style.display = 'block';
+
+                var dialog = document.getElementById('dialog');
+                dialog.style.display = 'none';
+
+                var chatIcon = document.getElementById('chatIcon');
+                chatIcon.style.display = 'none';
+            });
+
+            // 返回地图按钮点击事件
+            document.getElementById('backButton').addEventListener('click', function () {
+                var chatIframe = document.getElementById('chatIframe');
+                chatIframe.style.display = 'none';
+
+                var backButton = document.getElementById('backButton');
+                backButton.style.display = 'none';
+
+                var chatIcon = document.getElementById('chatIcon');
+                chatIcon.style.display = 'block';
+
+                var dialog = document.getElementById('dialog');
+                dialog.style.display = 'block';
+            });
+        }
+    </script>
+    <!-- 添加聊天气泡 -->
+    <script>
+        window.chat_iframe_src = 'https://ai.darenkeji.top/chat/js-1c100d0c586ae054610c62f163ec3706wdh7B';
+        window.chat_iframe_width = '375px'; //聊天窗口宽
+        window.chat_iframe_height = '667px'; //聊天窗口高
+        window.chat_icon_bg = '#3C5EFD'; //聊天悬浮按钮背景
+        window.chat_icon_color = '#fff'; //聊天悬浮按钮颜色
+        var js = document.createElement('script');
+        js.type = 'text/javascript';
+        js.async = true;
+        js.src = 'https://ai.darenkeji.top/js-iframe.js';
+        var header = document.getElementsByTagName('head')[0];
+        header.appendChild(js);
+    </script>
 </body>
 
 </html>

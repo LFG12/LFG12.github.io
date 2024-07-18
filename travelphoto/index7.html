@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食地图</title>
+    <!-- 引入天地图API -->
+    <script type="text/javascript"
+        src="https://api.tianditu.gov.cn/api?v=4.0&tk=a5c42978292b960f4c9f1bbac5ed984c"></script>
+    <!-- 引入Leaflet库 -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- 引入Leaflet热力图插件 -->
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <style>
+        #map {
+            height: 90vh;
+        }
+
+        #heatmapButton {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="map"></div>
+    <button id="heatmapButton">查看热力图</button>
+
+    <script>
+        window.onload = function () {
+            // 初始化天地图
+            var map = new T.Map("map");
+            var center = new T.LngLat(113.97939921156106, 22.540746033109635);
+            map.centerAndZoom(center, 15);
+
+            // 添加地图控件
+            map.addControl(new T.Control.Scale());
+            map.addControl(new T.Control.Zoom());
+
+            // 定义json_data
+            // var json_data = [...]  // 省略的具体内容
+
+            var json_data = '[\
+                { "filename": "深圳威尼斯英迪格酒店西餐厅.jpg", "latitude": 22.540746033109635, "longitude": 113.97939921156106 },\
+                { "filename": "粉不二.江西炒粉瓦罐汤(华侨城大厦店).jpg", "latitude": 22.5407706509938, "longitude": 113.988957721167 },\
+                { "filename": "Tims天好咖啡(华侨城步行街店).jpg", "latitude": 22.5446729050211, "longitude": 113.986155906283 },\
+                { "filename": "黄金海岸美食水会.jpg", "latitude": 22.5417187282338, "longitude": 113.989644924882 },\
+                { "filename": "四叶寿司(深圳华侨城店).jpg", "latitude": 22.53713467, "longitude": 113.9935855 },\
+                { "filename": "KFC甜品站(深圳国际园林花卉博览园店).jpg", "latitude": 22.54405505, "longitude": 114.0099139 },\
+                { "filename": "六合记牛肉火锅.jpg", "latitude": 22.54062668, "longitude": 114.0141688 },\
+                { "filename": "百果园(紫竹四路店).jpg", "latitude": 22.54126434, "longitude": 114.0153594 },\
+                { "filename": "煌上煌酱鸭(竹子林店).jpg", "latitude": 22.55793191, "longitude": 114.11072 },\
+                { "filename": "原上盈家草原火锅.jpg", "latitude": 22.54193745, "longitude": 114.0184234 },\
+                { "filename": "大巴扎手抓饭(车公庙店).jpg", "latitude": 22.54177272, "longitude": 114.0319919 },\
+                { "filename": "台湾花甲王(白石洲店).jpg", "latitude": 22.54646644, "longitude": 113.9731122 },\
+                { "filename": "林鲜记鸡煲(白石洲店).jpg", "latitude": 22.54457944, "longitude": 113.9739115 },\
+                { "filename": "Hi Burger.jpg", "latitude": 22.53909602, "longitude": 113.9825802 },\
+                { "filename": "佳泰砂锅粥(白石洲店).jpg", "latitude": 22.53882065, "longitude": 113.9740813 },\
+                { "filename": "宽米砂锅粥(白石洲店)原米芝莲砂锅粥.jpg", "latitude": 22.53907351, "longitude": 113.9733238 }\
+            ]'; // 示例数据，实际数据替换此处
+
+            var photoData = JSON.parse(json_data);
+
+            var icon = new T.Icon({
+                iconUrl: 'photo\\coffee.png', // 自定义图标路径
+                iconSize: new T.Point(50, 50), // 图标尺寸
+                iconAnchor: new T.Point(25, 50) // 图标的锚点
+            });
+
+            photoData.forEach(function (photo) {
+                var marker = new T.Marker(new T.LngLat(photo.longitude, photo.latitude), { icon: icon });
+                map.addOverLay(marker);
+
+                var infoWindowContent = `
+                    <div class="info-window">
+                        <div class="title">${photo.filename.split('.')[0]}</div>
+                        <img src="photo/${photo.filename}" alt="${photo.filename}">
+                    </div>
+                `;
+
+                var infoWindow = new T.InfoWindow(infoWindowContent);
+                marker.addEventListener("click", function () {
+                    this.openInfoWindow(infoWindow);
+                });
+            });
+
+            // 初始化Leaflet地图
+            var leafletMap = L.map('map').setView([22.540746033109635, 113.97939921156106], 15);
+
+            // 添加天地图瓦片层
+            var tdtLayer = L.tileLayer('https://t{s}.tianditu.gov.cn/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=a5c42978292b960f4c9f1bbac5ed984c', {
+                subdomains: ['0', '1', '2', '3', '4', '5', '6', '7'],
+                attribution: '© 天地图'
+            }).addTo(leafletMap);
+
+            // 解析热力图数据
+            var heatData = photoData.map(function (photo) {
+                return [photo.latitude, photo.longitude, 1]; // 第三个参数表示权重
+            });
+
+            var heatLayer = L.heatLayer(heatData, {
+                radius: 25,
+                blur: 15,
+                maxZoom: 17,
+            });
+
+            // 热力图按钮点击事件
+            var heatmapButton = document.getElementById('heatmapButton');
+            var heatmapVisible = false;
+            heatmapButton.addEventListener('click', function () {
+                if (heatmapVisible) {
+                    leafletMap.removeLayer(heatLayer);
+                    heatmapButton.textContent = '查看热力图';
+                } else {
+                    leafletMap.addLayer(heatLayer);
+                    heatmapButton.textContent = '隐藏热力图';
+                }
+                heatmapVisible = !heatmapVisible;
+            });
+
+            // 平移到随机点
+            document.getElementById('spinButton').addEventListener('click', function () {
+                var randomIndex = Math.floor(Math.random() * photoData.length);
+                var selectedPlace = photoData[randomIndex];
+                var lngLat = new T.LngLat(selectedPlace.longitude, selectedPlace.latitude);
+
+                leafletMap.panTo([selectedPlace.latitude, selectedPlace.longitude], {
+                    animate: true,
+                    duration: 2
+                });
+
+                setTimeout(function () {
+                    var marker = new T.Marker(lngLat, { icon: icon });
+                    map.addOverLay(marker);
+                    marker.openInfoWindow(new T.InfoWindow(`
+                        <div class="info-window">
+                            <div class="title">${selectedPlace.filename.split('.')[0]}</div>
+                            <img src="photo/${selectedPlace.filename}" alt="${selectedPlace.filename}">
+                        </div>
+                    `));
+                }, 1000);
+            });
+        }
+    </script>
+</body>
+
+</html>

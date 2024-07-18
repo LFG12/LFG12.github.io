@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食地图</title>
+    <!-- 引入天地图API -->
+    <script type="text/javascript"
+        src="https://api.tianditu.gov.cn/api?v=4.0&tk=a5c42978292b960f4c9f1bbac5ed984c"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+
+        .info-window {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .info-window img {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .info-window img:hover {
+            transform: scale(1.1);
+        }
+
+        .info-window .title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #doll {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 100px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #dialog {
+            display: none;
+            position: absolute;
+            bottom: 150px;
+            left: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        #spinWheel {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        #spinButton {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .chat-iframe {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            z-index: 9999;
+            display: none;
+        }
+
+        #chatIcon {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #3C5EFD;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 1001;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+        }
+
+        #backButton {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #3C5EFD;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 1001;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="map"></div>
+    <img id="doll" src="photo/xiaocilong.png" alt="玩偶">
+    <div id="dialog">
+        <button id="whatToEat">今天吃什么</button>
+    </div>
+    <div id="spinWheel">
+        <div>转动转盘决定今天吃什么!</div>
+        <button id="spinButton">点击转动</button>
+    </div>
+    <button id="chatIcon">💬</button>
+    <iframe id="chatIframe" src="https://ai.darenkeji.top/chat/js-1c100d0c586ae054610c62f163ec3706wdh7B"
+        class="chat-iframe" frameborder="0"></iframe>
+    <button id="backButton">←</button>
+
+    <script>
+        window.onload = function () {
+            // 初始化天地图
+            var map = new T.Map("map");
+
+            // 设置地图中心和缩放级别
+            map.centerAndZoom(new T.LngLat(113.97939921156106, 22.540746033109635), 15);
+
+            // 添加地图控件
+            map.addControl(new T.Control.Scale());
+            map.addControl(new T.Control.Zoom());
+
+            // 定义json_data
+            var json_data = '[{"filename": "深圳威尼斯英迪格酒店西餐厅.jpg", "latitude": 22.540746033109635, "longitude": 113.97939921156106}, {"filename": "粉不二.江西炒粉瓦罐汤(华侨城大厦店).jpg", "latitude": 22.5407706509938, "longitude": 113.988957721167}, {"filename": "Tims天好咖啡(华侨城步行街店).jpg", "latitude": 22.5446729050211, "longitude": 113.986155906283}, {"filename": "黄金海岸美食水会.jpg", "latitude": 22.5417187282338, "longitude": 113.989644924882}, {"filename": "四叶寿司(深圳华侨城店).jpg", "latitude": 22.53713467, "longitude": 113.9935855}, {"filename": "KFC甜品站(深圳国际园林花卉博览园店).jpg", "latitude": 22.54405505, "longitude": 114.0099139}, {"filename": "六合记牛肉火锅.jpg", "latitude": 22.54062668, "longitude": 114.0141688}, {"filename": "百果园(紫竹四路店).jpg", "latitude": 22.54126434, "longitude": 114.0153594}, {"filename": "煌上煌酱鸭(竹子林店).jpg", "latitude": 22.55793191, "longitude": 114.11072}, {"filename": "原上盈家草原火锅.jpg", "latitude": 22.54193745, "longitude": 114.0184234}, {"filename": "大巴扎手抓饭(车公庙店).jpg", "latitude": 22.54177272, "longitude": 114.0319919}, {"filename": "台湾花甲王(白石洲店).jpg", "latitude": 22.54646644, "longitude": 113.9731122}, {"filename": "林鲜记鸡煲(白石洲店).jpg", "latitude": 22.54457944, "longitude": 113.9739115}, {"filename": "Hi Burger.jpg", "latitude": 22.53909602, "longitude": 113.9825802}, {"filename": "佳泰砂锅粥(白石洲店).jpg", "latitude": 22.53882065, "longitude": 113.9740813}, {"filename": "宽米砂锅粥(白石洲店)原米芝莲砂锅粥.jpg", "latitude": 22.53907351, "longitude": 113.9733238}]';
+
+            var photoData = JSON.parse(json_data);
+
+            var icon = new T.Icon({
+                iconUrl: 'photo/coffee.png', // 自定义图标路径
+                iconSize: new T.Point(50, 50), // 图标尺寸
+                iconAnchor: new T.Point(25, 50) // 图标的锚点
+            });
+
+            photoData.forEach(function (photo) {
+                var marker = new T.Marker(new T.LngLat(photo.longitude, photo.latitude), { icon: icon });
+                map.addOverLay(marker);
+
+                var infoWindowContent = `
+                    <div class="info-window">
+                        <div class="title">${photo.filename.split('.')[0]}</div>
+                        <img src="photo/${photo.filename}" alt="${photo.filename}">
+                    </div>
+                `;
+
+                var infoWindow = new T.InfoWindow(infoWindowContent);
+                marker.addEventListener("click", function () {
+                    this.openInfoWindow(infoWindow);
+                });
+            });
+
+            // 玩偶点击事件
+            document.getElementById('doll').addEventListener('click', function () {
+                var chatIcon = document.getElementById('chatIcon');
+                chatIcon.style.display = chatIcon.style.display === 'none' ? 'block' : 'none';
+
+                var dialog = document.getElementById('dialog');
+                dialog.style.display = 'block';
+            });
+
+            // "今天吃什么"按钮点击事件
+            document.getElementById('whatToEat').addEventListener('click', function () {
+                var spinWheel = document.getElementById('spinWheel');
+                spinWheel.style.display = 'block';
+            });
+
+            // 关闭转盘
+            document.addEventListener('click', function (event) {
+                var spinWheel = document.getElementById('spinWheel');
+                if (!spinWheel.contains(event.target) && event.target.id !== 'whatToEat' && event.target.id !== 'spinButton') {
+                    spinWheel.style.display = 'none';
+                }
+            });
+
+            // 转盘点击事件
+            document.getElementById('spinButton').addEventListener('click', function () {
+                var randomIndex = Math.floor(Math.random() * photoData.length);
+                var selectedPlace = photoData[randomIndex];
+                var lngLat = new T.LngLat(selectedPlace.longitude, selectedPlace.latitude);
+
+                // 变速平移
+                map.panTo(lngLat);
+                setTimeout(function () {
+                    map.centerAndZoom(lngLat, 18);
+                    var marker = new T.Marker(lngLat, { icon: icon });
+                    map.addOverLay(marker);
+                    var infoWindow = new T.InfoWindow(`
+                        <div class="info-window">
+                            <div class="title">${selectedPlace.filename.split('.')[0]}</div>
+                            <img src="photo/${selectedPlace.filename}" alt="${selectedPlace.filename}">
+                        </div>
+                    `);
+                    marker.openInfoWindow(infoWindow);
+                }, 1000);
+            });
+
+            // 显示和隐藏聊天框
+            document.getElementById('chatIcon').addEventListener('click', function () {
+                var chatIframe = document.getElementById('chatIframe');
+                chatIframe.style.display = 'block';
+
+                var backButton = document.getElementById('backButton');
+                backButton.style.display = 'block';
+
+                var dialog = document.getElementById('dialog');
+                dialog.style.display = 'none';
+
+                var chatIcon = document.getElementById('chatIcon');
+                chatIcon.style.display = 'none';
+            });
+
+            // 返回地图按钮点击事件
+            document.getElementById('backButton').addEventListener('click', function () {
+                var chatIframe = document.getElementById('chatIframe');
+                chatIframe.style.display = 'none';
+
+                var backButton = document.getElementById('backButton');
+                backButton.style.display = 'none';
+
+                var chatIcon = document.getElementById('chatIcon');
+                chatIcon.style.display = 'block';
+
+                var dialog = document.getElementById('dialog');
+                dialog.style.display = 'block';
+            });
+        }
+    </script>
+</body>
+
+</html>
