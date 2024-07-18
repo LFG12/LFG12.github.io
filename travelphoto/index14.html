@@ -121,55 +121,11 @@
             font-size: 24px;
             display: none;
         }
-
-        .menu-icon {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: #3C5EFD;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-            z-index: 1002;
-            text-align: center;
-            line-height: 50px;
-            font-size: 24px;
-        }
-
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 70px;
-            right: 20px;
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            z-index: 1002;
-        }
-
-        .dropdown-menu a {
-            display: block;
-            color: black;
-            padding: 8px;
-            text-decoration: none;
-        }
-
-        .dropdown-menu a:hover {
-            background-color: #f1f1f1;
-        }
     </style>
 </head>
 
 <body>
-    <div id="menuIcon" class="menu-icon">☰</div>
-    <div id="dropdownMenu" class="dropdown-menu">
-        <a href="./hot.html">冷饮店热力图</a>
-        <a href="./code/中餐厅kepler.gl.html">中餐厅3D分布图</a>
-    </div>
+
     <div id="map"></div>
     <img id="doll" src="photo/xiaocilong.png" alt="玩偶">
     <div id="dialog">
@@ -299,7 +255,6 @@
     </script>
     <!-- 添加聊天气泡 -->
     <script>
-
         window.chat_iframe_src = 'https://ai.darenkeji.top/chat/js-1c100d0c586ae054610c62f163ec3706wdh7B';
         window.chat_iframe_width = '450px'; //聊天窗口宽
         window.chat_iframe_height = '600px'; //聊天窗口高
@@ -311,22 +266,6 @@
         js.src = 'https://ai.darenkeji.top/js-iframe.js';
         var header = document.getElementsByTagName('head')[0];
         header.appendChild(js);
-    </script>
-
-    <script>
-        document.getElementById('menuIcon').addEventListener('click', function () {
-            var dropdownMenu = document.getElementById('dropdownMenu');
-            dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
-        });
-
-        // 点击外部隐藏菜单
-        document.addEventListener('click', function (event) {
-            var dropdownMenu = document.getElementById('dropdownMenu');
-            if (!dropdownMenu.contains(event.target) && event.target.id !== 'menuIcon') {
-                dropdownMenu.style.display = 'none';
-            }
-        });
-
     </script>
 </body>
 
