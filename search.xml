@@ -4497,21 +4497,17 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 <p>平台：windows 参考连接：<a href="https://github.com/yihong0618/running_page/">https://github.com/yihong0618/running_page/</a></p>
 <p>linux平台部署链接：</p>
 </blockquote>
-<h1>执行步骤</h1>
-<h2 id="新建文件夹-拉取代码">新建文件夹 拉取代码</h2>
-<blockquote>
-<p><strong>建议直接使用管理员身份运行命令窗口</strong></p>
+<h1 id="执行步骤"><a href="#执行步骤" class="headerlink" title="执行步骤"></a>执行步骤</h1><h2 id="新建文件夹-拉取代码"><a href="#新建文件夹-拉取代码" class="headerlink" title="新建文件夹 拉取代码"></a>新建文件夹 拉取代码</h2><blockquote>
+<p> <strong>建议直接使用管理员身份运行命令窗口</strong></p>
 <p>命令行中切换路径：</p>
 <p>切换盘符（F盘为例） 先输入F:</p>
 <p>然后 cd 要跳转的路径（直接在文件夹上方路径栏复制即可）</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/yihong0618/running_page.git --depth=1</span><br></pre></td></tr></table></figure>
 <p>拉取代码后会在文件夹多出一个running_page</p>
-<h2 id="创建虚拟环境">创建虚拟环境</h2>
-<p>为了便于项目管理，且保持项目间的独立性 安全性，创建虚拟环境进行单独管理</p>
+<h2 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h2><p>为了便于项目管理，且保持项目间的独立性 安全性，创建虚拟环境进行单独管理</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python -m venv run_venv</span><br></pre></td></tr></table></figure>
-<h2 id="在本地运行running-page">在本地运行running_page</h2>
-<blockquote>
+<h2 id="在本地运行running-page"><a href="#在本地运行running-page" class="headerlink" title="在本地运行running_page"></a>在本地运行running_page</h2><blockquote>
 <p>需要提前安装node</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip3 install -r requirements.txt</span><br><span class="line">npm install -g corepack &amp;&amp; corepack enable &amp;&amp; pnpm install</span><br><span class="line">pnpm develop</span><br></pre></td></tr></table></figure>
@@ -4531,23 +4527,18 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pnpm install</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pnpm develop</span><br></pre></td></tr></table></figure>
 <p>查看是否能在本地运行</p>
-<h2 id="删除作者跑步数据">删除作者跑步数据</h2>
-<p>打开assets文件夹 将带有年份的数据删除</p>
+<h2 id="删除作者跑步数据"><a href="#删除作者跑步数据" class="headerlink" title="删除作者跑步数据"></a>删除作者跑步数据</h2><p>打开assets文件夹 将带有年份的数据删除</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F36-runningpage%E9%85%8D%E7%BD%AE%2F/image-20240407092635337-17124531967053.png" alt="image-20240407092635337"></p>
-<h2 id="错误解决后的爬取数据keep步骤">错误解决后的爬取数据keep步骤</h2>
-<p>1.激活虚拟环境后使用</p>
+<h2 id="错误解决后的爬取数据keep步骤"><a href="#错误解决后的爬取数据keep步骤" class="headerlink" title="错误解决后的爬取数据keep步骤"></a>错误解决后的爬取数据keep步骤</h2><p>1.激活虚拟环境后使用</p>
 <p><strong>注意需要断开科学上网的工具</strong></p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/keep_sync.py <span class="number">188</span>********* *******</span><br><span class="line"></span><br><span class="line">python run_page/keep_sync_2.py <span class="number">188</span>******** ********</span><br><span class="line"><span class="comment"># 输入的是自己的手机号和自己的密码</span></span><br></pre></td></tr></table></figure>
 <p>2.执行totle 处理</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE &#125;&#125;&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span> --special-distance <span class="number">10</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># distance代表将大于多少的单独列出来</span></span><br><span class="line"><span class="comment"># 自己处理时将$的改成一个字符串</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20240407&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;20240407&quot;</span> --special-distance <span class="number">3</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li></li>
-</ol>
+<p>3.</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE_GRID &#125;&#125;&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">10.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br><span class="line"></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20240406&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;20240407&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">10.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br></pre></td></tr></table></figure>
 <p>4.生成年度数据</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --from-db --type circular --use-localtime</span><br></pre></td></tr></table></figure>
-<h2 id="爬取悦跑圈数据">爬取悦跑圈数据</h2>
-<p>0.启动虚拟环境</p>
+<h2 id="爬取悦跑圈数据"><a href="#爬取悦跑圈数据" class="headerlink" title="爬取悦跑圈数据"></a>爬取悦跑圈数据</h2><p>0.启动虚拟环境</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">转到对应文件夹</span><br><span class="line">F:\runtest2\running_page</span><br><span class="line"></span><br><span class="line">run\Scripts\activate</span><br></pre></td></tr></table></figure>
 <p>1.获取悦跑圈数据</p>
 <blockquote>
@@ -4556,9 +4547,7 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python run_page/joyrun_sync.py 18863542881 验证码</span><br></pre></td></tr></table></figure>
 <p>2.执行totle 处理</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE &#125;&#125;&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span> --special-distance <span class="number">10</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># distance代表将大于多少的单独列出来</span></span><br><span class="line"><span class="comment"># 自己处理时将$的改成一个字符串</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20240821&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;20240821&quot;</span> --special-distance <span class="number">3</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li></li>
-</ol>
+<p>3.</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将最小距离小于多少的生成统计数据</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE_GRID &#125;&#125;&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">10.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br><span class="line"></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20240821&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;20240821&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">3.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br></pre></td></tr></table></figure>
 <p>4.生成年度数据</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --from-db --type circular --use-localtime</span><br></pre></td></tr></table></figure>
@@ -4567,17 +4556,16 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 <p>使用keep时：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">keep_sync.py 18863542881 example</span><br></pre></td></tr></table></figure>
 <p>成功实现了足迹上传  但是有个问题就是因为上一次获取的keep数据有问题导致的重复</p>
-<img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F36-runningpage%E9%85%8D%E7%BD%AE%2Fimage-20240407083922809.png" alt="image-20240407083922809" style="zoom:50%;" />
-<img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F36-runningpage%E9%85%8D%E7%BD%AE%2Fimage-20240407092010916.png" alt="image-20240407092010916" style="zoom:67%;" />
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F36-runningpage%E9%85%8D%E7%BD%AE%2Fimage-20240407083922809.png" alt="image-20240407083922809" style="zoom:50%;" /></p>
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F36-runningpage%E9%85%8D%E7%BD%AE%2Fimage-20240407092010916.png" alt="image-20240407092010916" style="zoom:67%;" /></p>
 <p>导致的数据存放，但是我不知道运行跑的数据存放到哪了，就有点问题了</p>
-<h1>搭建过程中的问题及解决方式：</h1>
-<ul>
+<h1 id="搭建过程中的问题及解决方式："><a href="#搭建过程中的问题及解决方式：" class="headerlink" title="搭建过程中的问题及解决方式："></a>搭建过程中的问题及解决方式：</h1><ul>
 <li>python3报错 那就不使用python3</li>
 </ul>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F36-runningpage%E9%85%8D%E7%BD%AE%2Fimage-20240406213358764-17124104410461.png" alt="image-20240406213358764"></p>
-<p>python3(python) F:\大三上课程\WebGIS\hexo\test\running_page\run_page\joyrun_sync.py 188* * *  * * * * *</p>
+<p>python3(python) F:\大三上课程\WebGIS\hexo\test\running_page\run_page\joyrun_sync.py 188<em> </em> <em>  </em> <em> </em> <em> </em></p>
 <p>原因：<strong>python3找不到</strong></p>
-<p>解决方式：python F:\大三上课程\WebGIS\hexo\test\running_page\run_page\keep_sync.py 188* * *  * * * * *</p>
+<p>解决方式：python F:\大三上课程\WebGIS\hexo\test\running_page\run_page\keep_sync.py 188<em> </em> <em>  </em> <em> </em> <em> </em></p>
 <ul>
 <li>运行keep获取时可能遇到服务器错误：</li>
 </ul>
@@ -4586,17 +4574,16 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 <li>ERR!报错 使用管理员身份打开</li>
 </ul>
 <p>第二步：</p>
-<p>python F:\大三上课程\WebGIS\hexo\test\running_page\run_page\keep_sync.py 18863542881 Lfg188635 --with-gpx</p>
+<p>python F:\大三上课程\WebGIS\hexo\test\running_page\run_page\keep_sync.py 18863542881 Lfg188635 —with-gpx</p>
 <ul>
 <li>from Crypto.Cipher import AES报错</li>
 </ul>
 <p>将小写的crypto的c改为大写</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F36-runningpage%E9%85%8D%E7%BD%AE%2Fimage-20240406230505884-17124159070351.png" alt="image-20240406230505884"></p>
-<p>参考连接：<a href="https://blog.csdn.net/qq_36841447/article/details/135197894">from Crypto.Cipher import AES报错解决_cannot import name ‘_create_cipher’ from 'crypto.c-CSDN博客</a></p>
-<h2 id="小结与回顾">小结与回顾</h2>
-<p>keep数据问题</p>
+<p>参考连接：<a href="https://blog.csdn.net/qq_36841447/article/details/135197894">from Crypto.Cipher import AES报错解决_cannot import name ‘_create_cipher’ from ‘crypto.c-CSDN博客</a></p>
+<h2 id="小结与回顾"><a href="#小结与回顾" class="headerlink" title="小结与回顾"></a>小结与回顾</h2><p>keep数据问题</p>
 <p>2024年的keep数据只获取大了数值，但并没获取到轨迹</p>
-<img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F36-runningpage%E9%85%8D%E7%BD%AE%2Fimage-20240406230233791-17124157550722.png" alt="image-20240406230233791" style="zoom: 50%;" />
+<p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F36-runningpage%E9%85%8D%E7%BD%AE%2Fimage-20240406230233791-17124157550722.png" alt="image-20240406230233791" style="zoom: 50%;" /></p>
 <p>原因发现了 是因为欢太健康向keep导入数据时没有将轨迹信息导入</p>
 <p>经发现是keep本身的问题，必须是使用keep软件运动才能记录轨迹，但不记录手环轨迹【避雷】</p>
 <p>转悦跑圈</p>
@@ -4604,8 +4591,7 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 <p>使用悦跑圈获取2024年数据，此后每次同步悦跑圈数据即可</p>
 <hr>
 <p>2024.8.7</p>
-<h2 id="本地部署后的推送">本地部署后的推送</h2>
-<p>该项目使用vite项目，如果设备支持自动化可以使用yihong项目的工作流进行自动化操作</p>
+<h2 id="本地部署后的推送"><a href="#本地部署后的推送" class="headerlink" title="本地部署后的推送"></a>本地部署后的推送</h2><p>该项目使用vite项目，如果设备支持自动化可以使用yihong项目的工作流进行自动化操作</p>
 <p>但我使用的<strong>悦跑圈</strong>暂不能至此自动化，如果以最简单的方式发布到github页面让别人访问，以下是我认为最简单的操作</p>
 <p>注意：前提是能正确在本地跑通，能够实现pnpm develop后能正常的预览效果</p>
 <p>vite项目部署指导：<a href="https://www.bilibili.com/video/BV1gM411177A/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc">【Vue/Vite项目静态站点部署】</a>这名博主真的很厉害，跟他也学习了git的基本操作<a href="https://www.bilibili.com/video/BV1PG411L7of/?share_source=copy_web&amp;vd_source=22838caadae2e7c7d92d4cec725d8abc">【10分钟git快速上手使用，教会你项目克隆，版本库的修改与推送更新，git配置帐户和角色，2022年git最新小白教程程，git入门必看】 </a>，讲的细致认真，通熟易懂;</p>
@@ -4620,23 +4606,20 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 <p>然后就可以把<code>dist</code>目录推送至github远端自己对应的仓库位置或者文件夹</p>
 <p>然后就可以实现了</p>
 <p><img src="https://xbgis-1321241379.cos.ap-chongqing.myqcloud.com/image%2F%E6%96%87%E7%AB%A0%E6%8F%92%E5%9B%BE%2F36-runningpage%E9%85%8D%E7%BD%AE%2Frunning_success.png" alt=""></p>
-<p>终于成功了！！！ 欢迎访问：<a href="http://lfg12.github.io/running_map">lfg12.github.io/running_map</a></p>
+<p>终于成功了！！！ 欢迎访问：lfg12.github.io/running_map</p>
 <p>后续有时间希望能够发挥GIS专业的优势，把mapbox的底图颜色优化以下，设置可以切换地图底图的功能，提交pr试试</p>
-<h2 id="回顾">回顾</h2>
-<p>整体的操作方式：</p>
+<h2 id="回顾"><a href="#回顾" class="headerlink" title="回顾"></a>回顾</h2><p>整体的操作方式：（个人使用，自己使用时请结合自己的具体路径）</p>
 <p>0.启动虚拟环境</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">转到对应文件夹</span><br><span class="line">F:\runtest2\running_page</span><br><span class="line"></span><br><span class="line">run\Scripts\activate</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">转到对应文件夹（指的是你本地存放runningpage代码的文件夹）</span><br><span class="line">F:\runtest2\running_page</span><br><span class="line"></span><br><span class="line">run\Scripts\activate</span><br></pre></td></tr></table></figure>
 <p>1.获取悦跑圈数据</p>
 <blockquote>
-<p><strong>同时注意关闭科学上网工具</strong></p>
+<p><strong>同时注意关闭科学上网工具</strong> 输入自己的电话和对应的验证码</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python run_page/joyrun_sync.py 188******** 验证码</span><br></pre></td></tr></table></figure>
 <p>2.执行totle 处理</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE &#125;&#125;&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span> --special-distance <span class="number">10</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># distance代表将大于多少的单独列出来</span></span><br><span class="line"><span class="comment"># 自己处理时将$的改成一个字符串</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20240915&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;20240915&quot;</span> --special-distance <span class="number">3</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.4</span></span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li></li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将最小距离小于多少的生成统计数据</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE_GRID &#125;&#125;&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">10.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br><span class="line"></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20240915&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;20240915&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">3.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE &#125;&#125;&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span> --special-distance <span class="number">10</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># distance代表将大于多少的单独列出来</span></span><br><span class="line"><span class="comment"># 自己处理时将$的改成一个字符串</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20250105&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;20250105&quot;</span> --special-distance <span class="number">3</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.4</span></span><br></pre></td></tr></table></figure>
+<p>3.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将最小距离小于多少的生成统计数据</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE_GRID &#125;&#125;&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">10.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br><span class="line"></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20250105&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;20250105&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">3.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br></pre></td></tr></table></figure>
 <p>4.生成年度数据</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --from-db --type circular --use-localtime</span><br></pre></td></tr></table></figure>
 <p>5.运行查看</p>
@@ -4644,28 +4627,27 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 <p>6.打包</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pnpm vite build</span><br></pre></td></tr></table></figure>
 <p>7.将新生成的dist文件夹放到要推送的位置，然后推送 hexo 三连即可</p>
-<h2 id="参考链接：">参考链接：</h2>
+<p>印象中dist文件夹内好像要修改些什么东西</p>
+<p>dist文件夹下内容</p>
 <ul>
-<li>
-<p><a href="https://github.com/yihong0618/running_page">yihong0618/running_page: Make your own running home page (github.com)</a></p>
+<li>assets</li>
+<li>images （图标文件，一般不用修改）</li>
+<li>index.html</li>
+<li>manifest.json</li>
+</ul>
+<p>将以上四个文件，放入自己的博客 runingpage目录下（我的目录为runningmap）</p>
+<p>然后hexo三连；</p>
+<h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><ul>
+<li><a href="https://github.com/yihong0618/running_page">yihong0618/running_page: Make your own running home page (github.com)</a></li>
+<li><a href="https://yihong.run/">大佬完成效果Running Page (yihong.run)</a></li>
+<li><p>项目地址：<a href="https://github.com/yihong0618/running_page">yihong0618/running_page: Make your own running home page (github.com)</a></p>
 </li>
-<li>
-<p><a href="https://yihong.run/">大佬完成效果Running Page (yihong.run)</a></p>
+<li><p><a href="https://baijiahao.baidu.com/s?id=1756411348660758321">个人户外跑步数据网页展示｜running_page｜小白操作指导 (baidu.com)</a></p>
 </li>
-<li>
-<p>项目地址：<a href="https://github.com/yihong0618/running_page">yihong0618/running_page: Make your own running home page (github.com)</a></p>
+<li>视频讲解<a href="https://www.youtube.com/watch?v=VdNkFxTX5QQ">如何在Windows上配置running page【How to deploy running_page by Windows】 (youtube.com)</a></li>
+<li><p>本机项目地址：<a href="http://localhost:5173/">Running Page</a></p>
 </li>
-<li>
-<p><a href="https://baijiahao.baidu.com/s?id=1756411348660758321">个人户外跑步数据网页展示｜running_page｜小白操作指导 (baidu.com)</a></p>
-</li>
-<li>
-<p>视频讲解<a href="https://www.youtube.com/watch?v=VdNkFxTX5QQ">如何在Windows上配置running page【How to deploy running_page by Windows】 (youtube.com)</a></p>
-</li>
-<li>
-<p>本机项目地址：<a href="http://localhost:5173/">Running Page</a></p>
-</li>
-<li>
-<p><a href="https://sspai.com/post/72425">running_page：优雅的跑步数据统计页 - 少数派 (sspai.com)</a></p>
+<li><p><a href="https://sspai.com/post/72425">running_page：优雅的跑步数据统计页 - 少数派 (sspai.com)</a></p>
 </li>
 </ul>
 ]]></content>

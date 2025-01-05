@@ -1,6 +1,6 @@
 {
-  "_activities-5f11081d.js": {
-    "file": "assets/activities-5f11081d.js"
+  "_activities-2b78691b.js": {
+    "file": "assets/activities-2b78691b.js"
   },
   "_vendors-684904ef.js": {
     "file": "assets/vendors-684904ef.js"
@@ -11,9 +11,9 @@
   },
   "assets/github.svg": {
     "assets": [
-      "assets/github-5525670a.svg"
+      "assets/github-1d4fe162.svg"
     ],
-    "file": "assets/github.svg-8e4fc619.js",
+    "file": "assets/github.svg-0550a750.js",
     "imports": [
       "_vendors-684904ef.js"
     ],
@@ -22,9 +22,9 @@
   },
   "assets/grid.svg": {
     "assets": [
-      "assets/grid-5f7f9738.svg"
+      "assets/grid-18ac25d2.svg"
     ],
-    "file": "assets/grid.svg-e1fa2a15.js",
+    "file": "assets/grid.svg-b5cc48bb.js",
     "imports": [
       "_vendors-684904ef.js"
     ],
@@ -59,9 +59,9 @@
   },
   "assets/year_2023.svg": {
     "assets": [
-      "assets/year_2023-86da054d.svg"
+      "assets/year_2023-4e2b7ed3.svg"
     ],
-    "file": "assets/year_2023-ad483645.js",
+    "file": "assets/year_2023-dcd2492a.js",
     "imports": [
       "_vendors-684904ef.js"
     ],
@@ -70,14 +70,25 @@
   },
   "assets/year_2024.svg": {
     "assets": [
-      "assets/year_2024-1d805b6c.svg"
+      "assets/year_2024-869cabe5.svg"
     ],
-    "file": "assets/year_2024-cdecca6c.js",
+    "file": "assets/year_2024-ab7be1c7.js",
     "imports": [
       "_vendors-684904ef.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/year_2024.svg"
+  },
+  "assets/year_2025.svg": {
+    "assets": [
+      "assets/year_2025-9b548e54.svg"
+    ],
+    "file": "assets/year_2025-b0b1538b.js",
+    "imports": [
+      "_vendors-684904ef.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2025.svg"
   },
   "index.css": {
     "file": "assets/index-481dc5ef.css",
@@ -92,13 +103,14 @@
       "assets/year_2022.svg",
       "assets/year_2023.svg",
       "assets/year_2024.svg",
+      "assets/year_2025.svg",
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-ca0b6663.js",
+    "file": "assets/index-e63de3f5.js",
     "imports": [
       "_vendors-684904ef.js",
-      "_activities-5f11081d.js"
+      "_activities-2b78691b.js"
     ],
     "isEntry": true,
     "src": "index.html"
