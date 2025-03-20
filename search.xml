@@ -4798,11 +4798,11 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python run_page/joyrun_sync.py 18863542881 验证码</span><br></pre></td></tr></table></figure>
 <p>2.执行totle 处理</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE &#125;&#125;&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span> --special-distance <span class="number">10</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># distance代表将大于多少的单独列出来</span></span><br><span class="line"><span class="comment"># 自己处理时将$的改成一个字符串</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20240821&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;20240821&quot;</span> --special-distance <span class="number">3</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE &#125;&#125;&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span> --special-distance <span class="number">10</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># distance代表将大于多少的单独列出来</span></span><br><span class="line"><span class="comment"># 自己处理时将$的改成一个字符串</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20250320&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;20250320&quot;</span> --special-distance <span class="number">3</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br></pre></td></tr></table></figure>
 <ol start="3">
 <li></li>
 </ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将最小距离小于多少的生成统计数据</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE_GRID &#125;&#125;&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">10.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br><span class="line"></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20240821&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;20240821&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">3.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将最小距离小于多少的生成统计数据</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE_GRID &#125;&#125;&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">10.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br><span class="line"></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20050320&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;20050320&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">3.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br></pre></td></tr></table></figure>
 <p>4.生成年度数据</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --from-db --type circular --use-localtime</span><br></pre></td></tr></table></figure>
 <p>5.运行查看</p>
@@ -4875,11 +4875,11 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python run_page/joyrun_sync.py 188******** 验证码</span><br></pre></td></tr></table></figure>
 <p>2.执行totle 处理</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE &#125;&#125;&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span> --special-distance <span class="number">10</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># distance代表将大于多少的单独列出来</span></span><br><span class="line"><span class="comment"># 自己处理时将$的改成一个字符串</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20250105&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;20250105&quot;</span> --special-distance <span class="number">3</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.4</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE &#125;&#125;&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span> --special-distance <span class="number">10</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># distance代表将大于多少的单独列出来</span></span><br><span class="line"><span class="comment"># 自己处理时将$的改成一个字符串</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20250320&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;20250320&quot;</span> --special-distance <span class="number">3</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.4</span></span><br></pre></td></tr></table></figure>
 <ol start="3">
 <li></li>
 </ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将最小距离小于多少的生成统计数据</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE_GRID &#125;&#125;&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">10.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br><span class="line"></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20250105&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;20250105&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">3.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将最小距离小于多少的生成统计数据</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE_GRID &#125;&#125;&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">10.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br><span class="line"></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20250320&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;202503205&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">3.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br></pre></td></tr></table></figure>
 <p>4.生成年度数据</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --from-db --type circular --use-localtime</span><br></pre></td></tr></table></figure>
 <p>5.运行查看</p>
@@ -4897,6 +4897,7 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 </ul>
 <p>将以上四个文件，放入自己的博客 runingpage目录下（我的目录为runningmap）</p>
 <p>然后hexo三连；</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">clean</span> <span class="string">&amp;&amp;</span> <span class="string">hexo</span> <span class="string">g</span> <span class="string">&amp;&amp;</span> <span class="string">hexo</span> <span class="string">d</span></span><br></pre></td></tr></table></figure>
 <h2 id="参考链接：">参考链接：</h2>
 <ul>
 <li>
@@ -5522,6 +5523,47 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
       </categories>
   </entry>
   <entry>
+    <title>从0开始在阿里云ECS安装winserver</title>
+    <url>/2024/01/16/25-2%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%9C%A8ECS%E5%AE%89%E8%A3%85winserver%E8%BF%9B%E8%A1%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h1>建站过程</h1>
+<h2 id="1-购买-试用ECS服务器">1.购买/试用ECS服务器</h2>
+<p>进入阿里云官网，进行注册登录</p>
+<p>进行新用户认证</p>
+<p>试用创建服务器实例（根据时间、使用情况来进行分配）</p>
+<h2 id="2-创建winserver实例">2.创建winserver实例</h2>
+<p>以更换操作系统为例：</p>
+<ul>
+<li>
+<p>停止实例（需验证码）</p>
+</li>
+<li>
+<p>切换操作系统为winserver 默认40G可用空间</p>
+</li>
+<li>
+<p>启动实例</p>
+</li>
+</ul>
+<h2 id="3-使用本机电脑进行远程连接">3.使用本机电脑进行远程连接</h2>
+<p>本地电脑远程连接一般用的都是电脑自带的远程桌面连接功能，首先在搜索里输入 “远程连接”，然后敲下回车键，就看到远程桌面连接的界面了</p>
+<p>ps:远程桌面连接页面出来的另一种方法：同时按下win+R 键，然后输入mstsc，按下回车就出来了</p>
+<p>接下来继续，在输入框中输入阿里云服务器的公网IP，然后点连接</p>
+<img src="../../../../../../../../大三下课程/AE开发/image/image-20240403222832959.png" alt="image-20240403222832959" style="zoom:67%;" />
+<p>PS：Windows系统的服务器用户名都是Administrator</p>
+<img src="../../../../../../../../大三下课程/AE开发/image/image-20240403223148483.png" alt="image-20240403223148483" style="zoom:67%;" />
+<p>连接成功，可以正常进行操作</p>
+<h2 id="4-按需安装postgis">4.按需安装postgis</h2>
+<p>根据教程：<a href="https://blog.csdn.net/Oruizn/article/details/111667978">PostgreSQL+PostGIS安装教程-CSDN博客</a></p>
+<p>安装postsql+postgis</p>
+<p>注意将postsql和postgis版本一致，建议选择15.6</p>
+<h2 id="5-查找教程-如何将java程序打包部署到服务器">5.查找教程 如何将java程序打包部署到服务器</h2>
+<p>在idea中将能正常运行的java项目打包为war包</p>
+<p><a href="https://mp.weixin.qq.com/s/jj2Rj4EHi67ppp0CUzMlQg">https://mp.weixin.qq.com/s/jj2Rj4EHi67ppp0CUzMlQg</a></p>
+]]></content>
+      <categories>
+        <category>建站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>从0开始在ECS安装宝塔面板</title>
     <url>/2024/01/16/25%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%9C%A8ECS%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E8%BF%9B%E8%A1%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1>建站过程</h1>
@@ -5568,47 +5610,6 @@ PS: 前台用户端获取密钥的方法也是同理的</p>
 <p>结果图片</p>
 <p>iamges的文件夹，将结果图片放入iamges的图片</p>
 <p><img src="" alt=""></p>
-]]></content>
-      <categories>
-        <category>建站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>从0开始在阿里云ECS安装winserver</title>
-    <url>/2024/01/16/25-2%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%9C%A8ECS%E5%AE%89%E8%A3%85winserver%E8%BF%9B%E8%A1%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h1>建站过程</h1>
-<h2 id="1-购买-试用ECS服务器">1.购买/试用ECS服务器</h2>
-<p>进入阿里云官网，进行注册登录</p>
-<p>进行新用户认证</p>
-<p>试用创建服务器实例（根据时间、使用情况来进行分配）</p>
-<h2 id="2-创建winserver实例">2.创建winserver实例</h2>
-<p>以更换操作系统为例：</p>
-<ul>
-<li>
-<p>停止实例（需验证码）</p>
-</li>
-<li>
-<p>切换操作系统为winserver 默认40G可用空间</p>
-</li>
-<li>
-<p>启动实例</p>
-</li>
-</ul>
-<h2 id="3-使用本机电脑进行远程连接">3.使用本机电脑进行远程连接</h2>
-<p>本地电脑远程连接一般用的都是电脑自带的远程桌面连接功能，首先在搜索里输入 “远程连接”，然后敲下回车键，就看到远程桌面连接的界面了</p>
-<p>ps:远程桌面连接页面出来的另一种方法：同时按下win+R 键，然后输入mstsc，按下回车就出来了</p>
-<p>接下来继续，在输入框中输入阿里云服务器的公网IP，然后点连接</p>
-<img src="../../../../../../../../大三下课程/AE开发/image/image-20240403222832959.png" alt="image-20240403222832959" style="zoom:67%;" />
-<p>PS：Windows系统的服务器用户名都是Administrator</p>
-<img src="../../../../../../../../大三下课程/AE开发/image/image-20240403223148483.png" alt="image-20240403223148483" style="zoom:67%;" />
-<p>连接成功，可以正常进行操作</p>
-<h2 id="4-按需安装postgis">4.按需安装postgis</h2>
-<p>根据教程：<a href="https://blog.csdn.net/Oruizn/article/details/111667978">PostgreSQL+PostGIS安装教程-CSDN博客</a></p>
-<p>安装postsql+postgis</p>
-<p>注意将postsql和postgis版本一致，建议选择15.6</p>
-<h2 id="5-查找教程-如何将java程序打包部署到服务器">5.查找教程 如何将java程序打包部署到服务器</h2>
-<p>在idea中将能正常运行的java项目打包为war包</p>
-<p><a href="https://mp.weixin.qq.com/s/jj2Rj4EHi67ppp0CUzMlQg">https://mp.weixin.qq.com/s/jj2Rj4EHi67ppp0CUzMlQg</a></p>
 ]]></content>
       <categories>
         <category>建站</category>
