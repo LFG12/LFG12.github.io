@@ -4030,7 +4030,23 @@
     <url>/2025/03/13/50-%E9%A1%B9%E7%9B%AE%E7%BB%8F/</url>
     <content><![CDATA[<p>预览</p>
 <span id="more"></span>
-<h1>项目</h1>
+<h1>项目经历</h1>
+<ul>
+<li>
+<p>大创项目 基于深度学习的遥感影像高质量筛选系统的设计与实现 第二负责人</p>
+</li>
+<li>
+<p>项目整体效果：</p>
+</li>
+<li>
+<p>基于北疆云遥平台进行影像筛选</p>
+</li>
+<li>
+<ul>
+<li>个人负责内容：遥感影像的预处理和后处理（使用GDAL代码库进行影像拆分、融合、rpb与rpc文件的读取转化。）遥感影像云标签的绘制。</li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <tags>
         <tag>python</tag>
@@ -4875,11 +4891,11 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python run_page/joyrun_sync.py 188******** 验证码</span><br></pre></td></tr></table></figure>
 <p>2.执行totle 处理</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE &#125;&#125;&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span> --special-distance <span class="number">10</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># distance代表将大于多少的单独列出来</span></span><br><span class="line"><span class="comment"># 自己处理时将$的改成一个字符串</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20250320&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;20250320&quot;</span> --special-distance <span class="number">3</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.4</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE &#125;&#125;&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span> --special-distance <span class="number">10</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># distance代表将大于多少的单独列出来</span></span><br><span class="line"><span class="comment"># 自己处理时将$的改成一个字符串</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20250324&quot;</span> --<span class="built_in">type</span> github --athlete <span class="string">&quot;20250324&quot;</span> --special-distance <span class="number">3</span> --special-distance2 <span class="number">20</span> --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --<span class="built_in">min</span>-distance <span class="number">0.4</span></span><br></pre></td></tr></table></figure>
 <ol start="3">
 <li></li>
 </ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将最小距离小于多少的生成统计数据</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE_GRID &#125;&#125;&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">10.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br><span class="line"></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20250320&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;202503205&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">3.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将最小距离小于多少的生成统计数据</span></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;$&#123;&#123; env.TITLE_GRID &#125;&#125;&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;$&#123;&#123; env.ATHLETE &#125;&#125;&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">10.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br><span class="line"></span><br><span class="line">python run_page/gen_svg.py --<span class="keyword">from</span>-db --title <span class="string">&quot;20250324&quot;</span> --<span class="built_in">type</span> grid --athlete <span class="string">&quot;20250324&quot;</span>  --output assets/grid.svg --<span class="built_in">min</span>-distance <span class="number">3.0</span> --special-color yellow --special-color2 red --special-distance <span class="number">20</span> --special-distance2 <span class="number">40</span> --use-localtime</span><br></pre></td></tr></table></figure>
 <p>4.生成年度数据</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python run_page/gen_svg.py --from-db --type circular --use-localtime</span><br></pre></td></tr></table></figure>
 <p>5.运行查看</p>
@@ -4897,7 +4913,7 @@ Lett等国际重要期刊。担任多份国内外学术期刊编委、副主编�
 </ul>
 <p>将以上四个文件，放入自己的博客 runingpage目录下（我的目录为runningmap）</p>
 <p>然后hexo三连；</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">clean</span> <span class="string">&amp;&amp;</span> <span class="string">hexo</span> <span class="string">g</span> <span class="string">&amp;&amp;</span> <span class="string">hexo</span> <span class="string">d</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">clean</span> <span class="string">&amp;&amp;</span> <span class="string">hexo</span> <span class="string">g</span> <span class="string">&amp;&amp;</span> <span class="string">hexo</span> <span class="string">d</span></span><br></pre></td></tr></table></figure>
 <h2 id="参考链接：">参考链接：</h2>
 <ul>
 <li>
