@@ -4026,34 +4026,6 @@
       </tags>
   </entry>
   <entry>
-    <title>项目汇总</title>
-    <url>/2025/03/13/50-%E9%A1%B9%E7%9B%AE%E7%BB%8F/</url>
-    <content><![CDATA[<p>预览</p>
-<span id="more"></span>
-<h1>项目经历</h1>
-<ul>
-<li>
-<p>大创项目 基于深度学习的遥感影像高质量筛选系统的设计与实现 第二负责人</p>
-</li>
-<li>
-<p>项目整体效果：</p>
-</li>
-<li>
-<p>基于北疆云遥平台进行影像筛选</p>
-</li>
-<li>
-<ul>
-<li>个人负责内容：遥感影像的预处理和后处理（使用GDAL代码库进行影像拆分、融合、rpb与rpc文件的读取转化。）遥感影像云标签的绘制。</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>python</tag>
-        <tag>echarts</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>诗涛兄分享</title>
     <url>/2025/03/01/49-%E8%AF%97%E6%B6%9B%E5%93%A5%E5%88%86%E4%BA%AB/</url>
     <content><![CDATA[<blockquote>
