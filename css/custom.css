@@ -368,3 +368,16 @@ body,
     transform: scale(0.5) translateY(-40px);
   }
 }
+
+
+/* ========= 禁止 yuanfan 卡片任何位移动画 ========= */
+.flink-list-item.lover *,
+.flink-list-item.lover a::before,
+.flink-list-item.lover a::after,
+.flink-list-item.lover .flink-item-icon,
+.flink-list-item.lover .flink-item-icon::before,
+.flink-list-item.lover .flink-item-icon::after {
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+}
