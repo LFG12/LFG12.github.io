@@ -278,10 +278,11 @@ body,
 
 
 /* 给小凡头像添加爱心动画-恋人 */
-/* 针对yuanfan的头像添加爱心动画-伪类选择器方式 */
+/* 针对yuanfan的头像添加爱心动画 */
 .flink-list-item a[title="yuanfan"] .flink-item-icon {
   position: relative;
   overflow: visible !important;
+  z-index: 10;
 }
 
 /* 爱心动画容器 */
@@ -292,11 +293,11 @@ body,
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 11;
   pointer-events: none;
 }
 
-/* 爱心元素 */
+/* 爱心元素 - 主爱心 */
 .flink-list-item a[title="yuanfan"] .flink-item-icon:hover::after {
   content: '\2665';
   /* 爱心符号 */
@@ -304,45 +305,50 @@ body,
   color: #ff69b4;
   /* 粉色爱心 */
   font-size: 16px;
-  z-index: 10;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 12;
   animation: heartAnimation 2s infinite ease-in-out;
   pointer-events: none;
 }
 
-/* 多个爱心，围绕头像不同角度 */
-.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-1,
-.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-2,
-.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-3,
-.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-4 {
+/* 额外爱心 - 围绕不同位置 */
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-1::after {
   content: '\2665';
   position: absolute;
   color: #ff69b4;
   font-size: 16px;
-  z-index: 10;
+  top: 0;
+  left: -20px;
+  z-index: 12;
+  animation: heartAnimation 2s infinite ease-in-out 0.3s;
   pointer-events: none;
 }
 
-.flink-list-item a[title="yuanfan"] .flink-item-icon Snape .flink-item-icon:hover .heart-1 {
-  animation: heartAnimation 2s infinite ease-in-out 0s;
-  transform-origin: 50% 50%;
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-2::after {
+  content: '\2665';
+  position: absolute;
+  color: #ff69b4;
+  font-size: 16px;
+  top: 0;
+  right: -20px;
+  z-index: 12;
+  animation: heartAnimation 2s infinite ease-in-out 0.6s;
+  pointer-events: none;
 }
 
-.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-2 {
-  animation: heartAnimation 2s infinite ease-in-out 0.5s;
-  transform-origin: 50% 50%;
-  transform: rotate(90deg);
-}
-
-.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-3 {
-  animation: heartAnimation 2s infinite ease-in-out 1s;
-  transform-origin: 50% 50%;
-  transform: rotate(180deg);
-}
-
-.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-4 {
-  animation: heartAnimation 2s infinite ease-in-out 1.5s;
-  transform-origin: 50% 50%;
-  transform: rotate(270deg);
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-3::after {
+  content: '\2665';
+  position: absolute;
+  color: #ff69b4;
+  font-size: 16px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 12;
+  animation: heartAnimation 2s infinite ease-in-out 0.9s;
+  pointer-events: none;
 }
 
 /* 爱心动画 keyframes */
