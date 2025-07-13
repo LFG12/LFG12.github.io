@@ -368,34 +368,3 @@ body,
     transform: scale(0.5) translateY(-40px);
   }
 }
-
-
-/* ========= 禁止 yuanfan 卡片任何位移动画 ========= */
-.flink-list-item.lover *,
-.flink-list-item.lover a::before,
-.flink-list-item.lover a::after,
-.flink-list-item.lover .flink-item-icon,
-.flink-list-item.lover .flink-item-icon::before,
-.flink-list-item.lover .flink-item-icon::after {
-  transform: none !important;
-  transition: none !important;
-  animation: none !important;
-}
-
-/* 让 yuanfan 的卡片 hover 时头像保持原位、大小、可见性 */
-.flink-list-item.lover:hover .flink-item-icon,
-.flink-list-item.lover:hover .flink-item-icon img {
-  opacity: 1 !important;
-  visibility: visible !important;
-  width: 100% !important;
-  height: 100% !important;
-  transform: none !important;
-  transition: none !important;
-}
-
-/* 如果主题还用了 flex 布局导致名字占满，把头像区固定宽度 */
-.flink-list-item.lover .flink-item-icon {
-  flex: 0 0 64px !important;
-  /* 64px 是 Butterfly 默认头像宽，可按需改 */
-  overflow: visible !important;
-}
