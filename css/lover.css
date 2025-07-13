@@ -1,0 +1,85 @@
+/* ========= 恋人特效 ========= */
+.flink#article-container .friend-card.lover {
+    position: relative;
+    /* 方便做绝对定位 */
+}
+
+/* 8 颗小爱心 */
+.flink#article-container .friend-card.lover::before,
+.flink#article-container .friend-card.lover::after,
+.flink#article-container .friend-card.lover .friend-left::before,
+.flink#article-container .friend-card.lover .friend-left::after,
+.flink#article-container .friend-card.lover .friend-right::before,
+.flink#article-container .friend-card.lover .friend-right::after,
+.flink#article-container .friend-card.lover .friend-name::before,
+.flink#article-container .friend-card.lover .friend-name::after {
+    content: '♥';
+    position: absolute;
+    color: #ff6b81;
+    font-size: 16px;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .4s, opacity .4s;
+}
+
+/* 8 个方位 */
+.flink#article-container .friend-card.lover::before {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -10px) scale(.4);
+}
+
+.flink#article-container .friend-card.lover::after {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 10px) scale(.4);
+}
+
+.flink#article-container .friend-card.lover .friend-left::before {
+    left: 0;
+    top: 50%;
+    transform: translate(-10px, -50%) scale(.4);
+}
+
+.flink#article-container .friend-card.lover .friend-left::after {
+    right: 0;
+    top: 50%;
+    transform: translate(10px, -50%) scale(.4);
+}
+
+.flink#article-container .friend-card.lover .friend-right::before {
+    top: 15%;
+    left: 15%;
+    transform: translate(-10px, -10px) scale(.4);
+}
+
+.flink#article-container .friend-card.lover .friend-right::after {
+    bottom: 15%;
+    right: 15%;
+    transform: translate(10px, 10px) scale(.4);
+}
+
+.flink#article-container .friend-card.lover .friend-name::before {
+    top: 15%;
+    right: 15%;
+    transform: translate(10px, -10px) scale(.4);
+}
+
+.flink#article-container .friend-card.lover .friend-name::after {
+    bottom: 15%;
+    left: 15%;
+    transform: translate(-10px, 10px) scale(.4);
+}
+
+/* 悬停动画 */
+.flink#article-container .friend-card.lover:hover::before,
+.flink#article-container .friend-card.lover:hover::after,
+.flink#article-container .friend-card.lover:hover .friend-left::before,
+.flink#article-container .friend-card.lover:hover .friend-left::after,
+.flink#article-container .friend-card.lover:hover .friend-right::before,
+.flink#article-container .friend-card.lover:hover .friend-right::after,
+.flink#article-container .friend-card.lover:hover .friend-name::before,
+.flink#article-container .friend-card.lover:hover .friend-name::after {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+}
