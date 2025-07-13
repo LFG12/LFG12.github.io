@@ -83,3 +83,9 @@
     opacity: 1;
     transform: translate(0, 0) scale(1);
 }
+
+/* 让 yuanfan 这条友链的头像不要左滑 */
+.flink#article-container .flink-list-item.lover:hover .flink-item-icon {
+    transform: none !important;
+    transition: none !important;
+}
