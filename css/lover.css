@@ -89,3 +89,8 @@
     transform: none !important;
     transition: none !important;
 }
+/* 彻底禁用 yuanfan 卡片的任何 transform 动画 */
+.flink#article-container .flink-list-item.lover * {
+    transform: none !important;
+    transition: transform 0s !important;
+}
