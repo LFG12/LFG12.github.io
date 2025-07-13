@@ -9,26 +9,31 @@ h6::before {
   -webkit-animation: ccc 1.6s linear infinite;
   animation: ccc 1.6s linear infinite;
 }
+
 @-webkit-keyframes ccc {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(-1turn);
     transform: rotate(-1turn);
   }
 }
+
 @keyframes ccc {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(-1turn);
     transform: rotate(-1turn);
   }
 }
+
 /* 小风车颜色 */
 #content-inner.layout h1::before {
   color: #ef50a8;
@@ -36,36 +41,42 @@ h6::before {
   font-size: 1.3rem;
   margin-top: -0.23rem;
 }
+
 #content-inner.layout h2::before {
   color: #fb7061;
   margin-left: -1.35rem;
   font-size: 1.1rem;
   margin-top: -0.12rem;
 }
+
 #content-inner.layout h3::before {
   color: #ffbf00;
   margin-left: -1.22rem;
   font-size: 0.95rem;
   margin-top: -0.09rem;
 }
+
 #content-inner.layout h4::before {
   color: #a9e000;
   margin-left: -1.05rem;
   font-size: 0.8rem;
   margin-top: -0.09rem;
 }
+
 #content-inner.layout h5::before {
   color: #57c850;
   margin-left: -0.9rem;
   font-size: 0.7rem;
   margin-top: 0rem;
 }
+
 #content-inner.layout h6::before {
   color: #5ec1e0;
   margin-left: -0.9rem;
   font-size: 0.66rem;
   margin-top: 0rem;
 }
+
 /* 修改风车图标大小 */
 #content-inner.layout h1::before {
   color: #ef50a8;
@@ -73,35 +84,41 @@ h6::before {
   font-size: 26px;
   margin-top: -5px;
 }
+
 #content-inner.layout h2::before {
   color: #fb7061;
   margin-left: -27px;
   font-size: 22px;
   margin-top: -3px;
 }
+
 #content-inner.layout h3::before {
   color: #ffbf00;
   margin-left: -25px;
   font-size: 20px;
   margin-top: -2px;
 }
+
 #content-inner.layout h4::before {
   color: #a9e000;
   font-size: 16px;
   margin-top: -2px;
 }
+
 #content-inner.layout h5::before {
   color: #57c850;
   margin-left: -18px;
   font-size: 14px;
   margin-top: 0;
 }
+
 #content-inner.layout h6::before {
   color: #5ec1e0;
   margin-left: -18px;
   font-size: 13px;
   margin-top: 0;
 }
+
 /* 小风车 hover 效果 */
 #content-inner.layout h1:hover,
 #content-inner.layout h2:hover,
@@ -111,6 +128,7 @@ h6::before {
 #content-inner.layout h6:hover {
   color: #49b1f5;
 }
+
 #content-inner.layout h1:hover::before,
 #content-inner.layout h2:hover::before,
 #content-inner.layout h3:hover::before,
@@ -135,16 +153,14 @@ h6::before {
 
 ::-webkit-scrollbar-thumb {
   background-color: #49b1f5;
-  background-image: -webkit-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.4) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0.4) 75%,
-    transparent 75%,
-    transparent
-  );
+  background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.4) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.4) 75%,
+      transparent 75%,
+      transparent);
   border-radius: 2em;
 }
 
@@ -176,6 +192,7 @@ body,
 .flink-list-item {
   width: calc(100% / 4 - 15px) !important;
 }
+
 @media screen and (max-width: 1250px) {
   .flink-list-item {
     width: calc(100% / 3 - 15px) !important;
@@ -190,6 +207,7 @@ body,
   -ms-transform: translateY(58px) !important;
   -o-transform: translateY(58px) !important;
 }
+
 #nav {
   transition: none !important;
   -webkit-transition: none !important;
@@ -200,7 +218,8 @@ body,
 
 /* aplayer最小化 --------------------------------------------*/
 .aplayer-narrow {
-  transform: translateX(-67px); /*66的宽度+1边框*/
+  transform: translateX(-67px);
+  /*66的宽度+1边框*/
 }
 
 .aplayer-body {
@@ -240,6 +259,7 @@ body,
   #universe {
     display: none;
   }
+
   /* 下面这个是切换手机背景的代码，有需要的可以使用，没需要的删了就行 */
   /* #web_bg {
       background-image: url("https://img.vm.laomishuo.com/image/2021/05/2021053107390019.jpeg");
@@ -254,4 +274,90 @@ body,
 .loading-img {
   background: url(../img/avatar.png) no-repeat center center;
   background-size: cover;
+}
+
+
+/* 给小凡头像添加爱心动画-恋人 */
+.lover .flink-item-icon {
+  position: relative;
+  overflow: visible !important;
+}
+
+/* 爱心动画容器 */
+.lover .flink-item-icon:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* 爱心元素 */
+.lover .flink-item-icon:hover::after {
+  content: '\2665';
+  /* 爱心符号 */
+  position: absolute;
+  color: #ff69b4;
+  /* 粉色爱心 */
+  font-size: 16px;
+  z-index: 10;
+  animation: heartAnimation 2s infinite ease-in-out;
+  pointer-events: none;
+}
+
+/* 多个爱心，围绕头像不同角度 */
+.lover .flink-item-icon:hover .heart-1,
+.lover .flink-item-icon:hover .heart-2,
+.lover .flink-item-icon:hover .heart-3,
+.lover .flink-item-icon:hover .heart-4 {
+  content: '\2665';
+  position: absolute;
+  color: #ff69b4;
+  font-size: 16px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.lover .flink-item-icon:hover .heart-1 {
+  animation: heartAnimation 2s infinite ease-in-out 0s;
+  transform-origin: 50% 50%;
+}
+
+.lover .flink-item-icon:hover .heart-2 {
+  animation: heartAnimation 2s infinite ease-in-out 0.5s;
+  transform-origin: 50% 50%;
+  transform: rotate(90deg);
+}
+
+.lover .flink-item-icon:hover .heart-3 {
+  animation: heartAnimation 2s infinite ease-in-out 1s;
+  transform-origin: 50% 50%;
+  transform: rotate(180deg);
+}
+
+.lover .flink-item-icon:hover .heart-4 {
+  animation: heartAnimation 2s infinite ease-in-out 1.5s;
+  transform-origin: 50% 50%;
+  transform: rotate(270deg);
+}
+
+/* 爱心动画 keyframes */
+@keyframes heartAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.5) translateY(-40px);
+  }
 }
