@@ -278,13 +278,14 @@ body,
 
 
 /* 给小凡头像添加爱心动画-恋人 */
-.lover .flink-item-icon {
+/* 针对yuanfan的头像添加爱心动画-伪类选择器方式 */
+.flink-list-item a[title="yuanfan"] .flink-item-icon {
   position: relative;
   overflow: visible !important;
 }
 
 /* 爱心动画容器 */
-.lover .flink-item-icon:hover::before {
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -296,7 +297,7 @@ body,
 }
 
 /* 爱心元素 */
-.lover .flink-item-icon:hover::after {
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover::after {
   content: '\2665';
   /* 爱心符号 */
   position: absolute;
@@ -309,10 +310,10 @@ body,
 }
 
 /* 多个爱心，围绕头像不同角度 */
-.lover .flink-item-icon:hover .heart-1,
-.lover .flink-item-icon:hover .heart-2,
-.lover .flink-item-icon:hover .heart-3,
-.lover .flink-item-icon:hover .heart-4 {
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-1,
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-2,
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-3,
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-4 {
   content: '\2665';
   position: absolute;
   color: #ff69b4;
@@ -321,24 +322,24 @@ body,
   pointer-events: none;
 }
 
-.lover .flink-item-icon:hover .heart-1 {
+.flink-list-item a[title="yuanfan"] .flink-item-icon Snape .flink-item-icon:hover .heart-1 {
   animation: heartAnimation 2s infinite ease-in-out 0s;
   transform-origin: 50% 50%;
 }
 
-.lover .flink-item-icon:hover .heart-2 {
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-2 {
   animation: heartAnimation 2s infinite ease-in-out 0.5s;
   transform-origin: 50% 50%;
   transform: rotate(90deg);
 }
 
-.lover .flink-item-icon:hover .heart-3 {
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-3 {
   animation: heartAnimation 2s infinite ease-in-out 1s;
   transform-origin: 50% 50%;
   transform: rotate(180deg);
 }
 
-.lover .flink-item-icon:hover .heart-4 {
+.flink-list-item a[title="yuanfan"] .flink-item-icon:hover .heart-4 {
   animation: heartAnimation 2s infinite ease-in-out 1.5s;
   transform-origin: 50% 50%;
   transform: rotate(270deg);
